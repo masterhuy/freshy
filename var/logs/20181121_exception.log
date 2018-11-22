@@ -1,0 +1,7 @@
+*ERROR* 	v1.7.4.4	2018/11/21 - 11:09:16: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at line 120 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.4.4	2018/11/21 - 11:09:19: Link to database cannot be established: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at line 120 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.4.4	2018/11/21 - 05:19:16: No template found for errors/404 at line 68 in file classes/Smarty/TemplateFinder.php
+*ERROR* 	v1.7.4.4	2018/11/21 - 05:20:08: No template found for errors/404 at line 68 in file classes/Smarty/TemplateFinder.php
+*ERROR* 	v1.7.4.4	2018/11/21 - 05:20:09: No template found for errors/404 at line 68 in file classes/Smarty/TemplateFinder.php
