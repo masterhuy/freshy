@@ -900,7 +900,7 @@ a.wishlist_top{
 #cart{
 	.featured-products{
 		.owl-stage-outer{
-			padding-bottom: 150px;
+			padding-bottom: 60px;
 		}
 	}
 }
@@ -958,6 +958,11 @@ a.wishlist_top{
 		&.fixed{
 			left: -8.5px;
 		}
+	}
+}
+.jms-banner{
+	img{
+		width: 100%;
 	}
 }
 
@@ -1067,5 +1072,12 @@ a.wishlist_top{
 		font-family: 'typo-icon';
 		font-size: 21px;
 		display: inline-block;
+	}
+}
+
+
+.categorytab-carousel, .hotdeal-carousel{
+	.owl-stage-outer{
+		padding-bottom: 60px;
 	}
 }

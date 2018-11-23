@@ -58,10 +58,10 @@
 			   {/block}	
 			</div>
 		{/block}
-					
-		<a data-link-action="quickview" class="quick-view product-btn hidden-xs">
-			<span><i class="fa fa-eye" aria-hidden="true"></i>Quick view</span>
-		</a>
+		{if isset($jpb_wishlist) && $jpb_wishlist}							
+			<a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
+			</a>
+		{/if}
 	</div>
 						
 	<div class="product-info">
@@ -79,12 +79,12 @@
 			{if $product.show_price}
 			  <div class="content_price">
 			  	{hook h='displayProductPriceBlock' product=$product type="before_price"}
-					<span class="price new">{$product.price}</span>
 				{if $product.has_discount}
 				 	{hook h='displayProductPriceBlock' product=$product type="old_price"}
-				  		<span class="old price">{$product.regular_price}</span>
+				  	<span class="old price">{$product.regular_price}</span>
 				{/if}
-				
+
+				<span class="price new">{$product.price}</span>
 
 				{hook h='displayProductPriceBlock' product=$product type='unit_price'}
 
@@ -128,11 +128,9 @@
 			<span class="text-addcart"><i class="flaticon-shopping-basket"></i>{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
 			<span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>			
 	   	</button>
-	   	{if isset($jpb_wishlist) && $jpb_wishlist}							
-			<a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
-				<i class="storm-heart"></i>
-			</a>
-		{/if}
+	   	<a data-link-action="quickview" class="quick-view product-btn hidden-xs" title="{l s='Quick view' d='Shop.Theme.Actions'}">
+			Quick view
+		</a>
     </div>
 </div>
 

@@ -744,7 +744,7 @@ a.wishlist_top {
   margin: 0 -15px; }
 
 #cart .featured-products .owl-stage-outer {
-  padding-bottom: 150px; }
+  padding-bottom: 60px; }
 
 .wlp_bought img {
   width: 100%; }
@@ -793,6 +793,9 @@ a.wishlist_top {
 
 .modal-open #header .header.fixed, .modal-open #header .menu.fixed, .fancybox-margin .header.fixed, .fancybox-margin .menu.fixed {
   left: -8.5px; }
+
+.jms-banner img {
+  width: 100%; }
 
 .force-full-width .feature-icon span {
   display: none; }
@@ -882,3 +885,6 @@ a.wishlist_top {
     font-family: 'typo-icon';
     font-size: 21px;
     display: inline-block; }
+
+.categorytab-carousel .owl-stage-outer, .hotdeal-carousel .owl-stage-outer {
+  padding-bottom: 60px; }

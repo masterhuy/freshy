@@ -47,7 +47,7 @@
 		<div class="hotdeal-carousel">
 			{foreach from=$products item=product key=k}	
 				<div class="item">
-					<div class="product-box" itemtype="http://schema.org/Product" data-id-product="{$product.id_product nofilter}" data-id-product-attribute="{$product.id_product_attribute nofilter}" >
+					<div class="product-box product-preview" itemtype="http://schema.org/Product" data-id-product="{$product.id_product nofilter}" data-id-product-attribute="{$product.id_product_attribute nofilter}" >
 						{block name='product_thumbnail'}
 						<div class="img-hotdeal">
 						  	<a href="{$product.url nofilter}" class="product-image">
@@ -63,44 +63,30 @@
 						<div class="product-info hotdeal">
 							<div class="countdown" id="countdown-{$hotdeals[$k].id_hotdeals nofilter}">{$hotdeals[$k].deals_time nofilter}</div>
 							{block name='product_name'}
-							   	<a href="{$product.url nofilter}" class="product-name">{$product.name nofilter}</a>
+							   	<a href="{$product.url nofilter}" class="product-link">{$product.name nofilter}</a>
 							{/block}
 
 							{block name='product_price_and_shipping'}
 								{if $product.show_price}
 									<div class="content_price">
 									  	{hook h='displayProductPriceBlock' product=$product type="before_price"}
-										<span itemprop="price" class="price new">{$product.price nofilter}</span>
-										
-										{if $product.has_discount}
+
+									  	{if $product.has_discount}
 										  	{hook h='displayProductPriceBlock' product=$product type="old_price"}
 										  	<span class="old price">{$product.regular_price nofilter}</span>
 										{/if}
 
+										<span itemprop="price" class="price new">{$product.price nofilter}</span>
+										
+										
 										{hook h='displayProductPriceBlock' product=$product type='unit_price'}
 
 										{hook h='displayProductPriceBlock' product=$product type='weight'}
 									</div>
 								{/if}
 							{/block}
-							<div class="product-sold">
-					        	<div class="sold-quantyties">
-					        		<div class="available pull-left">Available: <span>{$product.quantity_all_versions}</span></div>
-					        		<div class="already_sold pull-right">Already Sold: 
-					        			<span>
-					        				{if $product.sold != "" }
-					        					{$product.sold}
-					        				{else}
-					        					0
-					        				{/if}
-					        			</span>
-					        		</div>
-					        	</div>
-						        <div class="proces-bars">
-						        	<span style="width:{($product.sold/$product.quantity_all_versions)*100}%;"></span>
-						        </div>
-						    </div>
 						</div>
+
 						<div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down">
 						  	{block name='product_variants'}
 								{if $product.main_variants}
@@ -108,6 +94,27 @@
 								{/if}
 						  	{/block}
 						</div>
+
+						<div class="product_action">
+							{block name='product_variants'}
+								{if $product.main_variants}
+									{if isset($jpb_pcolor) && $jpb_pcolor == 1}
+										<div class="color_to_pick_list">
+											{include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
+										</div>
+									{/if}
+								{/if}
+							{/block}
+							<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+								<span class="fa fa-spin fa-spinner"></span>
+								<span class="fa fa-check"></span>
+								<span class="text-addcart"><i class="flaticon-shopping-basket"></i>{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
+								<span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>			
+						   	</button>
+						   	<a data-link-action="quickview" class="quick-view product-btn hidden-xs" title="{l s='Quick view' d='Shop.Theme.Actions'}">
+								Quick view
+							</a>
+					    </div>
 		  			</div>
 		  		</div>
 			{/foreach}

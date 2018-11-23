@@ -31,6 +31,8 @@
 
 {/if}
 {if $html_content}
-{$html_content nofilter}
+	<div class="banner-content">
+		{$html_content nofilter}
+	</div>
 {/if}
 </div>	

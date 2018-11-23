@@ -35,6 +35,43 @@ $(window).load(function(){
 });
 jQuery(function ($) {
     "use strict";
+
+    if($(".hotdeal-carousel").length) {		
+		var hotdealCarousel = $(".hotdeal-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		hotdealCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:h_itemsDesktop
+				},
+				991:{
+					items:h_itemsDesktopSmall
+				},
+				768:{
+					items:h_itemsTablet
+				},
+				481:{
+					items:h_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin: 0,
+			nav: h_nav,
+			dots: h_pag,
+			loop:true,
+			autoplay: h_auto_play_carousel,
+			slideSpeed: 800,
+		});
+	}
+	
 	if($(".producttab-carousel").length) {
 		var producttabCarousel = $(".producttab-carousel");			
 		var rtl = false;
