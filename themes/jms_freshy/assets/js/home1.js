@@ -36,6 +36,39 @@ $(window).load(function(){
 jQuery(function ($) {
     "use strict";
 
+    if($(".testimonial-carousel").length) {
+		var testimonialCarousel = $(".testimonial-carousel");		
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		testimonialCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:testi_itemsDesktop
+				},
+				991:{
+					items:testi_itemsDesktopSmall
+				},
+				768:{
+					items:testi_itemsTablet
+				},
+				481:{
+					items:testi_itemsMobile
+				},
+				0: {
+					items:1
+				}
+			},
+				rtl: rtl,
+				margin: 0,
+				nav: p_nav_testi,
+		        dots: p_pag_testi,
+				autoplay:auto_play_testi,
+				slideSpeed: 800,
+				loop: true
+		});
+	}
+
     if($(".hotdeal-carousel").length) {		
 		var hotdealCarousel = $(".hotdeal-carousel");			
 		var rtl = false;
@@ -108,6 +141,39 @@ jQuery(function ($) {
 			    slideSpeed: 200
 		});
 	}
+
+	if($(".blog-carousel").length) {
+		var blogCarousel = $(".blog-carousel");		
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		blogCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:blog_itemsDesktop
+				},
+				991:{
+					items:blog_itemsDesktopSmall
+				},
+				768:{
+					items:blog_itemsTablet
+				},
+				481:{
+					items:blog_itemsMobile
+				},
+				0: {
+					items:1
+				}
+			},
+				rtl: rtl,
+				margin:30,
+				nav: p_nav_blog,
+		        dots: p_pag_blog,
+				autoplay:auto_play_blog,
+				loop: true,
+				slideSpeed: 800,	
+		});
+	}
  	
  	if($(".categorytab-carousel").length) {
 		var categorytabCarousel = $(".categorytab-carousel");			
@@ -178,30 +244,4 @@ jQuery(function ($) {
 				slideSpeed: 200,	
 		});
 	}
-});
-
-
-jQuery(document).ready(function($) {
-	var header = $(".jms-row.header");
-	producttab = $(".product_tab");
-	catetab = $(".cate_tab");
-
-	$(window).scroll(function () {
-    	if ($(window).scrollTop()){
-			header.addClass("fixed");
-    	} else {
-			header.removeClass("fixed");
-    	}
-    });
-
-	$(".product_tab .product-miniature").hover(function(){
-	    producttab.css("z-index", "3");
-		}, function(){
-        producttab.css("z-index", "1");
-	});
-	$(".cate_tab .product-miniature").hover(function(){
-	    catetab.css("z-index", "3");
-		}, function(){
-        catetab.css("z-index", "1");
-	});
 });

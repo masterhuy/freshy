@@ -1,13 +1,23 @@
-#header {
+.page-index #header {
   position: relative;
   z-index: 2; }
 
-#wrapper {
+.page-index #wrapper {
   margin-top: -181px;
   display: inline-block;
   width: 100%;
   position: relative;
   z-index: 1; }
+  .page-index #wrapper .addon-title h3 {
+    text-align: center; }
+    .page-index #wrapper .addon-title h3::before {
+      content: url("../img/leaf.png");
+      position: absolute;
+      left: 50%;
+      top: -47px;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
 
 .header {
   padding: 20px 0; }
@@ -232,16 +242,6 @@
     max-width: 1810px;
     width: 100%;
     padding: 0 15px; }
-  .cates_tab .addon-title {
-    text-align: center; }
-    .cates_tab .addon-title h3::before {
-      content: url("../img/leaf.png");
-      position: absolute;
-      left: 50%;
-      top: -47px;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%); }
 
 .brand {
   margin-top: -8px;
@@ -249,14 +249,32 @@
   width: 100%; }
 
 .hot_deal {
-  margin-top: 100px; }
+  margin-top: 126px; }
   .hot_deal .addon-title h3 {
-    text-align: center; }
-    .hot_deal .addon-title h3::before {
-      content: url("../img/leaf.png");
-      position: absolute;
-      left: 50%;
-      top: -47px;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%); }
+    letter-spacing: 0.4px;
+    padding-bottom: 29px; }
+
+.testimonial {
+  position: relative; }
+  .testimonial::before {
+    content: url("../imgg/testi_img2.png");
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .testimonial::after {
+    content: url("../img/testi_img1.png");
+    position: absolute;
+    bottom: -54px;
+    right: -8px; }
+  .testimonial .addon-title h3 {
+    letter-spacing: 0.2px; }
+
+.blog {
+  margin-top: 59px; }
+  .blog .addon-title h3 {
+    margin-bottom: 10px;
+    letter-spacing: 0.2px;
+    padding-bottom: 29px; }
+
+.jms-popup-overlay {
+  display: block !important; }

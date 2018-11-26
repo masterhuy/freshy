@@ -2,17 +2,26 @@
 @import "varians";
 
 
-#header{
-	position: relative;
-	z-index: 2;
+.page-index{
+	#header{
+		position: relative;
+		z-index: 2;
+	}
+	#wrapper{
+		margin-top: -181px;
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		z-index: 1;
+		.addon-title h3{
+			text-align: center;
+			&::before{
+				@include imgBeforeTitle();
+			}
+		}
+	}
 }
-#wrapper{
-	margin-top: -181px;
-	display: inline-block;
-	width: 100%;
-	position: relative;
-	z-index: 1;
-}
+
 // header
 .header{
 	padding: 20px 0;
@@ -266,14 +275,6 @@
 		width: 100%;
 		padding: 0 15px;
 	}
-	.addon-title{
-		text-align: center;
-		h3{
-			&::before{
-				@include imgBeforeTitle();
-			}
-		}
-	}
 }
 
 // brand
@@ -285,13 +286,43 @@
 
 //hotdeal
 .hot_deal{
-	margin-top: 100px;
-	.addon-title{
-		h3{
-			text-align: center;
-			&::before{
-				@include imgBeforeTitle();
-			}
-		}
+	margin-top: 126px;
+	.addon-title h3{
+		letter-spacing: 0.4px;
+		padding-bottom: 29px;
 	}
+}
+
+//testimonial
+.testimonial{
+	position: relative;
+	&::before{
+		content: url('../imgg/testi_img2.png');
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&::after{
+		content: url('../img/testi_img1.png');
+		position: absolute;
+		bottom: -54px;
+		right: -8px;
+	}
+	.addon-title h3{
+		letter-spacing: 0.2px;
+	}
+}
+
+//blog
+.blog{
+	margin-top: 59px;
+	.addon-title h3{
+		margin-bottom: 10px;
+		letter-spacing: 0.2px;
+		padding-bottom: 29px;
+	}
+}
+
+.jms-popup-overlay{
+	display: block !important;
 }

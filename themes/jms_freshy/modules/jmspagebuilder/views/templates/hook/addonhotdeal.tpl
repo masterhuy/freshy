@@ -47,7 +47,7 @@
 		<div class="hotdeal-carousel">
 			{foreach from=$products item=product key=k}	
 				<div class="item">
-					<div class="product-box product-preview" itemtype="http://schema.org/Product" data-id-product="{$product.id_product nofilter}" data-id-product-attribute="{$product.id_product_attribute nofilter}" >
+					<div class="product-box product-preview js-product-miniature" itemtype="http://schema.org/Product" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}">
 						{block name='product_thumbnail'}
 						<div class="img-hotdeal">
 						  	<a href="{$product.url nofilter}" class="product-image">

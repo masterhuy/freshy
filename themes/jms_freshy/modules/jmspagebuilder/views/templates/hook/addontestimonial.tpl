@@ -44,36 +44,42 @@
 {/if}	
 
 <div id="testimonial">
-	<div class="testimonial-carousel">
-		{foreach from=$testimonials item=testimonial}	
-			<div class="testimonial-box">
-				<div class="testimonial-img">
-					{if $show_image}
-						<img class="img-responsive" src="{$image_url|escape:'html':'UTF-8'}resized_{$testimonial.image|escape:'html':'UTF-8'}" alt="{$testimonial.author|escape:'html':'UTF-8'}" />
-					{/if}
-					<div class="info_people">
-						<div class="testimonial-author">
-							{$testimonial.author|escape:'html':'UTF-8'}
+	<div class="testimonial_box">
+		<div class="testimonial-carousel">
+			{foreach from=$testimonials item=testimonial}	
+				<div class="item">
+					<div class="testimonial-box">
+						<div class="testimonial-info">
+							<div class="testimonial-comment" >
+								{$testimonial.comment|escape:'html':'UTF-8'}
+							</div>
+							{if $show_time}
+								<div class="testimonial-date">
+									{$testimonial.posttime|date_format:"%b %e, %Y"|escape:'html':'UTF-8'}
+								</div>
+							{/if}
 						</div>
-						{if $show_office}
-							<span class="show_office">
-								{$testimonial.office|escape:'html':'UTF-8'}
-							</span>
-						{/if}
-					</div>
-				</div>
-				<div class="testimonial-info">
-					<div class="testimonial-comment" >
-						{$testimonial.comment|escape:'html':'UTF-8'}
-					</div>
-					{if $show_time}
-						<div class="testimonial-date">
-							{$testimonial.posttime|date_format:"%b %e, %Y"|escape:'html':'UTF-8'}
+						<div class="testimonial-img">
+							{if $show_image}
+								<img class="img-responsive" src="{$image_url|escape:'html':'UTF-8'}resized_{$testimonial.image|escape:'html':'UTF-8'}" alt="{$testimonial.author|escape:'html':'UTF-8'}" />
+							{/if}
+							<div class="info_people">
+								<div class="testimonial-author">
+									{$testimonial.author|escape:'html':'UTF-8'}
+								</div>
+								{if $show_office}
+									<span class="show_office">
+										{$testimonial.office|escape:'html':'UTF-8'}
+									</span>
+								{/if}
+							</div>
+							<div class="id_testimonial">#{$testimonial.id_testimonial|escape:'html':'UTF-8'}</div>
+							
 						</div>
-					{/if}
+					</div>	
 				</div>
-			</div>	
-		{/foreach}
+			{/foreach}
+		</div>
 	</div>
 </div>
 

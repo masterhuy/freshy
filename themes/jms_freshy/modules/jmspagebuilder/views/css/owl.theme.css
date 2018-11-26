@@ -42,31 +42,30 @@
 	cursor:default;	
 }
 .owl-theme .owl-controls div.owl-prev, .owl-theme .owl-controls div.owl-next {
-	background-position: 50% 50%;
-	border-radius: 3px;
 	display: inline-block;
-	height: 35px;
-	margin: 0 3px;
+	height: 26px;
+	margin: 0 2.5px;
 	text-align: center;
-	width: 35px;
+	width: 48px;
 	cursor: pointer;
 	z-index: 2;
 }
 
 .owl-theme .owl-controls  div.owl-prev {
-    background: #f3f4f6 url("../../../../assets/img/icon/prev.png") no-repeat scroll 54% 50%;
-    right: 39px;
+    background: url("../../../../assets/img/icon/left.png") no-repeat center;
+    border: 1px solid #e1e1e1;
+    border-radius: 30px;
 }
-.owl-theme .owl-controls  div.owl-next {
-    background: #f3f4f6 url("../../../../assets/img/icon/next.png") no-repeat scroll 54% 50%;
-    margin-right: 0;
-    right: -2px;
+.owl-theme .owl-controls div.owl-next {
+	background: url("../../../../assets/img/icon/right.png") no-repeat center ;
+	border: 1px solid #e1e1e1;
+    border-radius: 30px;
 }
 .owl-theme .owl-controls div.owl-prev:hover {
-    background: #111 url("../../../../assets/img/icon/prevac.png") no-repeat scroll 48% 50%;
+    background: url("../../../../assets/img/icon/left_hover.png") no-repeat center;
 }
 .owl-theme .owl-controls div.owl-next:hover {
-    background: #111 url("../../../../assets/img/icon/nextac.png") no-repeat scroll 54% 50%;
+    background: url("../../../../assets/img/icon/right_hover.png") no-repeat center;
 }
 .owl-dot > span {
     background: #9d9e9f;
@@ -102,8 +101,9 @@
 	margin-bottom: 0;
 	margin-top: 0;
 	position: absolute;
-	top: -44px;
-	right: 15px;
+	top: -5px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .owl-theme .owl-controls .owl-page {
 	display:inline-block;

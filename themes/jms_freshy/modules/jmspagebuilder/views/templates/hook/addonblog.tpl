@@ -59,9 +59,6 @@
 				</div>
 			{/if}	
 			<div class="post-info">
-				<h4 class="post-title">
-					<a href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}" title="{$post.title}">{$post.title|truncate:40:'...'|escape:'htmlall':'UTF-8'}</a>
-				</h4>
 				<ul class="post-meta">
 					{if $show_category == '1'}
 						<li>
@@ -89,16 +86,14 @@
 					{if $show_ncomments == '1'}		
 						<li class="comment">
 							<span>
-								<i class="fa fa-comment-o" aria-hidden="true" style="font-size: 15px;"></i>
-								{if $post.comment_count > 0}
-									({$post.comment_count|escape:'html':'UTF-8'}) {l s='Comments' d='Modules.JmsPagebuilder'}
-								{else}
-									({$post.comment_count|escape:'html':'UTF-8'}) {l s='Comment' d='Modules.JmsPagebuilder'}
-								{/if}
+								{$post.comment_count|escape:'html':'UTF-8'} {l s='Comment(s)' d='Modules.JmsPagebuilder'}
 							</span>
 						</li>
 					{/if}
 				</ul>
+				<h4 class="post-title">
+					<a href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}" title="{$post.title}">{$post.title|truncate:40:'...'|escape:'htmlall':'UTF-8'}</a>
+				</h4>
 				{if $show_introtext == '1'}	
 					<div class="post-intro">{$post.introtext nofilter}</div>	
 				{/if}
