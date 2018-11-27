@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-22 05:11:37
+/* Smarty version 3.1.33, created on 2018-11-26 21:52:02
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bf680d9245f24_67753910',
+  'unifunc' => 'content_5bfcb1521b4385_53169512',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6b2e7567394b2a395811bc8cd4fdfde5f38a5f60' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\modules\\jmsajaxsearch\\views\\templates\\hook\\jmsajaxsearch.tpl',
-      1 => 1542877456,
+      1 => 1543287119,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bf680d9245f24_67753910 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bfcb1521b4385_53169512 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 6 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 8 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 11 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 19 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 20) {?>
 <div class="btn-group compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<a href="#" class="btn-xs icon_search" title="Search">
@@ -53,7 +53,7 @@ if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 6 || $_smarty_tpl->tpl_vars
 			<input type="hidden" name="controller" value="search" />
 			<input type="hidden" name="orderby" value="position" />
 			<input type="hidden" name="orderway" value="desc" />
-			<input type="text" id="ajax_search" name="search_query" placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search...','d'=>'Modules.JmsAjaxsearch'),$_smarty_tpl ) );?>
+			<input type="text" id="ajax_search" name="search_query" placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search here','d'=>'Modules.JmsAjaxsearch'),$_smarty_tpl ) );?>
 " class="form-control ajax_search" />
 		</form>
 		<div id="search_result"></div>

@@ -158,9 +158,10 @@ $(document).ready(function() {
 
 jQuery(function ($) {
     "use strict";
-	var bodyEl = $("body"),
+    
+    var bodyEl = $("body"),
 		content = $('.main-site'),
-		openbtn = $('.top_menu p'),
+		openbtn = $('.setting-img'),
 		closebtn = $('.main-site' ),
 		isOpen = false;
 
@@ -187,15 +188,14 @@ jQuery(function ($) {
 	}
 	function toggleMenu() {		
 		if( isOpen ) {
-			bodyEl.removeClass('open');
+			bodyEl.removeClass('st-open');
 		}
 		else {
-			bodyEl.addClass('open');
+			bodyEl.addClass('st-open');
 		}
 		isOpen = !isOpen;
 	}
 	init();
-
 });
 jQuery(function ($) {
     "use strict";

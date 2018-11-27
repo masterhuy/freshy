@@ -62,7 +62,7 @@
 			<span>{l s='More special Deals, Events & Promotions' d='Shop.Theme.Global'}</span>
 		</div>
 		<div class="popup addon-title">
-			<p class="text-1">{l s='Sign up our newsletter & get 20 for your next purchase!' d='Shop.Theme.Global'}</p>
+			<p class="text-1">{l s='Sign up our newsletter & get 20 percent off for your next purchase!' d='Shop.Theme.Global'}</p>
 		</div>
 		<div class="news_content">
         	<div  class="block_c_right">
@@ -73,7 +73,7 @@
 						<button type="submit" name="submitNewsletter" class="newsletter-btn buttonh1 btn-active">
 							{l s='Sign up' d='Shop.Theme'}
 						</button>
-						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup btn-active">
+						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup">
 							{l s='Subscribe' d='Shop.Theme'}
 						</button>
 						<input type="hidden" name="action" value="0" />

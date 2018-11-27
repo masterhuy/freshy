@@ -3,16 +3,10 @@
 
 
 .page-index{
-	#header{
-		position: relative;
-		z-index: 2;
-	}
 	#wrapper{
 		margin-top: -181px;
 		display: inline-block;
 		width: 100%;
-		position: relative;
-		z-index: 1;
 		.addon-title h3{
 			text-align: center;
 			&::before{
@@ -25,6 +19,8 @@
 // header
 .header{
 	padding: 20px 0;
+	position: relative;
+	z-index: 999;
 	.container > .row{
 		@include flex(center, center);
 	}
@@ -55,6 +51,10 @@
 				left: -27px;
 				top: -2px;
 			}
+		}
+		.setting-img {
+			padding-top: 2px;
+			cursor: pointer;
 		}
 		.btn-search{
 			position: relative;
@@ -96,6 +96,35 @@
 
 // menu
 .menu{
+	position: relative;
+	z-index: 998;
+	.features{
+		.image{
+			margin-bottom: 28px;
+		}
+		.dropdown-menu::before{
+			left: 550px;
+		}
+		.mega-dropdown-inner ul li:not(.group) a{
+			padding-left: 14px;
+			position: relative;
+			&::before{
+				content: "";
+				padding-right: 3px;
+				display: inline-block;
+				width: 6px;
+				height: 6px;
+				background-color: #fb943b;
+				border-radius: 50%;
+				position: absolute;
+				left: 0;
+				top: 9px;
+			}
+		}
+	}
+	.stores .dropdown-menu::before{
+		left: 443px;
+	}
 	#jms-megamenu-container{
 		.nav.level0{
 			text-align: center;
@@ -108,6 +137,7 @@
 // slider
 .slides{
 	position: relative;
+	z-index: 1;
 	&::after{
 		content: url("../img/path_slide.png");
 		position: absolute;
@@ -321,8 +351,4 @@
 		letter-spacing: 0.2px;
 		padding-bottom: 29px;
 	}
-}
-
-.jms-popup-overlay{
-	display: block !important;
 }

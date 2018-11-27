@@ -78,7 +78,7 @@
     display: block;
     left: 0;
     margin-top: 0;
-    min-width: 228px;
+    min-width: 140px;
     opacity: 0;
     padding: 0;
     position: absolute;
@@ -120,12 +120,18 @@
 .jms-megamenu .mega-nav li > a {
     border-radius: 0;
     display: block;
-    font-weight:500;
-    font-size: 14px;
-    line-height: 26px;
+    font-weight:400;
+    font-family: Cabin;
+    font-size: 15px;
+    line-height: 23px;
     padding: 3.5px 0;
     position: relative;
     text-transform: capitalize;
+    color: #907459;
+    letter-spacing: 0.3px;
+}
+.jms-megamenu .mega-nav li > a:hover{
+    color: #fb943b;
 }
 .jms-megamenu .mega-nav li:last-child > a:hover {
     border: medium none;
@@ -169,9 +175,10 @@
     right: 0;
     top: calc(50% - 12px);
 	content: '\f105';
+    font-size: 14px;
 }
 .jms-megamenu .item-fullwidth .mega-nav > li > ul > li.group, .jms-megamenu .item-fullwidth .mega-nav > li.group {
-    margin-bottom: 10px;
+    margin-bottom: 17px;
     position: relative;
     vertical-align: top;
 }
@@ -220,6 +227,7 @@
     top: 100%;
     margin: auto;
     transform: translateX(-50%) translateY(10px);
+    padding: 30px 15px 20px !important;
 }
 .jms-megamenu .menu-align-center.open > .dropdown-menu{
     top: 100%;
@@ -242,11 +250,11 @@
     margin-left: 0;
 }
 .jms-megamenu .open .mega.open .dropdown-menu {
-    top: -17px !important;
+    top: -14px !important;
 }
 .jms-megamenu .dropdown-menu {
     background: #fff !important;
-    padding: 30px 15px !important;
+    padding: 12px 15px !important;
 }
 .jms-megamenu .mega-col-nav.col-sm-3:first-child {
 	border-left:0;
@@ -286,7 +294,7 @@
 }
 .jms-megamenu .nav > .item-fullwidth .mega-nav li > a {
     border-bottom: medium none;
-    line-height: 23px;
+    line-height: 25px;
     padding: 0;
     margin-bottom: 5px;
 }
@@ -303,18 +311,19 @@
     top: 0;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
-.jms-megamenu .nav  .mega-nav li.group > a {
-    color: #111;
+.jms-megamenu .nav .mega-nav li.group > a {
+    color: #603813;
     display: block;
     font-family: "Poppins";
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
     line-height: 32px;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-transform: uppercase;
+    text-transform: capitalize;
     white-space: nowrap;
     width: 100%;
+    letter-spacing: 0;
 }
 .jms-megamenu .nav .item-fullwidth .mega-nav li.group > a{
 	padding-left:0;
@@ -509,6 +518,9 @@
 .jms-megamenu .nav li li.new > a > span::after,
 .jms-megamenu .nav li li.hot > a > span::after {
 	top: -15px;
+}
+.mega-dropdown-inner .dropdown-menu{
+    min-width: 228px;
 }
 @media (max-width: 1199px) {
 	.home_2 .jms-megamenu .menu-align-left.features > .dropdown-menu{

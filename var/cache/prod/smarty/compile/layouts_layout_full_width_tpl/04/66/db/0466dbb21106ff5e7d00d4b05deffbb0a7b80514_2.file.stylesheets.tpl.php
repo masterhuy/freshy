@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-25 22:58:41
+/* Smarty version 3.1.33, created on 2018-11-26 22:46:25
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\templates\_partials\stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bfb6f71ad8845_99043690',
+  'unifunc' => 'content_5bfcbe11ab39a9_57444248',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0466dbb21106ff5e7d00d4b05deffbb0a7b80514' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\templates\\_partials\\stylesheets.tpl',
-      1 => 1543204715,
+      1 => 1543290379,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfb6f71ad8845_99043690 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bfcbe11ab39a9_57444248 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
 css/linearicon.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
 css/typo-icon.css" />
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Work+Sans:700" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Playball:400,500,600,700" rel="stylesheet"> 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

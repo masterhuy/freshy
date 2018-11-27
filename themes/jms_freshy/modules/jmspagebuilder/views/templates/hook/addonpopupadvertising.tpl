@@ -34,7 +34,12 @@
 			<div>
 				{$popup_content nofilter}
 			</div>
-		</div>				
+		</div>			
+		<div id="social_block">
+			<ul class="find-us">
+		       <li class="divider"><a href="#" class="facebook"><span class="fa fa-facebook"></span></a></li>       <li class="divider"><a href="#" class="twitter"><span class="fa fa-twitter"></span></a></li>                     <li class="divider"><a href="#" class="gplus"><span class="fa fa-google-plus"></span></a></li>		   <li class="divider"><a href="#" class="pinterest"><span class="fa fa-pinterest"></span></a></li>            
+				   <li class="divider"><a href="#" class="instagram"><span class="fa fa-instagram"></span></a></li>  </ul>
+		</div>	
 		<div class="dontshow">
 			<input type="checkbox" name="dontshowagain" value="1" id="dontshowagain" /> 
 			<label>{l s="Don't show this popup again" d='Shop.Theme'}</label>

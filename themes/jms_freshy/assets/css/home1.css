@@ -1,13 +1,7 @@
-.page-index #header {
-  position: relative;
-  z-index: 2; }
-
 .page-index #wrapper {
   margin-top: -181px;
   display: inline-block;
-  width: 100%;
-  position: relative;
-  z-index: 1; }
+  width: 100%; }
   .page-index #wrapper .addon-title h3 {
     text-align: center; }
     .page-index #wrapper .addon-title h3::before {
@@ -20,7 +14,9 @@
       transform: translateX(-50%); }
 
 .header {
-  padding: 20px 0; }
+  padding: 20px 0;
+  position: relative;
+  z-index: 999; }
   .header .container > .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -56,6 +52,9 @@
         position: absolute;
         left: -27px;
         top: -2px; }
+    .header .left .setting-img {
+      padding-top: 2px;
+      cursor: pointer; }
     .header .left .btn-search {
       position: relative;
       top: -3px; }
@@ -98,14 +97,38 @@
       position: relative;
       top: -3px; }
 
-.menu #jms-megamenu-container .nav.level0 {
-  text-align: center;
-  background: #fff;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08); }
+.menu {
+  position: relative;
+  z-index: 998; }
+  .menu .features .image {
+    margin-bottom: 28px; }
+  .menu .features .dropdown-menu::before {
+    left: 550px; }
+  .menu .features .mega-dropdown-inner ul li:not(.group) a {
+    padding-left: 14px;
+    position: relative; }
+    .menu .features .mega-dropdown-inner ul li:not(.group) a::before {
+      content: "";
+      padding-right: 3px;
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background-color: #fb943b;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 9px; }
+  .menu .stores .dropdown-menu::before {
+    left: 443px; }
+  .menu #jms-megamenu-container .nav.level0 {
+    text-align: center;
+    background: #fff;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08); }
 
 .slides {
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .slides::after {
     content: url("../img/path_slide.png");
     position: absolute;
@@ -275,6 +298,3 @@
     margin-bottom: 10px;
     letter-spacing: 0.2px;
     padding-bottom: 29px; }
-
-.jms-popup-overlay {
-  display: block !important; }

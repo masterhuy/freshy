@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-26 05:14:28
+/* Smarty version 3.1.33, created on 2018-11-26 21:02:53
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bfbc78452c2d2_01160323',
+  'unifunc' => 'content_5bfca5cd35b659_61868023',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1543226724,
+      1 => 1543284167,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfbc78452c2d2_01160323 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bfca5cd35b659_61868023 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
@@ -43,7 +43,7 @@ function content_5bfbc78452c2d2_01160323 (Smarty_Internal_Template $_smarty_tpl)
 </span>
 		</div>
 		<div class="popup addon-title">
-			<p class="text-1"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sign up our newsletter & get 20 for your next purchase!','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+			<p class="text-1"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sign up our newsletter & get 20 percent off for your next purchase!','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </p>
 		</div>
 		<div class="news_content">
@@ -62,7 +62,7 @@ function content_5bfbc78452c2d2_01160323 (Smarty_Internal_Template $_smarty_tpl)
 							<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sign up','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 
 						</button>
-						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup btn-active">
+						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup">
 							<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Subscribe','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 
 						</button>

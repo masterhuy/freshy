@@ -6,9 +6,16 @@
 .jms-popup .buttonh1{
   display: none;
 }
+.jms-popup .alert.alert-danger{
+  position: absolute;
+width: 100%;
+padding: 0;
+bottom: -42px;
+border-radius: 30px;
+text-align: center;
+}
 .jms-popup {
-   padding: 40px;
-   padding-right: 324px;
+  padding: 78px 112px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17,17 +24,19 @@
   margin-left: -395px;
   margin-top: -311.5px;
   border-radius: 0px;
-  color:#333;
   text-align: left;
-  line-height:30px;
-  max-width:100%;
-  text-align:left;
+  line-height: 30px;
+  max-width: 100%;
+  text-align: left;
   border-radius: 3px;
-    background: url("../../../../assets/img/popup_bg.jpg") no-repeat;
+  background: url("../../../../assets/img/popup_bg.jpg") no-repeat;
 }
 .jms-popup .addon-title .text-1{
-  font-size: 37px;
-  color: #333;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 20px;
+line-height: 1.64;
 }
 .jms-popup .addon-title .text-2{
   font-size: 40px;
@@ -41,20 +50,26 @@
   display: block;
   line-height: 1.6;
 }
-.jms-popup .addon-title p{
-  text-transform: uppercase;
-}
 .jms-popup input {
 	border:1px solid #ececec;
 	margin-bottom:13px;
 }
 .jms-popup .btn-popup {
-  height: 53px;
-  border-radius: 3px;
-  padding: 0 21px;
-  margin-left: 10px;
+  height: 52px;
+  border-radius: 30px;
+  padding: 0 28px;
+  margin-left: 15px;
   text-transform: uppercase;
   font-weight: 600;
+  border: 2px solid #fb943b;
+  color: #fb943b;
+  background: transparent;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+}
+.jms-popup .btn-popup:hover{
+  color: #fff;
+  background: #fb943b;
 }
 .jms-popup p {
 	line-height:26px;
@@ -77,14 +92,15 @@
   max-width:100%;
 }
 .jms-popup-overlay .popup-close {
-    cursor: pointer;
-    display: block;
-    float: right;
-    height: 15px;
-    position: absolute;
-    right: 7px;
-    top: 7px;
-    width: 17px;
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 24px;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  width: 24px;
+  border-radius: 50%;
 }
 .jms-popup-overlay {
 	display: block;	
@@ -100,7 +116,9 @@
     z-index: 99998;
 }
 .dontshow {
-	margin-top:20px;
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
 }
 #dontshowagain {
   position: relative;
@@ -116,16 +134,17 @@
 }
 .dontshow label {
   display: inline-block;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 30px;
-  font-size: 13px;
-  color: #666;
+  font-size: 14px;
+  color: #907459;
+  font-family: Cabin;
 }
 .jms-popup-content .textnews_h1.addon-title {
     display: none;
 }
 .popup-close {
-    background: rgba(0, 0, 0, 0) url("../../../../assets/img/icon/close.png") no-repeat scroll 54% 50%;
+  background: #fff url("../../../../assets/img/icon/close.png") no-repeat scroll 50% 50%;
 }
 .jms-popup-content  .block_c_right .form-group{
 	display:flex;
@@ -157,20 +176,24 @@
   margin-top: 33px;
 }
 .jms-popup-content .block_c_right .newsletter-input {
-  border-radius: 3px;
+  border-radius: 30px;
   color: #666;
   font-size: 14px;
-  height: 53px;
+  height: 52px;
   text-align: left;
   border: 0;
   background: #f5f5f5;
-  padding-left: 21px;
+  padding-left: 27px;
+  font-family: Cabin;
+  box-shadow: 0 0 4px rgba(0,0,0,0.08);
+  letter-spacing: 0.3px;
+  margin-bottom: 0;
 }
 .input_popup::-webkit-input-placeholder {
-  color: #666 !important;
+  color: #7d7d7d !important;
   font-size: 14px !important;
 }
 .input_popup::-moz-placeholder {
-  color: #666 !important;
+  color: #7d7d7d !important;
   font-size: 14px !important;
 }

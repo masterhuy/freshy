@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-26 04:52:51
+/* Smarty version 3.1.33, created on 2018-11-26 21:15:26
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmspagebuilder\views\templates\hook\addonpopupadvertising.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bfbc273ab19a2_83262915',
+  'unifunc' => 'content_5bfca8bef13d65_00947723',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a4dccca6632071db36fc08683ae9bdf7fb89fab2' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\modules\\jmspagebuilder\\views\\templates\\hook\\addonpopupadvertising.tpl',
-      1 => 1542795069,
+      1 => 1543284924,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfbc273ab19a2_83262915 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bfca8bef13d65_00947723 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-popup-overlay" style="display:none;">
 	<div class="jms-popup">		
 		<?php if ($_smarty_tpl->tpl_vars['popup_title']->value) {?>
@@ -34,7 +34,12 @@ function content_5bfbc273ab19a2_83262915 (Smarty_Internal_Template $_smarty_tpl)
 				<?php echo $_smarty_tpl->tpl_vars['popup_content']->value;?>
 
 			</div>
-		</div>				
+		</div>			
+		<div id="social_block">
+			<ul class="find-us">
+		       <li class="divider"><a href="#" class="facebook"><span class="fa fa-facebook"></span></a></li>       <li class="divider"><a href="#" class="twitter"><span class="fa fa-twitter"></span></a></li>                     <li class="divider"><a href="#" class="gplus"><span class="fa fa-google-plus"></span></a></li>		   <li class="divider"><a href="#" class="pinterest"><span class="fa fa-pinterest"></span></a></li>            
+				   <li class="divider"><a href="#" class="instagram"><span class="fa fa-instagram"></span></a></li>  </ul>
+		</div>	
 		<div class="dontshow">
 			<input type="checkbox" name="dontshowagain" value="1" id="dontshowagain" /> 
 			<label><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>"Don't show this popup again",'d'=>'Shop.Theme'),$_smarty_tpl ) );?>
