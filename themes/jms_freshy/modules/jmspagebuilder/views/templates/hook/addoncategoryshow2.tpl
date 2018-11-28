@@ -22,7 +22,6 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-
 <script type="text/javascript">
 	var cs_items = {if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if};
 	var cs_itemsDesktop = {if $cols}{$cols|escape:'htmlall':'UTF-8'}{else}4{/if};
@@ -42,39 +41,20 @@
     {if isset($categories) AND $categories}
             <div class="categories-carousel2">
             {foreach from=$categories item=category }
-	            <div class="item block_category">
-	            	{foreach from=$category item=c_item }
-	            
-						{assign var='categoryLink' value=$link->getcategoryLink($c_item.id_category, $c_item.link_rewrite)}
-						<div class="categories-wrapper">
-							{if $show_img == 1}
-							<div class="categoy-image">
-								<a href="{$categoryLink nofilter}">
-									<img src="{$img_cat_dir nofilter}{$c_item.id_category nofilter}.jpg" alt="{$c_item.name nofilter}" title="{$c_item.name nofilter}" class="img-responsive"/>
-								</a>
-							</div>
-							{/if}
-							<div class="c_item-info">
-								<a class="cat-name" href="{$categoryLink nofilter}">{$c_item.name nofilter}</a>
-								<ul class="child" style="margin-bottom: 0;">
-									{foreach from=$c_item.cat_childs item=child}
-										{assign var='childLink' value=$link->getcategoryLink($child.id_category, $c_item.link_rewrite)}
-										<li>
-											<a href="{$childLink nofilter}">{$child.name}</a>
-										</li>
-									{/foreach}
-								</ul>
-								
-							</div>
+                {assign var='categoryLink' value=$link->getcategoryLink($category.id_category, $category.link_rewrite)}
+					<div class="categories-wrapper">
+						<div class="categoy-image">
+							<a href="{$categoryLink nofilter}">
+								<img src="{$img_cat_dir nofilter}{$category.id_category nofilter}_thumb.jpg" alt="{$category.name nofilter}" title="{$category.name nofilter}" class="img-responsive"/>
+							</a>
 						</div>
-	            	{/foreach}
-	            </div>
+						<div class="category-info">
+							<a class="cat-name" href="{$categoryLink}">{$category.name nofilter}</a>
+						</div>
+					</div>
             {/foreach}
             </div>
     {else}
         <p>{l s='No categories' d='Modules.JmsPagebuilder'}</p>
   {/if}
 </div>
-
-
-	

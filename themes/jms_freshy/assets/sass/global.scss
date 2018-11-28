@@ -1075,8 +1075,116 @@ a.wishlist_top{
 	}
 }
 
+// cates tab
+.cates_tab{
+	.addon-title{
+		margin-bottom: 67px;
+	}
+	.categorytab-carousel{
+		padding-top: 18px;
+	}
+	.jms-tab ul .nav-item{
+		margin: 0 16px;
+		&.Bread.\&.Eggs a::before{
+			background-image: url("../img/icon/bread_eggs_.png");
+		}
+		&.Fresh.Fruits a::before{
+			background-image: url("../img/icon/fresh_fruits_.png");
+		}
+		&.Fresh.Tubers a::before{
+			background-image: url("../img/ficon/resh_tubers_.png");
+		}
+		&.Vegetables a::before{
+			background-image: url("../img/icon/vegetables_.png");
+		}
+		&.Seafoods a::before{
+			background-image: url("../img/icon/seafood_.png");
+		}
+		&.active a::before, a.active::before{
+			background-position: center bottom;
+		}
+		a::before{
+			content: "";
+			left: 50%;
+			position: absolute;
+			top: -50px;
+			transform: translateX(-50%);
+			width: 65px;
+			height: 47px;
+			display: block;
+			background-position: center top;
+			background-repeat: no-repeat;
+			transition: .4s all;
+		}
+	}
+}
 
-.categorytab-carousel, .hotdeal-carousel{
+.page-index{
+	#wrapper{
+		.addon-title h3{
+			text-align: center;
+			&::before{
+				@include imgBeforeTitle();
+			}
+		}
+	}
+}
+
+// category show2
+.categories-wrapper {
+	position: relative;
+	.category-info {
+		position: absolute;
+		top: 52px;
+		text-align: center;
+		width: 100%;
+		a{
+			font-size: 32px;
+			color: #fff;
+			font-weight: 500;
+			padding: 0 15px;
+		}
+	}
+}
+
+
+.jms-megamenu{
+	.features{
+		.image{
+			margin-bottom: 28px;
+		}
+		.dropdown-menu::before{
+			left: 550px;
+		}
+		.mega-dropdown-inner ul li:not(.group) a{
+			padding-left: 14px;
+			position: relative;
+			&::before{
+				content: "";
+				padding-right: 3px;
+				display: inline-block;
+				width: 6px;
+				height: 6px;
+				background-color: #fb943b;
+				border-radius: 50%;
+				position: absolute;
+				left: 0;
+				top: 9px;
+			}
+		}
+	}
+	.stores .dropdown-menu::before{
+		left: 443px;
+	}
+	#jms-megamenu-container{
+		.nav.level0{
+			text-align: center;
+			background: #fff;
+			box-shadow: 0px 1px 3px rgba(0,0,0,0.08);
+		}
+	}
+}
+.product-carousel, .categorytab-carousel, .hotdeal-carousel{
 	.owl-stage-outer{
 		padding-bottom: 60px;
 	}

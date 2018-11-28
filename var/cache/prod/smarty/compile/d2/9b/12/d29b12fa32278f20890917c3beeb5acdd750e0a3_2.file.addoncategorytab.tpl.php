@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-23 01:43:04
+/* Smarty version 3.1.33, created on 2018-11-27 21:32:17
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmspagebuilder\views\templates\hook\addoncategorytab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bf7a178ed4774_81559391',
+  'unifunc' => 'content_5bfdfe31239e16_40920262',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd29b12fa32278f20890917c3beeb5acdd750e0a3' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\modules\\jmspagebuilder\\views\\templates\\hook\\addoncategorytab.tpl',
-      1 => 1542955375,
+      1 => 1543372334,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5bf7a178ed4774_81559391 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bfdfe31239e16_40920262 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 var cattab_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {
@@ -62,7 +62,8 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['category']->value) {
 ?>
-			<li class="nav-item<?php if ($_smarty_tpl->tpl_vars['k']->value == 0) {?> active<?php }?>"><a class="" data-toggle="tab" href="#category-<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['category']->value['id_category'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+			<li class="nav-item<?php if ($_smarty_tpl->tpl_vars['k']->value == 0) {?> active<?php }?> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['name'], ENT_QUOTES, 'UTF-8');?>
+"><a class="" data-toggle="tab" href="#category-<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['category']->value['id_category'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 "><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['name'], ENT_QUOTES, 'UTF-8');?>
 </a></li>
 		<?php

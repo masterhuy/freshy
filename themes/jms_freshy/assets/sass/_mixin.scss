@@ -11,16 +11,19 @@
 	display: flex;
 	justify-content: #{$vCenter};
 	align-items: #{$hCenter};
+	@content;
 }
 
 @mixin flexVCenter() {
 	display: flex;
 	align-items: center;
+	@content;
 }
 
 @mixin flexHCenter() {
 	display: flex;
 	justify-content: center;
+	@content;
 }
 
 @mixin imgBeforeTitle() {
@@ -29,6 +32,7 @@
 	left: 50%;
 	top: -47px;
 	transform: translateX(-50%);
+	@content;
 }
 
 
@@ -40,6 +44,7 @@
 			border-bottom-color: #{$color};
 		}
 	}
+	@content;
 }
 
 

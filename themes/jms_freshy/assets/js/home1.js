@@ -236,7 +236,7 @@ jQuery(function ($) {
 				}
 			},
 				rtl: rtl,
-				margin: 30,
+				margin: 0,
 				nav: p_nav_brand,
 		        dots: p_pag_brand,
 				autoplay:auto_play_brand,

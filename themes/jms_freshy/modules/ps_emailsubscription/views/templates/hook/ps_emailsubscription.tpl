@@ -53,9 +53,9 @@
 			<h3>{l s='Newsletter Signup' d='Shop.Theme.Global'}</h3>
 			<span>{l s='Sign up our Newsletter for Exclusive Discount codes' d='Shop.Theme.Global'}</span>
 		</div>
-		<div class="textnews_h5 addon-title">
-			<h3>{l s='Get the latest news delivered daily' d='Shop.Theme.Global'}</h3>
-			<span>{l s='Give us your email and you will be daily update with the latest events in detail!' d='Shop.Theme.Global'}</span>
+		<div class="textnews_h2 addon-title">
+			<p class="text-1">{l s='JOIN OUR NEWSLETTER' d='Shop.Theme.Global'}</p>
+			<p class="text-2">{l s='Subscribe Newsletter' d='Shop.Theme.Global'}</p>
 		</div>
 		<div class="textnews_h7 addon-title">
 			<h3>{l s='Subscribe to Our Newsletter' d='Shop.Theme.Global'}</h3>
@@ -68,12 +68,12 @@
         	<div  class="block_c_right">
 				<form action="{$urls.pages.index}#footer" method="post">
 					<div class="form-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if}" >
-						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Your email here...' d='Shop.Forms.Labels'}" />
+						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Email@example.com' d='Shop.Forms.Labels'}" />
 						<input class="input_popup form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Email@example.com' d='Shop.Forms.Labels'}" />
 						<button type="submit" name="submitNewsletter" class="newsletter-btn buttonh1 btn-active">
 							{l s='Sign up' d='Shop.Theme'}
 						</button>
-						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup">
+						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup btn-shopnow1 btn-effect1">
 							{l s='Subscribe' d='Shop.Theme'}
 						</button>
 						<input type="hidden" name="action" value="0" />

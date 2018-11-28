@@ -886,5 +886,96 @@ a.wishlist_top {
     font-size: 21px;
     display: inline-block; }
 
-.categorytab-carousel .owl-stage-outer, .hotdeal-carousel .owl-stage-outer {
+.cates_tab .addon-title {
+  margin-bottom: 67px; }
+
+.cates_tab .categorytab-carousel {
+  padding-top: 18px; }
+
+.cates_tab .jms-tab ul .nav-item {
+  margin: 0 16px; }
+  .cates_tab .jms-tab ul .nav-item.Bread.\&.Eggs a::before {
+    background-image: url("../img/icon/bread_eggs_.png"); }
+  .cates_tab .jms-tab ul .nav-item.Fresh.Fruits a::before {
+    background-image: url("../img/icon/fresh_fruits_.png"); }
+  .cates_tab .jms-tab ul .nav-item.Fresh.Tubers a::before {
+    background-image: url("../img/ficon/resh_tubers_.png"); }
+  .cates_tab .jms-tab ul .nav-item.Vegetables a::before {
+    background-image: url("../img/icon/vegetables_.png"); }
+  .cates_tab .jms-tab ul .nav-item.Seafoods a::before {
+    background-image: url("../img/icon/seafood_.png"); }
+  .cates_tab .jms-tab ul .nav-item.active a::before, .cates_tab .jms-tab ul .nav-item a.active::before {
+    background-position: center bottom; }
+  .cates_tab .jms-tab ul .nav-item a::before {
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: -50px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 65px;
+    height: 47px;
+    display: block;
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+    transition: .4s all; }
+
+.page-index #wrapper .addon-title h3 {
+  text-align: center; }
+  .page-index #wrapper .addon-title h3::before {
+    content: url("../img/leaf.png");
+    position: absolute;
+    left: 50%;
+    top: -47px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+.categories-wrapper {
+  position: relative; }
+  .categories-wrapper .category-info {
+    position: absolute;
+    top: 52px;
+    text-align: center;
+    width: 100%; }
+    .categories-wrapper .category-info a {
+      font-size: 32px;
+      color: #fff;
+      font-weight: 500;
+      padding: 0 15px; }
+
+.jms-megamenu .features .image {
+  margin-bottom: 28px; }
+
+.jms-megamenu .features .dropdown-menu::before {
+  left: 550px; }
+
+.jms-megamenu .features .mega-dropdown-inner ul li:not(.group) a {
+  padding-left: 14px;
+  position: relative; }
+  .jms-megamenu .features .mega-dropdown-inner ul li:not(.group) a::before {
+    content: "";
+    padding-right: 3px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #fb943b;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 9px; }
+
+.jms-megamenu .stores .dropdown-menu::before {
+  left: 443px; }
+
+.jms-megamenu #jms-megamenu-container .nav.level0 {
+  text-align: center;
+  background: #fff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08); }
+
+.product-carousel .owl-stage-outer, .categorytab-carousel .owl-stage-outer, .hotdeal-carousel .owl-stage-outer {
   padding-bottom: 60px; }

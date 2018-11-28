@@ -83,6 +83,39 @@ $(document).ready(function () {
 
 jQuery(function ($) {
 	"use strict";
+	if($(".testimonial-carousel").length) {
+		var testimonialCarousel = $(".testimonial-carousel");		
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		testimonialCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:3
+				},
+				991:{
+					items:3
+				},
+				768:{
+					items:2
+				},
+				481:{
+					items:2
+				},
+				0: {
+					items:1
+				}
+			},
+				rtl: rtl,
+				margin: 0,
+				nav: false,
+		        dots: false,
+				autoplay:false,
+				slideSpeed: 800,
+				loop: true
+		});
+	}
+
 	if($(".customs-carousel-product").length) {
 		  var customsCarouselProduct = $(".customs-carousel-product");
 		var rtl = false;

@@ -24,25 +24,20 @@
 *}
 {if $addon_title}	
 <div class="addon-title">
-<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
+	<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
 </div>
 {/if}
-<div class="addon-desc">
-<span>
-		{l s='With best flash sale up 50% off ' mod='jmspagebuilder'}
-</span>
-</div>
 <div class="countdown-box{if $box_class} {$box_class|escape:'htmlall':'UTF-8'}{/if} addon-title">
-{if $image}	
-	<img src="{$root_url|escape:'html':'UTF-8'}{$image|escape:'html':'UTF-8'}" />	
-{/if}
-{if $html_content}
-{$html_content nofilter}
-{/if}
-<div class="countdown">
-	{$expire_time|escape:'html':'UTF-8'}
-</div>
-{if $button_text}
-<a href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"{/if} class="btn-effect1 btn-shopnow">{$button_text|escape:'htmlall':'UTF-8'}</a>
-{/if}
+	{if $image}	
+		<img src="{$root_url|escape:'html':'UTF-8'}{$image|escape:'html':'UTF-8'}" />	
+	{/if}
+	{if $html_content}
+		{$html_content nofilter}
+	{/if}
+	<div class="countdown">
+		{$expire_time|escape:'html':'UTF-8'}
+	</div>
+	{if $button_text}
+		<a href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"{/if} class="btn-effect1 btn-shopnow">{$button_text|escape:'htmlall':'UTF-8'}</a>
+	{/if}
 </div>	

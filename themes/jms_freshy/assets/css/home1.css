@@ -2,16 +2,6 @@
   margin-top: -181px;
   display: inline-block;
   width: 100%; }
-  .page-index #wrapper .addon-title h3 {
-    text-align: center; }
-    .page-index #wrapper .addon-title h3::before {
-      content: url("../img/leaf.png");
-      position: absolute;
-      left: 50%;
-      top: -47px;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%); }
 
 .header {
   padding: 20px 0;
@@ -278,12 +268,15 @@
     padding-bottom: 29px; }
 
 .testimonial {
-  position: relative; }
+  position: relative;
+  margin-top: -10px;
+  display: inline-block;
+  width: 100%; }
   .testimonial::before {
-    content: url("../imgg/testi_img2.png");
+    content: url("../img/testi_img2.png");
     position: absolute;
-    top: 0;
-    left: 0; }
+    top: -150px;
+    left: -11px; }
   .testimonial::after {
     content: url("../img/testi_img1.png");
     position: absolute;
