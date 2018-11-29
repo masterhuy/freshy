@@ -1243,7 +1243,7 @@ fieldset[disabled] .btn-default {
 
 .btn-effect1::before {
   background: #fb943b none repeat scroll 0 0;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .btn-effect:before {
@@ -1347,22 +1347,6 @@ input[type="text"]:hover, input[type="password"]:hover, input[type="datetime"]:h
   box-shadow: none;
   border-color: #eee; }
 
-.page-index input[type="text"]:active, 
-.page-index input[type="password"]:active, 
-.page-index input[type="datetime"]:active, 
-.page-index input[type="datetime-local"]:active, 
-.page-index input[type="date"]:active, 
-.page-index input[type="month"]:active, 
-.page-index input[type="time"]:active, 
-.page-index input[type="week"]:active, 
-.page-index input[type="number"]:active, 
-.page-index input[type="email"]:active, 
-.page-index input[type="url"]:active, 
-.page-index input[type="search"]:active, 
-.page-index input[type="tel"]:active, 
-.page-index input[type="color"]:active {
-  border-color: transparent; }
-
 input[type="text"]:active, 
 input[type="password"]:active, 
 input[type="datetime"]:active, 
@@ -1387,22 +1371,6 @@ input[type="color"]:active {
   border-color: transparent; }
 
 select:focus, textarea:focus {
-  border-color: transparent; }
-
-.page-index input[type="text"]:focus, 
-.page-index input[type="password"]:focus, 
-.page-index input[type="datetime"]:focus, 
-.page-index input[type="datetime-local"]:focus, 
-.page-index input[type="date"]:focus, 
-.page-index input[type="month"]:focus, 
-.page-index input[type="time"]:focus, 
-.page-index input[type="week"]:focus, 
-.page-index input[type="number"]:focus, 
-.page-index input[type="email"]:focus, 
-.page-index input[type="url"]:focus, 
-.page-index input[type="search"]:focus, 
-.page-index input[type="tel"]:focus, 
-.page-index input[type="color"]:focus {
   border-color: transparent; }
 
   input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
@@ -1491,10 +1459,10 @@ ul#order_step li {
   color: #fb943b;
   letter-spacing: 0.3px;
   padding: 6.5px;
+  background: transparent;
 }
 #cart_block #button_order_cart:hover{
   color: #fff;
-  background: #fb943b;
 }
 .cart-prices .value {
   float: right;
@@ -3957,6 +3925,23 @@ footer .blog-carousel {
 .post-meta li {
   display: inline-block;}
 
+.post-readmore {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  height: 31px;
+  border: 1px solid #e1e1e1;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.post-readmore:hover{
+  color: #fff;
+}
+
 /**** Preload *****/
 .preloader {
   position: fixed;
@@ -5280,6 +5265,9 @@ footer .blog-carousel {
   padding-bottom: 40px; }
 .jms-banner{
   position: relative;
+}
+.jms-banner img{
+  width: 100%;
 }
 /*Owl carousel*/
 .brand-carousel {

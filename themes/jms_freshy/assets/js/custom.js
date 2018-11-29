@@ -83,6 +83,79 @@ $(document).ready(function () {
 
 jQuery(function ($) {
 	"use strict";
+	if($(".product-carousel").length) {		
+		var productCarousel = $(".product-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:4
+				},
+				991:{
+					items:3
+				},
+				768:{
+					items:2
+				},
+				481:{
+					items:2
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:0,
+			nav: false,
+			dots: false,
+			autoplay: false,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
+	if($(".producttab-carousel").length) {
+		var producttabCarousel = $(".producttab-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		producttabCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:4
+				},
+				991:{
+					items:3
+				},
+				768:{
+					items:2
+				},
+				481:{
+					items:2
+				},
+				361:{
+					items:1
+				},
+				0: {
+					items:1
+				}
+			},
+			rtl: rtl,
+				margin: 0,
+			    nav: false,
+		        dots: false,
+				autoplay: false,
+				loop:true,
+			    navigationText: ["", ""],
+			    slideSpeed: 200
+		});
+	}
+
 	if($(".testimonial-carousel").length) {
 		var testimonialCarousel = $(".testimonial-carousel");		
 		var rtl = false;
@@ -113,6 +186,112 @@ jQuery(function ($) {
 				autoplay:false,
 				slideSpeed: 800,
 				loop: true
+		});
+	}
+
+	if($(".categorytab-carousel").length) {
+		var categorytabCarousel = $(".categorytab-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		categorytabCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:4
+				},
+				991:{
+					items:3
+				},
+				768:{
+					items:2
+				},
+				481:{
+					items:2
+				},
+				361:{
+					items:1
+				},
+				0: {
+					items:1
+				}
+			},
+			rtl: rtl,
+				margin: 0,
+			    nav: false,
+		        dots: false,
+				autoplay: false,
+				loop:true,
+			    navigationText: ["", ""],
+			    slideSpeed: 200
+		});
+	}
+
+	if($(".brand-carousel").length) {
+		var brandCarousel = $(".brand-carousel");		
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		brandCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:6
+				},
+				991:{
+					items:5
+				},
+				768:{
+					items:4
+				},
+				481:{
+					items:3
+				},
+				0: {
+					items:1
+				}
+			},
+				rtl: rtl,
+				margin: 0,
+				nav: false,
+		        dots: false,
+				autoplay:false,
+				loop: true,
+				slideSpeed: 200,	
+		});
+	}
+
+	if($(".hotdeal-carousel").length) {		
+		var hotdealCarousel = $(".hotdeal-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		hotdealCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:3
+				},
+				991:{
+					items:3
+				},
+				768:{
+					items:2
+				},
+				481:{
+					items:2
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin: 0,
+			nav: false,
+			dots: false,
+			loop:true,
+			autoplay: false,
+			slideSpeed: 800,
 		});
 	}
 
@@ -149,6 +328,39 @@ jQuery(function ($) {
 			autoplay: false,
 			slideSpeed: 200,
 			loop:true,
+		});
+	}
+
+	if($(".blog-carousel").length) {
+		var blogCarousel = $(".blog-carousel");		
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		blogCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:3
+				},
+				991:{
+					items:3
+				},
+				768:{
+					items:2
+				},
+				481:{
+					items:2
+				},
+				0: {
+					items:1
+				}
+			},
+				rtl: rtl,
+				margin:30,
+				nav: false,
+		        dots: false,
+				autoplay:false,
+				loop: true,
+				slideSpeed: 800,	
 		});
 	}
 });

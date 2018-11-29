@@ -251,6 +251,39 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".blog-carousel").length) {
+		var blogCarousel = $(".blog-carousel");		
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		blogCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:blog_itemsDesktop
+				},
+				991:{
+					items:blog_itemsDesktopSmall
+				},
+				768:{
+					items:blog_itemsTablet
+				},
+				481:{
+					items:blog_itemsMobile
+				},
+				0: {
+					items:1
+				}
+			},
+				rtl: rtl,
+				margin:30,
+				nav: p_nav_blog,
+		        dots: p_pag_blog,
+				autoplay:auto_play_blog,
+				loop: true,
+				slideSpeed: 800,	
+		});
+	}
+
 	if($(".brand-carousel").length) {
 		var brandCarousel = $(".brand-carousel");		
 		var rtl = false;

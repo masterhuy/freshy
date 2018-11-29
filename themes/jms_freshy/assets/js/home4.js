@@ -249,29 +249,5 @@ jQuery(function ($) {
 });
 
 jQuery(document).ready(function($) {
-	var menu = $(".jms-row.menu");
-
-	$(window).scroll(function () {
-    	if ($(window).scrollTop()){
-			menu.addClass("fixed");
-    	} else {
-			menu.removeClass("fixed");
-    	}
-    });
-    
-	$(".product_tab .product-miniature").hover(function(){
-	    $(".product_tab").css("z-index", "3");
-		}, function(){
-        $(".product_tab").css("z-index", "1");
-	});
-	$(".cates_tab .product-miniature").hover(function(){
-	    $(".cates_tab").css("z-index", "3");
-		}, function(){
-        $(".cates_tab").css("z-index", "1");
-	});
-	$(".tv .product-miniature").hover(function(){
-	    $(".tv").css("z-index", "3");
-		}, function(){
-        $(".tv").css("z-index", "1");
-	});
+	$("#jms-vermegamenu-container").addClass('collapse');
 });

@@ -98,7 +98,7 @@
 					<div class="post-intro">{$post.introtext nofilter}</div>	
 				{/if}
 				{if $show_readmore == '1'}	
-					<a class="post-readmore btn-hover" href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">{l s='Read more' d='Modules.JmsPagebuilder'}</a>	
+					<a class="post-readmore btn-effect1" href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">{l s='Read more' d='Modules.JmsPagebuilder'}</a>	
 				{/if}
 			</div>
 		</div>		

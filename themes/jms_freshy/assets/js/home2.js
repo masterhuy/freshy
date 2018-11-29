@@ -59,7 +59,7 @@ jQuery(function ($) {
 				}
 			},
 				rtl: rtl,
-				margin: 0,
+				margin: 30,
 				nav: p_nav_testi,
 		        dots: p_pag_testi,
 				autoplay:auto_play_testi,
