@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-22 05:11:37
+/* Smarty version 3.1.33, created on 2018-11-29 21:06:42
   from 'module:pscustomersigninpscustome' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bf680d91635f7_12521658',
+  'unifunc' => 'content_5c009b3270ed00_75774536',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd5f8f570180f74d1dbdd1a1d2af0445e90a6650c' => 
     array (
       0 => 'module:pscustomersigninpscustome',
-      1 => 1542875382,
+      1 => 1543543509,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bf680d91635f7_12521658 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c009b3270ed00_75774536 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="_desktop_user_info">
 	<div class="user-info btn-group compact-hidden type1 ">
 		<?php if ($_smarty_tpl->tpl_vars['logged']->value) {?> 
@@ -112,7 +112,7 @@ function content_5bf680d91635f7_12521658 (Smarty_Internal_Template $_smarty_tpl)
 	 </div>
 	 <div class="user-info btn-group compact-hidden type3">
 		<?php if ($_smarty_tpl->tpl_vars['logged']->value) {?> 
-		 	<a class="btn-name account btn-xs dropdown-toggle" data-toggle="dropdown" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['my_account_url']->value, ENT_QUOTES, 'UTF-8');?>
+		 	<a class="title btn-name account btn-xs dropdown-toggle" data-toggle="dropdown" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['my_account_url']->value, ENT_QUOTES, 'UTF-8');?>
 "  title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'View my customer account','d'=>'Shop.Theme.CustomerAccount'),$_smarty_tpl ) );?>
 " rel="nofollow">
 		    	<span><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['customerName']->value, ENT_QUOTES, 'UTF-8');?>
@@ -136,7 +136,7 @@ function content_5bf680d91635f7_12521658 (Smarty_Internal_Template $_smarty_tpl)
 	    <?php } else { ?>   
 		  	<a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('my-account',true), ENT_QUOTES, 'UTF-8');?>
 " title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Login/Register','d'=>'Shop.Theme.CustomerAccount'),$_smarty_tpl ) );?>
-" class="account" rel="nofollow">
+" class="account title" rel="nofollow">
 		  		<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Login/Register','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 </span>
 		  	</a>

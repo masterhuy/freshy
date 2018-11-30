@@ -6,12 +6,12 @@
  * @Website: http://www.joommasters.com
 **/
 #jms-vermegamenu-container {
-	margin-bottom:0px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0px;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 0 0 10px 10px;
 }
 .jms-vermegamenu {
-    padding: 14px 0;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    padding: 0;
 }
 .jms-vermegamenu .nav {
 	text-align:right;
@@ -19,13 +19,35 @@
 }
 .jms-vermegamenu img {
 	max-width:100%;
+    width: 100%;
 }
-.jms-vermegamenu .nav > li {        
-    margin: 0px 20px;
-    padding: 0;    
+.jms-vermegamenu .nav > li.page{
+    padding: 0 20px;
+}
+.jms-vermegamenu .nav > li.page a{
+    color: #f6372d;
+}
+.jms-vermegamenu .nav > li.page a:hover{
+    color: #fb943b;
+}
+.jms-vermegamenu .level0 > li.open > a::after {
+    content: "";
+    width: 10px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    right: -17px;
+    top: 0;
+    z-index: 99999;
+}
+.jms-vermegamenu .nav > li{
+    margin: 0;
+    padding: 0 15px;
     vertical-align: top;
-	text-align:left;
-    border-bottom:1px solid #ccc;
+    text-align: left;
+}
+.jms-vermegamenu .nav > li:not(:last-child) {
+    border-bottom: 1px solid #f5f5f5;
 }
 .jms-vermegamenu .nav > li.more_cates{
     border-bottom: 0;
@@ -34,24 +56,28 @@
 .jms-vermegamenu .nav > li.more_cates a{
     font-weight: 500;
 }
-.jms-vermegamenu .nav > li a i,
-#mobile-vermegamenu .jms-vermegamenu .nav > li a i{
+.jms-vermegamenu .nav > li a i, 
+#mobile-vermegamenu .jms-vermegamenu .nav > li a i {
     font-size: 23px;
     position: relative;
     top: 3px;
-    padding-right: 15px;
+    padding-right: 7px;
 }
 .jms-vermegamenu .nav > li > a {
-    color: #333;
-    font-family: "Poppins",serif;
-    font-size: 1em;
+    font-family: "Cabin",serif;
+    font-size: 16px;
     line-height: 30px;
-    padding: 5.5px 0px;
+    padding: 7.25px 0px;
     position: relative;
-    text-transform: uppercase;
+    text-transform: capitalize;
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+}
+.jms-vermegamenu .nav > li > a i{
+    width: 38.3px;
+    text-align: center;
 }
 .jms-vermegamenu .nav > li > a > .caret::after {
     content: "\f105";
@@ -99,18 +125,21 @@
     padding: 25px 40px !important;
     border-radius: 3px;
 }
+.jms-vermegamenu .nav > li.fruits .image {
+    padding-top: 7px;
+}
+.jms-vermegamenu .fruits .dropdown-menu.fullwidth {
+    width: 100%;
+    padding: 35px 30px 35px 30px !important;
+}
 .jms-vermegamenu .dropdown-menu.fullwidth {
-	width:100%;
-    padding: 35px 40px !important;
+    width: 100%;
+    padding: 35px 45px 35px 30px !important;
 }
 .jms-vermegamenu .row + .row {
-    padding-top: 44px;
+    padding-top: 35px;
     display: flex;
     align-items: center;
-}
-.jms-vermegamenu .row + .row .mega-col-nav {
-    display: flex;
-    justify-content: center;
 }
 .jms-vermegamenu .row .mega-inner {    
     border-radius: 0;
@@ -125,14 +154,18 @@
 	min-height:20px;
 }
 .jms-vermegamenu .mega-nav li > a, .jms-vermegamenu .mega-nav li > span {
-    font-family: "Poppins",serif;
+    font-family: "Cabin",serif;
     background: #fff none repeat scroll 0 0;
     border-radius: 0;
-    color: #555;
-    font-size: 14px;
+    color: #907459;
+    font-size: 15px;
     display: block;
     text-decoration: none;
     text-transform: capitalize;
+    line-height: 25px;
+}
+.jms-vermegamenu .mega-nav li > a:hover{
+    color: #fb943b;
 }
 .jms-vermegamenu .mega-nav li {
     line-height: 23px;
@@ -186,15 +219,42 @@
     width: 0;
     font-family: FontAwesome;
 }
+.jms-vermegamenu .level0 > li > .dropdown-menu{
+    border-left: 2px solid #fb943b;
+}
+.jms-vermegamenu .image li > a,
+.jms-vermegamenu .mega-col-nav.image a::before{
+    display: none !important;
+}
+.jms-vermegamenu .mega-inner ul li:not(.group) a{
+    position: relative;
+    padding-left: 14px;
+}
+.jms-vermegamenu .mega-col-nav.image a{
+    padding-left: 0 !important;
+}
+.jms-vermegamenu .mega-inner ul li:not(.group) a::before{
+    content: "";
+    padding-right: 3px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #fb943b;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
 .jms-vermegamenu .mega-nav li.group > a {
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #3700ff;
-    font-weight: 600;
-}	
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+    color: #603813;
+    font-family: Poppins;
+}
 .jms-vermegamenu .mega-nav > li > ul > li.group,
 .jms-vermegamenu .mega-nav > li.group {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     margin-top: 1px;
 	position:relative;
 }

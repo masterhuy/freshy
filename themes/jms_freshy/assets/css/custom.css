@@ -1015,7 +1015,7 @@ table td[class*="col-"], table table th[class*="col-"] {
   -ms-transition: all 400ms ease 0s;
   -o-transition: all 400ms ease 0s; }
 
-.dropdown-menu::before {
+.jms-megamenu .dropdown-menu::before {
   content: "";
   left: 0;
   top: -7px;
@@ -1046,7 +1046,7 @@ table td[class*="col-"], table table th[class*="col-"] {
 
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
   background: none;
-  color: #1ec7a6; }
+  color: #fb943b; }
 
 .jms_ajax_search .btn-xs.icon.dropdown-toggle {
   position: relative;
@@ -1159,7 +1159,7 @@ fieldset[disabled] .btn-default {
   color: #fb943b;
   border: 2px solid #fb943b !important;
   border-radius: 30px;
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   padding: 0 38px;
   font-size: 18px;
@@ -1167,10 +1167,11 @@ fieldset[disabled] .btn-default {
   font-weight: 600;
   background: transparent;
   letter-spacing: 0.4px;
+  cursor: pointer;
 }
 
 .btn-shopnow1:hover{
-  color: #fff;
+  color: #fff !important;
 }
 .btn-effect1, .btn-effect {
   -webkit-transform: perspective(1px) translateZ(0px);
@@ -3127,11 +3128,12 @@ ul.footer_links {
 
 /*HEADER*/
 .topbar .dropdown-menu {
-  padding: 5px 0;
+  padding: 7px 0;
   display: block;
 }
-.topbar .open > .dropdown-menu {
-  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+.topbar .dropdown-menu {
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  border: 0;
 }
 .top_menu_second .addon-title h3::before{
   display: none;
@@ -3328,6 +3330,15 @@ ul.footer_links {
   font-size: 29px;
   position: absolute; }
 
+.languages-info .flag{
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+}
+.languages-info .dropdown-menu > li > a,
+#_desktop_currency_selector .dropdown-menu > li > a {
+  line-height: 28px;
+}
   .languages-list li img{
     margin-bottom: 0 !important;
   }
@@ -5472,12 +5483,17 @@ footer .blog-carousel {
   margin-bottom: 30px; }
 
 .button-search {
-  background: transparent;
+  background: #fb943b;
   border: 0;
   color: #fff;
   display: block;
-  height: 45px;
-  font-size: 23px;
+  height: 47px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 21px 0 19px;
+  border-radius: 0 30px 30px 0;
+  letter-spacing: 0.3px;
 }
 /*# sourceMappingURL=custom.css.map */
 

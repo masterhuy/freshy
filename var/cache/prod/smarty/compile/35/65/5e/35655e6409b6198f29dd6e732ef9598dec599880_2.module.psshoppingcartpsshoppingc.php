@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-28 23:42:55
+/* Smarty version 3.1.33, created on 2018-11-29 22:31:46
   from 'module:psshoppingcartpsshoppingc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bff6e4f15cb79_82700404',
+  'unifunc' => 'content_5c00af22a0c387_00258849',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '35655e6409b6198f29dd6e732ef9598dec599880' => 
     array (
       0 => 'module:psshoppingcartpsshoppingc',
-      1 => 1543466572,
+      1 => 1543548682,
       2 => 'module',
     ),
   ),
@@ -21,18 +21,17 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:ps_shoppingcart/ps_shoppingcart-product-line.tpl' => 1,
   ),
 ),false)) {
-function content_5bff6e4f15cb79_82700404 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c00af22a0c387_00258849 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="btn-group compact-hidden blockcart cart-preview <?php if ($_smarty_tpl->tpl_vars['cart']->value['products_count'] > 0) {?>active<?php } else { ?>inactive<?php }?> dropdown <?php if (isset($_smarty_tpl->tpl_vars['jpb_addtocart']->value) && $_smarty_tpl->tpl_vars['jpb_addtocart']->value == 'ajax_cartbottom') {?>shoppingcart-bottom<?php }?>" id="cart_block" data-refresh-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['refresh_url']->value, ENT_QUOTES, 'UTF-8');?>
 ">
-	<a href="#" class="dropdown-toggle cart-icon" data-toggle="dropdown">	
-		<span class="ajax_cart_quantity"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['products_count'], ENT_QUOTES, 'UTF-8');?>
-</span>
-	</a>
 	<div class="text-custom">
 		<span class="cart_block_total ajax_block_cart_total"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['totals']['total']['value'], ENT_QUOTES, 'UTF-8');?>
 </span>
 	</div>
-	
+	<a href="#" class="dropdown-toggle cart-icon" data-toggle="dropdown">	
+		<span class="ajax_cart_quantity"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['products_count'], ENT_QUOTES, 'UTF-8');?>
+</span>
+	</a>
 	<a href="#" class="btn-xs tab-title dropdown-toggle" data-toggle="dropdown">		 
 		<span><span class="box-cart ajax_cart_quantity"> <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['products_count'], ENT_QUOTES, 'UTF-8');?>
 </span> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'item(s) in your cart','mod'=>'blockcart'),$_smarty_tpl ) );?>

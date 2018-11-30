@@ -24,6 +24,8 @@
  *}
 <link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/linearicon.css" />
 <link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/typo-icon.css" />
+<link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/pe-icon-set-food.css" />
+<link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/helper.css" />
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Playball:400,500,600,700" rel="stylesheet"> 

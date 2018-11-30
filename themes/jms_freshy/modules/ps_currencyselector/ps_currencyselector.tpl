@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info type1">
-   	<a href="#"  class="btn-xs dropdown-toggle" data-toggle="dropdown">
+   	<a href="#"  class="title btn-xs dropdown-toggle" data-toggle="dropdown">
 		<span class="btn-name"><b>{$currency.sign}</b> {$current_currency.iso_code}</span>
 	</a>
 	<ul class="dropdown-menu hidden-sm-down" aria-labelledby="currency-selector-label">
@@ -38,7 +38,7 @@
 </div>
 	
 <div id="_desktop_currency_selector" class="btn-group compact-hidden currency-info type2">
-	<span class="btn-name">{l s='Select Currency:' d='Shop.Theme.Global'}</span>
+	<span class="title btn-name">{l s='Select Currency:' d='Shop.Theme.Global'}</span>
 	<ul class="curentry-list">
 		{foreach from=$currencies item=currency}
 			<li {if $currency.current} class="current" {/if}>

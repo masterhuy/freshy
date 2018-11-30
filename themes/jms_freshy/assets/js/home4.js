@@ -249,5 +249,5 @@ jQuery(function ($) {
 });
 
 jQuery(document).ready(function($) {
-	$("#jms-vermegamenu-container").addClass('collapse');
+	$("#jms-vermegamenu-container").addClass('collapse in');
 });

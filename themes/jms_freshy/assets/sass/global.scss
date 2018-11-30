@@ -1184,6 +1184,24 @@ a.wishlist_top{
 		}
 	}
 }
+.ver_menu {
+	background: #fb943b;
+	color: #fff;
+	line-height: 60px;
+	margin-bottom: 0;
+	padding: 0 20px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.2px;
+	cursor: pointer;
+	img{
+		margin-right: 6px;
+		margin-top: -2px;
+	}
+}
+
+
 .product-carousel, .categorytab-carousel, .hotdeal-carousel{
 	.owl-stage-outer{
 		padding-bottom: 60px;

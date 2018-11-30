@@ -210,12 +210,7 @@ a.collapse-expand:hover {
     right: 100%;
 }
 .jms-vermegamenu .menu-align-center > .dropdown-menu {
-  left: 50%;
-  transform: translate(-50%);
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
+  left: 100%;
 }
 .jms-vermegamenu .mega-nav > .mega.menu-align-left > .dropdown-menu {
 	left: 100%;

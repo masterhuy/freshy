@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-22 05:11:37
+/* Smarty version 3.1.33, created on 2018-11-29 21:06:42
   from 'module:pslanguageselectorpslangu' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bf680d91b1807_43232720',
+  'unifunc' => 'content_5c009b3278fba5_74420068',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1c00f78dace25d509ec3a1f54176b7ae2000accf' => 
     array (
       0 => 'module:pslanguageselectorpslangu',
-      1 => 1542875273,
+      1 => 1543543423,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bf680d91b1807_43232720 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c009b3278fba5_74420068 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block languages module -->
 <?php if (count($_smarty_tpl->tpl_vars['languages']->value) > 1) {?>
 	<div class="btn-group compact-hidden languages-info type1">
@@ -53,7 +53,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		</ul>
 	</div>
 	<div class="btn-group compact-hidden languages-info type2">
-		<a href="#" class="btn-xs dropdown-toggle" data-toggle="dropdown">
+		<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
 			<span class="btn-name">
 				<img class="flag" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language']->value['iso_code'], ENT_QUOTES, 'UTF-8');?>
 " src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
@@ -88,7 +88,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		</ul>
 	</div>
 	<div class="btn-group compact-hidden languages-info type3">
-		<span class="btn-name"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Select Language:','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+		<span class="title btn-name"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Select Language:','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </span>
 		<ul class="languages-list">
 			<?php
@@ -113,7 +113,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		</ul>
 	</div>
 	<div class="btn-group compact-hidden languages-info type4">
-		<a href="#" class="btn-xs dropdown-toggle" data-toggle="dropdown">
+		<a href="#" class="title btn-xs dropdown-toggle" data-toggle="dropdown">
 			<span class="btn-name">
 				<img class="flag" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language']->value['iso_code'], ENT_QUOTES, 'UTF-8');?>
 " src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>

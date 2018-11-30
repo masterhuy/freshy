@@ -977,5 +977,20 @@ a.wishlist_top {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08); }
 
+.ver_menu {
+  background: #fb943b;
+  color: #fff;
+  line-height: 60px;
+  margin-bottom: 0;
+  padding: 0 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  cursor: pointer; }
+  .ver_menu img {
+    margin-right: 6px;
+    margin-top: -2px; }
+
 .product-carousel .owl-stage-outer, .categorytab-carousel .owl-stage-outer, .hotdeal-carousel .owl-stage-outer {
   padding-bottom: 60px; }

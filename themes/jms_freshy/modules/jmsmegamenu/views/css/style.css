@@ -90,7 +90,7 @@
     visibility: hidden;
     z-index: 9999;
 }
-.jms-megamenu .dropdown-menu::before{
+div.jms-megamenu .dropdown-menu::before{
     left: 38px;
 }
 .jms-megamenu .open > .dropdown-menu {

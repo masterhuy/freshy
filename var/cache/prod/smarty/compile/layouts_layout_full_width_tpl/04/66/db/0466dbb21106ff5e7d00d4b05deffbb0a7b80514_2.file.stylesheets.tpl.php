@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-26 22:46:25
+/* Smarty version 3.1.33, created on 2018-11-29 23:56:19
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\templates\_partials\stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bfcbe11ab39a9_57444248',
+  'unifunc' => 'content_5c00c2f3749c42_50732815',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0466dbb21106ff5e7d00d4b05deffbb0a7b80514' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\templates\\_partials\\stylesheets.tpl',
-      1 => 1543290379,
+      1 => 1543553775,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfcbe11ab39a9_57444248 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c00c2f3749c42_50732815 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
 css/linearicon.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
 css/typo-icon.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
+css/pe-icon-set-food.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
+css/helper.css" />
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Playball:400,500,600,700" rel="stylesheet"> 
