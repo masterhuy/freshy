@@ -1201,6 +1201,40 @@ a.wishlist_top{
 	}
 }
 
+//service
+.service{
+	.left .feature-box{
+		border: 1px solid #81b502;
+	}
+	.center .feature-box{
+		border: 1px solid #f2962a;
+	}
+	.right .feature-box{
+		border: 1px solid #29c4e9;
+	}
+	.feature-box{
+		@include flex(center, center);
+		border-radius: 8px;
+		padding: 30.5px 0;
+	}
+	.include_content_s{
+		margin-left: 22px;
+		.text-1{
+			font-size: 24px;
+			font-weight: 600;
+			letter-spacing: 0.4px;
+			margin-bottom: 6px;
+		}
+		.text-2{
+			color: #907459;
+			font-family: Cabin;
+			font-size: 16px;
+			margin-bottom: 8px;
+		}
+	}
+}
+
+
 
 .product-carousel, .categorytab-carousel, .hotdeal-carousel{
 	.owl-stage-outer{

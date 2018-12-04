@@ -992,5 +992,40 @@ a.wishlist_top {
     margin-right: 6px;
     margin-top: -2px; }
 
+.service .left .feature-box {
+  border: 1px solid #81b502; }
+
+.service .center .feature-box {
+  border: 1px solid #f2962a; }
+
+.service .right .feature-box {
+  border: 1px solid #29c4e9; }
+
+.service .feature-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 30.5px 0; }
+
+.service .include_content_s {
+  margin-left: 22px; }
+  .service .include_content_s .text-1 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-bottom: 6px; }
+  .service .include_content_s .text-2 {
+    color: #907459;
+    font-family: Cabin;
+    font-size: 16px;
+    margin-bottom: 8px; }
+
 .product-carousel .owl-stage-outer, .categorytab-carousel .owl-stage-outer, .hotdeal-carousel .owl-stage-outer {
   padding-bottom: 60px; }

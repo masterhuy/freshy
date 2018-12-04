@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-28 04:29:13
+/* Smarty version 3.1.33, created on 2018-12-03 04:31:57
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bfe5fe9ec6488_09311426',
+  'unifunc' => 'content_5c04f80db44801_26470791',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1543397343,
+      1 => 1543829487,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfe5fe9ec6488_09311426 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c04f80db44801_26470791 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
@@ -36,10 +36,10 @@ function content_5bfe5fe9ec6488_09311426 (Smarty_Internal_Template $_smarty_tpl)
 			<p class="text-2"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Subscribe Newsletter','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </p>
 		</div>
-		<div class="textnews_h7 addon-title">
-			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Subscribe to Our Newsletter','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+		<div class="textnews_h4 addon-title">
+			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Follow Us','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </h3>
-			<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'More special Deals, Events & Promotions','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+			<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sign up our newsletter & get 20 percent off for your next purchase!','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </span>
 		</div>
 		<div class="popup addon-title">
@@ -59,8 +59,8 @@ function content_5bfe5fe9ec6488_09311426 (Smarty_Internal_Template $_smarty_tpl)
 " placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Email@example.com','d'=>'Shop.Forms.Labels'),$_smarty_tpl ) );?>
 " />
 						<button type="submit" name="submitNewsletter" class="newsletter-btn buttonh1 btn-active">
-							<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sign up','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
-
+							<img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
+themes/jms_freshy/assets/img/icon/btn-right.png" alt="">
 						</button>
 						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup btn-shopnow1 btn-effect1">
 							<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Subscribe','d'=>'Shop.Theme'),$_smarty_tpl ) );?>

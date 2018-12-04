@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-25 22:56:54
+/* Smarty version 3.1.33, created on 2018-12-03 05:41:19
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmspagebuilder\views\templates\hook\addontestimonial.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bfb6f066d0bd8_29459524',
+  'unifunc' => 'content_5c05084f8a8b34_27113051',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b8d1974fe82fc662d639a758570597ca9f2e39ae' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\modules\\jmspagebuilder\\views\\templates\\hook\\addontestimonial.tpl',
-      1 => 1543204612,
+      1 => 1543833675,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfb6f066d0bd8_29459524 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c05084f8a8b34_27113051 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_freshy\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
 
@@ -60,12 +60,17 @@ if ($_smarty_tpl->tpl_vars['addon_desc']->value) {?>
 	<div class="testimonial_box">
 		<div class="testimonial-carousel">
 			<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['testimonials']->value, 'testimonial');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['testimonials_slides']->value, 'testimonials_slide');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['testimonials_slide']->value) {
+?>
+				<div class="item">
+					<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['testimonials_slide']->value, 'testimonial');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['testimonial']->value) {
-?>	
-				<div class="item">
-					<div class="testimonial-box">
+?>
+						<div class="testimonial-box">
 						<div class="testimonial-info">
 							<div class="testimonial-comment" >
 								<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['comment'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
@@ -101,7 +106,11 @@ resized_<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registere
 </div>
 							
 						</div>
-					</div>	
+					</div>
+					<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 				</div>
 			<?php
 }

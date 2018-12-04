@@ -86,6 +86,9 @@
     font-size: 16px;
     color: #444;
 }
+.jms-vermegamenu .nav > li.open > a > .caret::after {
+    color: #fb943b;
+}
 .jms-vermegamenu .nav > li > a > .caret {
     border: 0;
     float: right;
@@ -123,14 +126,24 @@
 }
 .jms-vermegamenu .dropdown-menu {
     padding: 25px 40px !important;
-    border-radius: 3px;
 }
 .jms-vermegamenu .nav > li.fruits .image {
     padding-top: 7px;
 }
 .jms-vermegamenu .fruits .dropdown-menu.fullwidth {
-    width: 100%;
     padding: 35px 30px 35px 30px !important;
+}
+.jms-vermegamenu .fast_food .dropdown-menu.fullwidth {
+    padding: 35px 10px 0px 30px !important;
+}
+.jms-vermegamenu .fast_food .col1{
+    width: 44.5%;
+}
+.jms-vermegamenu .fast_food .col2{
+    width: 55.5%;
+}
+.jms-vermegamenu .fast_food .image{
+    padding-top: 10px;
 }
 .jms-vermegamenu .dropdown-menu.fullwidth {
     width: 100%;
@@ -251,6 +264,28 @@
     font-weight: 500;
     color: #603813;
     font-family: Poppins;
+}
+.jms-vermegamenu .mega-nav li.group.all{
+    margin-bottom: 0;
+}
+.jms-vermegamenu .mega-nav li.group.all > a {
+    font-size: 15px;
+    color: #907459;
+    font-family: Cabin;
+    font-weight: 400;
+    margin-top: 17px;
+    padding-top: 11px;
+    border-top: 1px solid #ebebeb;
+    letter-spacing: 0.3px;
+}
+.jms-vermegamenu .mega-nav li.more > a {
+    font-size: 13px;
+    color: #cab39c;
+    font-family: Cabin;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-transform: initial;
+    margin-top: -11px;
 }
 .jms-vermegamenu .mega-nav > li > ul > li.group,
 .jms-vermegamenu .mega-nav > li.group {

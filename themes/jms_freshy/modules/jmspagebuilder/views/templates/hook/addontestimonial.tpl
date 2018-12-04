@@ -46,9 +46,10 @@
 <div id="testimonial">
 	<div class="testimonial_box">
 		<div class="testimonial-carousel">
-			{foreach from=$testimonials item=testimonial}	
+			{foreach from = $testimonials_slides item = testimonials_slide}
 				<div class="item">
-					<div class="testimonial-box">
+					{foreach from = $testimonials_slide item = testimonial}
+						<div class="testimonial-box">
 						<div class="testimonial-info">
 							<div class="testimonial-comment" >
 								{$testimonial.comment|escape:'html':'UTF-8'}
@@ -76,7 +77,8 @@
 							<div class="id_testimonial">#{$testimonial.id_testimonial|escape:'html':'UTF-8'}</div>
 							
 						</div>
-					</div>	
+					</div>
+					{/foreach}
 				</div>
 			{/foreach}
 		</div>

@@ -2163,10 +2163,11 @@ ul#order_step li {
   bottom: 2px;
 }
 .product-name {
-  font-family: Poppins;
-  text-transform: uppercase;
+  font-family: Cabin;
+  text-transform: capitalize;
   font-weight: 500;
   line-height: 1.45;
+  font-size: 18px;
 }
 
 /*Out of Stock*/
@@ -2504,9 +2505,10 @@ padding: 5.5px 20px; }
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 24px; }
-  .product-box .flexbox {
-    margin-right: 10px;
-    width: 71.5%; }
+.product-box .flexbox {
+  margin-right: 30px;
+  width: 92%;
+}
 
 /* Image Swap */
 .image_swap .product-img2 {
@@ -3774,7 +3776,7 @@ footer .blog-carousel {
   font-family: Cabin;
   color: #7d7d7d;
   padding-left: 28px;
-  width: 490PX;
+  width: 490px;
   letter-spacing: 0.3px;
 }
 #newsletter-input::-moz-placeholder{
@@ -4383,6 +4385,7 @@ footer .blog-carousel {
 .feature-box i {
   font-size: 60px;
   color: #707070; }
+
 
 /*END service*/
 #product .content-aside, #category .content-aside {

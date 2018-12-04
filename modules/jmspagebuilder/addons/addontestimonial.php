@@ -14,6 +14,7 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 include_once(_PS_MODULE_DIR_.'jmspagebuilder/addons/addonbase.php');
+include_once(_PS_MODULE_DIR_.'jmspagebuilder/classes/productHelper.php');
 
 class JmsAddonTestimonial extends JmsAddonBase
 {
@@ -152,6 +153,14 @@ class JmsAddonTestimonial extends JmsAddonBase
             ),
             array(
                 'type' => 'text',
+                'name' => 'rows',
+                'label' => $this->l('Number of Rows'),
+                'lang' => '0',
+                'desc' => 'Number of Rows (Or Number of Items per Column)',
+                'default' => 2
+            ),
+            array(
+                'type' => 'text',
                 'name' => 'overwrite_tpl',
                 'label' => $this->l('Overwrite Tpl File'),
                 'lang' => '0',
@@ -167,11 +176,16 @@ class JmsAddonTestimonial extends JmsAddonBase
             LEFT JOIN '._DB_PREFIX_.'jmstestimonials_lang pbl ON (pbl.`id_testimonial` = pb.`id_testimonial`)
             WHERE pbl.`comment` != "" AND pb.`active` = 1 AND pbl.`id_lang` = '.$id_lang.
             ' LIMIT '.$addon->fields[2]->value;
-        $testimonials = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($query);
+        $_testimonials = Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS($query);
+        $row = $addon->fields[15]->value;
+        $cols = $addon->fields[3]->value;
+        $total_config = $addon->fields[2]->value;
+        $testimonials = JmsProductHelper::sliceProducts($_testimonials, $row, $cols, $total_config);
+
         $this->context->smarty->assign(
             array(
                 'link' => $this->context->link,
-                'testimonials' => $testimonials,
+                'testimonials_slides' => $testimonials,
                 'addon_title' => JmsPageBuilderHelper::decodeHTML($addon->fields[0]->value->$id_lang),
                 'addon_desc' => JmsPageBuilderHelper::decodeHTML($addon->fields[1]->value->$id_lang),
                 'items_show' => $addon->fields[3]->value,

@@ -57,9 +57,9 @@
 			<p class="text-1">{l s='JOIN OUR NEWSLETTER' d='Shop.Theme.Global'}</p>
 			<p class="text-2">{l s='Subscribe Newsletter' d='Shop.Theme.Global'}</p>
 		</div>
-		<div class="textnews_h7 addon-title">
-			<h3>{l s='Subscribe to Our Newsletter' d='Shop.Theme.Global'}</h3>
-			<span>{l s='More special Deals, Events & Promotions' d='Shop.Theme.Global'}</span>
+		<div class="textnews_h4 addon-title">
+			<h3>{l s='Follow Us' d='Shop.Theme.Global'}</h3>
+			<span>{l s='Sign up our newsletter & get 20 percent off for your next purchase!' d='Shop.Theme.Global'}</span>
 		</div>
 		<div class="popup addon-title">
 			<p class="text-1">{l s='Sign up our newsletter & get 20 percent off for your next purchase!' d='Shop.Theme.Global'}</p>
@@ -71,7 +71,7 @@
 						<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Email@example.com' d='Shop.Forms.Labels'}" />
 						<input class="input_popup form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{$value}" placeholder="{l s='Email@example.com' d='Shop.Forms.Labels'}" />
 						<button type="submit" name="submitNewsletter" class="newsletter-btn buttonh1 btn-active">
-							{l s='Sign up' d='Shop.Theme'}
+							<img src="{$urls.base_url}themes/jms_freshy/assets/img/icon/btn-right.png" alt="">
 						</button>
 						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup btn-shopnow1 btn-effect1">
 							{l s='Subscribe' d='Shop.Theme'}

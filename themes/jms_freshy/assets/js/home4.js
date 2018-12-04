@@ -59,7 +59,7 @@ jQuery(function ($) {
 				}
 			},
 				rtl: rtl,
-				margin: 30,
+				margin: 0,
 				nav: p_nav_brand,
 		        dots: p_pag_brand,
 				autoplay:auto_play_brand,
@@ -177,6 +177,42 @@ jQuery(function ($) {
 			slideSpeed: 800,
 		});
 	}
+
+	if($(".product-carousel2").length) {		
+		var productCarousel2 = $(".product-carousel2");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarousel2.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:p2_itemsDesktop
+				},
+				991:{
+					items:p2_itemsDesktopSmall
+				},
+				768:{
+					items:p2_itemsTablet
+				},
+				481:{
+					items:p2_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:0,
+			nav: p2_nav,
+			dots: p2_pag,
+			autoplay: p2_auto_play_carousel,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
 	
  	if($(".blog-carousel").length) {
 		var blogCarousel = $(".blog-carousel");		
@@ -246,6 +282,70 @@ jQuery(function ($) {
 			slideSpeed: 800,
 		});
 	}
+
+	if($(".testimonial-carousel").length) {
+		var testimonialCarousel = $(".testimonial-carousel");		
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		testimonialCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:testi_itemsDesktop
+				},
+				991:{
+					items:testi_itemsDesktopSmall
+				},
+				768:{
+					items:testi_itemsTablet
+				},
+				481:{
+					items:testi_itemsMobile
+				},
+				0: {
+					items:1
+				}
+			},
+				rtl: rtl,
+				margin: 30,
+				nav: p_nav_testi,
+		        dots: p_pag_testi,
+				autoplay:auto_play_testi,
+				slideSpeed: 800,
+				loop: true
+		});
+	}
+	
+	var catesCarousel = $('.cates .cates-carousel');			
+	var rtl = false;
+	if ($("body").hasClass("rtl")) rtl = true;	
+	 	catesCarousel.owlCarousel({
+	  	responsiveClass:true,
+		    responsive:{
+		        1199:{
+					items:5
+				},
+				991:{
+					items:4
+				},
+				768:{
+					items:3
+				},
+				481:{
+					items:2
+				},
+				0: {
+					items:1
+				}
+		    },
+		    rtl: rtl,
+		    margin: 30,
+		    nav: true,
+		    dots: false,
+		    loop: true,
+		    navigationText: ["", ""],
+			slideSpeed: 800
+		});
 });
 
 jQuery(document).ready(function($) {
