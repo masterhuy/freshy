@@ -1414,8 +1414,19 @@ ul#order_step li {
   left: auto;
   visibility: hidden; }
 #cart_block .shoppingcart-box::before{
+  content: "";
+  left: 0;
+  top: -7px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fb943b;
+}
+#cart_block .shoppingcart-box::before{
   left: auto;
-  right: 46px;
+  right: 48px;
 }
 #cart_block.open .shoppingcart-box {
   visibility: visible;
@@ -5514,7 +5525,7 @@ footer .blog-carousel {
 }
 .newsletter #newsletter_block_left .popup.addon-title,
 #newsletter_block_left .textnews_h2,
-#newsletter_block_left .textnews_h5,
+#newsletter_block_left .textnews_h4,
 #newsletter_block_left .textnews_h7,
 .newsletter .input_popup, .newsletter .btn-popup, 
 .jms-popup .inputNew, .jms-popup .buttonh1 {

@@ -992,15 +992,6 @@ a.wishlist_top {
     margin-right: 6px;
     margin-top: -2px; }
 
-.service .left .feature-box {
-  border: 1px solid #81b502; }
-
-.service .center .feature-box {
-  border: 1px solid #f2962a; }
-
-.service .right .feature-box {
-  border: 1px solid #29c4e9; }
-
 .service .feature-box {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -157,7 +157,7 @@ class JmsAddonTestimonial extends JmsAddonBase
                 'label' => $this->l('Number of Rows'),
                 'lang' => '0',
                 'desc' => 'Number of Rows (Or Number of Items per Column)',
-                'default' => 2
+                'default' => '1'
             ),
             array(
                 'type' => 'text',

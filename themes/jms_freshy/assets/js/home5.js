@@ -68,6 +68,78 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".product-carousel2").length) {		
+		var productCarousel2 = $(".product-carousel2");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarousel2.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:p2_itemsDesktop
+				},
+				991:{
+					items:p2_itemsDesktopSmall
+				},
+				768:{
+					items:p2_itemsTablet
+				},
+				481:{
+					items:p2_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:0,
+			nav: p2_nav,
+			dots: p2_pag,
+			autoplay: p2_auto_play_carousel,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
+	if($(".product-carousel2_1").length) {		
+		var productCarousel2_1 = $(".product-carousel2_1");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarousel2_1.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:p2_1_itemsDesktop
+				},
+				991:{
+					items:p2_1_itemsDesktopSmall
+				},
+				768:{
+					items:p2_1_itemsTablet
+				},
+				481:{
+					items:p2_1_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:0,
+			nav: p2_1_nav,
+			dots: p2_1_pag,
+			autoplay: p2_1_auto_play_carousel,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
 	if($(".product-carousel").length) {
 		var productCarousel = $(".product-carousel");			
 		var rtl = false;
@@ -163,7 +235,7 @@ jQuery(function ($) {
 				}
 			},
 				rtl: rtl,
-				margin:30,
+				margin:0,
 				nav: p_nav_brand,
 		        dots: p_pag_brand,
 				autoplay:auto_play_brand,
@@ -284,14 +356,9 @@ jQuery(document).ready(function($) {
     	}
     });
     
-	$(".new_arrival .product-miniature").hover(function(){
-	    $(".new_arrival").css("z-index", "3");
+	$(".product_carousel .product-miniature").hover(function(){
+	    $(".product_carousel").css("z-index", "3");
 		}, function(){
-        $(".new_arrival").css("z-index", "1");
-	});
-	$(".product_tab .product-miniature").hover(function(){
-	    $(".product_tab").css("z-index", "3");
-		}, function(){
-        $(".product_tab").css("z-index", "1");
+        $(".product_carousel").css("z-index", "1");
 	});
 });

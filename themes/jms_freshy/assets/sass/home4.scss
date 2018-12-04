@@ -161,8 +161,11 @@
 	position: relative;
 	z-index: 2;
 	border-top: 1px solid #f4f4f4;
-	box-shadow: 0 0 3px rgba(0,0,0,0.08);
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.04);
 	.jms-megamenu{
+		.home{
+			padding-left: 0;
+		}
 		.stores .dropdown-menu::before {
 			left: 462px;
 		}
@@ -196,6 +199,39 @@
 	}
 	.btn-shopnow1{
 		padding: 0 33px;
+	}
+}
+
+//service
+.service{
+	.left .feature-box{
+		border: 1px solid #81b502;
+	}
+	.center .feature-box{
+		border: 1px solid #f2962a;
+	}
+	.right .feature-box{
+		border: 1px solid #29c4e9;
+	}
+	.feature-box{
+		@include flex(center, center);
+		border-radius: 8px;
+		padding: 30.5px 0;
+	}
+	.include_content_s{
+		margin-left: 22px;
+		.text-1{
+			font-size: 24px;
+			font-weight: 600;
+			letter-spacing: 0.4px;
+			margin-bottom: 6px;
+		}
+		.text-2{
+			color: #907459;
+			font-family: Cabin;
+			font-size: 16px;
+			margin-bottom: 8px;
+		}
 	}
 }
 
@@ -362,7 +398,7 @@
 //blog
 .blog{
 	background: #f7f4ef;
-	padding: 87px 0;
+	padding: 87px 0 55px;
 	.addon-title h3{
 		text-align: left !important;
 		font-size: 25px;
@@ -387,21 +423,51 @@
 		.owl-controls{
 			left: auto;
 			right: 0;
-			top: -43px;
+			top: -33px;
 			transform: unset;
 			div{
+				margin: 0;
+				margin-left: 5px;
 				background-color: #fff !important;
 			}
 		}
 	}
 	.testimonial {
 		padding: 0 15px;
+		.testimonial-carousel{
+			padding-top: 9px;
+			.owl-controls{
+				left: auto;
+				right: 15px;
+				top: -37px;
+				transform: unset;
+				div{
+					margin: 0;
+					margin-left: 5px;
+					background-color: #fff !important;
+				}
+			}
+		}
+		.testimonial-box {
+			padding: 20px 30px;
+			margin-bottom: 20px;
+			box-shadow: 0 0 3px rgba(0,0,0,0.08);
+		}
+		.testimonial-img {
+			margin-top: 16px;
+		}
+		.id_testimonial{
+			display: none;
+		}
 	}
 }
 
 
 //newsletter
 .newsletter{
+	#newsletter_block_left .textnews_h4{
+		display: block;
+	}
 	.textnews_h1.addon-title {
 		display: none;
 	}
@@ -442,6 +508,10 @@
 	#social_block ul li {
 		margin-right: 4px;
 	}
+}
+
+#footer {
+	margin-top: 0;
 }
 
 .footer_b{

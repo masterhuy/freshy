@@ -28,6 +28,14 @@
 }
 #jms_ajax_search .search-box.dropdown-menu::before{
     left: 80px;
+    content: "";
+    top: -7px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fb943b;
 }
 #jms_ajax_search.open > .dropdown-menu > a {
     color: #999;

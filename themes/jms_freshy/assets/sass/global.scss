@@ -1203,15 +1203,6 @@ a.wishlist_top{
 
 //service
 .service{
-	.left .feature-box{
-		border: 1px solid #81b502;
-	}
-	.center .feature-box{
-		border: 1px solid #f2962a;
-	}
-	.right .feature-box{
-		border: 1px solid #29c4e9;
-	}
 	.feature-box{
 		@include flex(center, center);
 		border-radius: 8px;
@@ -1233,8 +1224,6 @@ a.wishlist_top{
 		}
 	}
 }
-
-
 
 .product-carousel, .categorytab-carousel, .hotdeal-carousel{
 	.owl-stage-outer{

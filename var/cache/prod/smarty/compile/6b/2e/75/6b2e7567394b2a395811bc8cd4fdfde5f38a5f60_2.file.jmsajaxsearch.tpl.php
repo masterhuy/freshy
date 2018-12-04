@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-29 22:17:25
+/* Smarty version 3.1.33, created on 2018-12-03 22:18:56
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c00abc5c459a5_99509860',
+  'unifunc' => 'content_5c05f22036a847_01784932',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6b2e7567394b2a395811bc8cd4fdfde5f38a5f60' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\modules\\jmsajaxsearch\\views\\templates\\hook\\jmsajaxsearch.tpl',
-      1 => 1543547842,
+      1 => 1543893532,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c00abc5c459a5_99509860 (Smarty_Internal_Template $_smarty_tpl) {
-if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 4) {?>
+function content_5c05f22036a847_01784932 (Smarty_Internal_Template $_smarty_tpl) {
+if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 4 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 5) {?>
 <div class="btn-group compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<div class="search-box">
 		<form method="get" action="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['link']->value->getPageLink('search'),'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>

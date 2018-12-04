@@ -68,11 +68,11 @@
     background: url("../../../../assets/img/icon/right_hover.png") no-repeat center;
 }
 .owl-dot > span {
-    background: #9d9e9f;
+    background: #d7d7d7;
     display: inline-block;
-    height: 10px;
+    height: 12px;
 	cursor: pointer;
-    width: 10px;
+    width: 12px;
     border-radius: 50%;
 }
 .owl-dots {
@@ -87,7 +87,9 @@
     margin: 0 3px;
 }
 .owl-dot.active span {
-    background: #000000 none repeat scroll 0 0;
+    background: #fb943b none repeat scroll 0 0;
+    width: 24px;
+    border-radius: 10px;
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */

@@ -5,7 +5,7 @@
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  * @Website: http://www.joommasters.com
 *}
-{if $jpb_homepage == 4}
+{if $jpb_homepage == 4 || $jpb_homepage == 5}
 <div class="btn-group compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<div class="search-box">
 		<form method="get" action="{$link->getPageLink('search')|escape:'html':'UTF-8'}" class="searchbox">
