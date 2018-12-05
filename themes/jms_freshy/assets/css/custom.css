@@ -2018,6 +2018,10 @@ ul#order_step li {
   margin-right: 10px;
 }
 
+.flexbox + .product-info .content_price .price.old{
+  margin-right: 5px;
+}
+
 .product-preview:hover .content_price {
   /*opacity: 0;*/
   -webkit-transition: all 0.4s ease 0s;
@@ -5384,12 +5388,6 @@ footer .blog-carousel {
   display: block;
   position: relative;
 }
-.jms-hotdeal .product-box::before {
-  content: url("../img/label_hotdeal.png");
-  position: absolute;
-  top: -6px;
-  left: -6px;
-}
 .jms-hotdeal .product-preview .product-info::before {
   display: none;
 }
@@ -5647,7 +5645,9 @@ footer .blog-carousel {
 #comment::placeholder{
   color: rgba(40, 33, 31, 0.5);
 }
-
+.setting-img {
+  cursor: pointer;
+}
 
 
 a,

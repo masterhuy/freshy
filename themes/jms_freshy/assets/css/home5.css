@@ -368,7 +368,7 @@
   margin-right: 10px; }
 
 .two_column .banner2 {
-  margin-top: -36px; }
+  margin-top: -24px; }
 
 .two_column .blog .blog-carousel {
   padding-top: 28px; }
@@ -396,9 +396,13 @@
   margin-right: 5px; }
 
 .two_column .recommend {
-  margin-top: -331px; }
+  margin-top: -319px; }
+  .two_column .recommend .flex-box.product-box {
+    margin-bottom: 25px;
+    min-height: 125px; }
 
 .two_column .testimonial {
+  margin-top: 21px;
   padding: 0 15px; }
   .two_column .testimonial .testimonial-box {
     background: #f8f8f8;
@@ -407,3 +411,16 @@
     padding-top: 10px; }
     .two_column .testimonial .owl-theme .owl-controls {
       top: -37px; }
+  .two_column .testimonial .id_testimonial {
+    right: 90px; }
+
+.brand .addon-box {
+  border-radius: 10px; }
+
+#footer {
+  margin-top: -78px; }
+  #footer #social_block ul li {
+    margin-right: 4px; }
+
+.footer_t {
+  padding: 135px 0 41px; }

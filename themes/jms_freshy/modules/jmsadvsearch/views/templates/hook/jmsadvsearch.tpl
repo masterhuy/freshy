@@ -12,10 +12,9 @@
 			<input type="hidden" name="controller" value="search" />
 			<input type="hidden" name="order" value="product.position.asc" />			
 		<div class="input-group keyword-group">
-			<input type="text" id="ajax_advsearch" name="search_query" placeholder="{l s='Search for Product...' mod='jmsadvsearch'}" class="input-search" />
 			<div class="input-group-addon icon-drop-down">
 				<select name="id_category" id="selector_cat">
-				<option value="0">{l s='All Category' mod='jmsadvsearch'}</option>
+				<option value="0">{l s='All Categories' mod='jmsadvsearch'}</option>
 					{foreach from=$jmsCategTree.children item=child name=jmsCategTree}
 						{if $smarty.foreach.jmsCategTree.last}
 							{include file="$branche_tpl_path" node=$child last='true'}
@@ -25,9 +24,10 @@
 					{/foreach}
 				</select>
 			</div>
+			<input type="text" id="ajax_advsearch" name="search_query" placeholder="{l s='Search everything here' mod='jmsadvsearch'}" class="input-search" />
 		</div>
 		<span class="input-group-addon input-group-search">
-			<button class="storm-zoom"></button>
+			{l s='Search' mod='jmsadvsearch'}
 		</span>
 	</form>
 	<div id="advsearch_result">

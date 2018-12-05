@@ -49,12 +49,13 @@
 		    {block name='product_price_and_shipping'}
 		        {if $product.show_price}
 		          <div class="content_price">
-		          	{hook h='displayProductPriceBlock' product=$product type="before_price"}
-		            <span class="price new">{$product.price}</span>
-		            {if $product.has_discount}
+		          	{if $product.has_discount}
 		              {hook h='displayProductPriceBlock' product=$product type="old_price"}
 		              <span class="old price">{$product.regular_price}</span>
 		            {/if}
+		          	{hook h='displayProductPriceBlock' product=$product type="before_price"}
+		            <span class="price new">{$product.price}</span>
+		            
 		            
 
 		            {hook h='displayProductPriceBlock' product=$product type='unit_price'}

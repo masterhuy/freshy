@@ -5,7 +5,7 @@
     min-height: auto;
 	position:static;
 }
-.home_1 #jms-megamenu-container, .home_3 #jms-megamenu-container, .home_6 #jms-megamenu-container, .home_7 #jms-megamenu-container{
+.home_1 #jms-megamenu-container, .home_3 #jms-megamenu-container{
 	position:relative;
 }
 .image-menu img {

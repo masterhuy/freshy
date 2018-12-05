@@ -429,7 +429,7 @@
 		margin-right: 10px;
 	}
 	.banner2{
-		margin-top: -36px;
+		margin-top: -24px;
 	}
 	.blog{
 		.blog-carousel{
@@ -460,9 +460,14 @@
 		}
 	}
 	.recommend{
-		margin-top: -331px;
+		margin-top: -319px;
+		.flex-box.product-box {
+			margin-bottom: 25px;
+			min-height: 125px;
+		}
 	}
 	.testimonial {
+		margin-top: 21px;
 		padding: 0 15px;
 		.testimonial-box {
 			background: #f8f8f8;
@@ -474,5 +479,23 @@
 				top: -37px;
 			}
 		}
+		.id_testimonial {
+			right: 90px;
+		}
 	}
+}
+
+//brand 
+.brand .addon-box {
+	border-radius: 10px;
+}
+
+#footer {
+	margin-top: -78px;
+	#social_block ul li {
+		margin-right: 4px;
+	}
+}
+.footer_t {
+	padding: 135px 0 41px;
 }

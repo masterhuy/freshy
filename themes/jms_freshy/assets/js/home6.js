@@ -35,6 +35,79 @@ $(window).load(function(){
 });
 jQuery(function ($) {
     "use strict";
+    if($(".categorytab-carousel").length) {
+		var categorytabCarousel = $(".categorytab-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		categorytabCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:cattab_itemsDesktop
+				},
+				991:{
+					items:cattab_itemsDesktopSmall
+				},
+				768:{
+					items:cattab_itemsTablet
+				},
+				481:{
+					items:cattab_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0: {
+					items:1
+				}
+			},
+			rtl: rtl,
+				margin: 0,
+			    nav: cattab_nav,
+		        dots: cattab_pag,
+				autoplay: cattab_auto_play_carousel,
+				loop:true,
+			    navigationText: ["", ""],
+			    slideSpeed: 200
+		});
+	}
+	
+    if($(".hotdeal-carousel").length) {		
+		var hotdealCarousel = $(".hotdeal-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		hotdealCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:h_itemsDesktop
+				},
+				991:{
+					items:h_itemsDesktopSmall
+				},
+				768:{
+					items:h_itemsTablet
+				},
+				481:{
+					items:h_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin: 0,
+			nav: h_nav,
+			dots: h_pag,
+			loop:true,
+			autoplay: h_auto_play_carousel,
+			slideSpeed: 800,
+		});
+	}
+
     if($(".product-carousel").length) {		
 		var productCarousel = $(".product-carousel");			
 		var rtl = false;

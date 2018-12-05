@@ -10,12 +10,20 @@
 #ajax_advsearch {
     border: 0;
     border-radius: 0;
-    color: #888;
-    height: 42px;
+    color: #b29c86;
+    height: 45px;
     padding: 0 10px;
-    width: 250px;
+    width: 280px;
     float: left;
-    padding-left: 20px;
+    padding-left: 19px;
+    font-family: Cabin;
+    letter-spacing: 0.2px;
+}
+#ajax_advsearch::-moz-placeholder{
+    color: #b29c86;
+}
+#ajax_advsearch::-webkit-input-placeholder{
+    color: #b29c86;
 }
 #advsearch_result {
     left: 0;
@@ -96,8 +104,8 @@
     border: 0;
 }
 .jms-advsearch .input-group.keyword-group {
-    border: 2px solid #e6e6e6;
-    border-radius: 3px;
+    border: 1px solid #fb943b;
+    border-radius: 30px 0 0 30px;
 }
 .jms-advsearch .input-group-addon.icon-drop-down {
     border: 0;
@@ -105,14 +113,14 @@
     background: transparent;
     position: relative;
 }
-.jms-advsearch .input-group-addon.icon-drop-down::before{
+.jms-advsearch .input-group-addon.icon-drop-down::before {
     content: "";
     position: absolute;
     width: 1px;
-    height: 35px;
-    left: 0;
-    top: 4px;
-    background: #f2f2f2;
+    height: 45px;
+    right: 0;
+    top: 0;
+    background: #fb943b;
 }
 .jms-advsearch .storm-zoom {
     font-size: 23px;
@@ -122,11 +130,17 @@
 }
 .jms-advsearch .input-group-addon.input-group-search {
     border: 0;
-    background: #ed2b2b;
+    background: #fb943b;
     height: 46px;
-    padding: 0px 25px;
+    padding: 0px 20px;
     position: relative;
     left: -2px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 0 30px 30px 0;
 }
 #searchbox #selector_cat {
     border: 0;
@@ -135,19 +149,21 @@
     -ms-appearance: none;
     -o-appearance: none;
     cursor: pointer;
-    max-width: 157px;
-    padding: 0 15px;
-    font-size: 13px;
-    color: #888;
+    width: 184px;
+    padding: 0 18px;
+    font-size: 14px;
+    color: #603813;
+    font-family: Cabin;
+    letter-spacing: 0.2px;
 }
 #searchbox .input-group-addon.icon-drop-down::after {
     content: "\f107";
     font-family: "FontAwesome";
     font-size: 13px;
     position: absolute;
-    right: 11px;
+    right: 19px;
     top: 50%;
     transform: translateY(-50%);
     z-index: -1;
-    color: #888;
+    color: #603813;
 }

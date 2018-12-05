@@ -62,7 +62,7 @@ class JmsAddonHotdeal extends JmsAddonBase
             array(
                 'type' => 'text',
                 'name' => 'items_show',
-                'label' => $this->l('Items Show'),
+                'label' => $this->l('Number of Columns'),
                 'lang' => '0',
                 'desc' => 'Number of Items Show ( > 1199px )',
                 'default' => 5
