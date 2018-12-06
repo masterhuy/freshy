@@ -24,6 +24,7 @@
  *}
 <div class="breadcrumb">
     <div class="breadcrumb-box container">
+        <span class="title_meta">{$page.meta.title}</span>
         <div data-depth="{$breadcrumb.count}" class="breadcrumb-inner hidden-sm-down">
             <ol itemscope itemtype="http://schema.org/BreadcrumbList">
                 {foreach from=$breadcrumb.links item=path name=breadcrumb}

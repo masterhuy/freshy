@@ -177,7 +177,7 @@ select#jmsskin {
 	border:1px solid #333;
 	width:230px;
 	line-height:15px;
-    font-family: "Neue Einstellung"; 
+    font-family: "Poppins"; 
     font-weight:400;
 }
 #jmstools .info .info-content:before {
@@ -237,7 +237,7 @@ select#jmsskin {
 	float: left;
 }
 #jmstools .btn-action .btn:hover {
-	background:#000;
+	background:#fb943b;
 	color: #FFF !important;
 }
 .form-content label {

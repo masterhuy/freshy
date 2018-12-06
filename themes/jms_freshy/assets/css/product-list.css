@@ -14,16 +14,22 @@
     margin-bottom: 0;
 }
 #search_filters .facet .facet-title {
-    color: #222;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    line-height: 26px;
-    display: inline-block;
-    text-transform: uppercase;
+	line-height: 26px;
 	padding-bottom: 4px;
-	border-bottom: 2px solid;
+	font-size: 22px;
+	font-weight: 500;
+	display: inline-block;
 	margin-bottom: 17px;
+	position: relative;
+}
+#search_filters .facet .facet-title::before {
+	bottom: -6px;
+	content: "";
+	height: 2px;
+	left: 0;
+	position: absolute;
+	width: 35px;
+	background: #fb943b;
 }
 #search_filters .facet.size ul li a {
 	background: transparent;

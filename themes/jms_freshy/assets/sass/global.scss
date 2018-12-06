@@ -28,13 +28,11 @@
 	animation: fa-spin 2s infinite linear;
 }
 .breadcrumb-inner ol li{
-	&:last-child a{
-		color: #222;
-		font-weight: 600;
-	}
 	a{
-		text-transform: uppercase;
-		color: #888;
+		font-family: Cabin;
+		font-size: 15px;
+		color: #907459;
+		font-weight: 500;
 	}
 }
 .jms-advsearch .input-group.keyword-group {
@@ -43,9 +41,9 @@
 #_desktop_user_info .dropdown-menu{
 	left: -20px;
 }
-#_desktop_search_filters_clear_all button{
-	background: #111;
-	border-color: #111;
+#_desktop_search_filters_clear_all button {
+	background: $active;
+	border-color: $active;
 }
 .facet.color {
 	ul li{

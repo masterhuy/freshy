@@ -3011,8 +3011,15 @@ ul.footer_links {
 
 /*Breadcrumb*/
 .breadcrumb {
-  padding: 19px 0;
-  margin-bottom: 100px; }
+  background: url("../img/breadcrumb_bg.jpg") no-repeat scroll;
+  padding: 45px 0;
+  margin-bottom: 100px;
+}
+
+.breadcrumb-inner {
+  float: right;
+  padding-top: 4px;
+}
 
 .title_meta {
   float: left;
@@ -3028,10 +3035,11 @@ ul.footer_links {
   .breadcrumb-inner ol li {
     display: inline-block; }
     .breadcrumb-inner ol li::after {
-      content: "\f101";
-      font-family: FontAwesome;
-      color: #888;
-      margin: 0 3px; }
+  content: "/";
+  font-family: FontAwesome;
+  margin: 0 3px;
+  font-weight: 600;
+}
     .breadcrumb-inner ol li:last-child:after {
       display: none; }
 
@@ -3405,6 +3413,9 @@ ul.footer_links {
 
 #social_block ul li {
   display: inline-block; }
+
+#footer #social_block ul li {
+  margin-right: 4px; }
 
 .list_footer .addon-box a {
   -webkit-transition: all 0.3s ease 0s;
@@ -3881,56 +3892,56 @@ footer .blog-carousel {
 
 /*end brand*/
 /*Blog*/
-.blog img{
+.blog-carousel img{
   border-radius: 5px;
 }
-.blog .owl-theme .owl-controls {
+.blog-carousel.owl-theme .owl-controls {
   top: -15px;
 }
-.blog .post-info {
+.blog-carousel .post-info {
   margin-top: 17px;
 }
-.blog .post-intro p{
+.blog-carousel .post-intro p{
   color: #666;
   line-height: 1.45;
 }
-.blog .post-meta .time{
+.blog-carousel .post-meta .time{
   font-weight: 400;
   color: #907459;
   margin-right: 17px;
   position: relative;
 }
-.blog .comment {
+.blog-carousel .comment {
   color: #907459;
 }
-.blog .post-meta {
+.blog-carousel .post-meta {
   margin-bottom: 10px;
 }
-.blog .post-meta li{
+.blog-carousel .post-meta li{
   font-family: Cabin;
 }
-.blog .btn-readmore:hover{
+.blog-carousel .btn-readmore:hover{
   color: #fff;
 }
-.blog .post-meta .time::after{
+.blog-carousel .post-meta .time::after{
   content: "-";
   position: absolute;
   top: 0px;
   right: -14px;
 }
-.blog .post-title{
+.blog-carousel .post-title{
   padding-bottom: 9px;
 }
-.blog .post-title a {
+.blog-carousel .post-title a {
   font-size: 18px;
   font-weight: 600;
   text-transform: capitalize;
   letter-spacing: 0.35px;
 }
-.blog .owl-theme .owl-controls {
+.blog-carousel.owl-theme .owl-controls {
   right: 0;
 }
-.blog .owl-dots {
+.blog-carousel .owl-dots {
   bottom: -20px;
 }
 .post-thumb {

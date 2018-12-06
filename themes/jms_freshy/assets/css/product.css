@@ -3,34 +3,57 @@
     padding-bottom: 0;
 }
 .title-block h3 {
-    font-size: 18px;
-    font-weight: 600;
-    padding-bottom: 4px;
-    text-transform: uppercase;
-    border-bottom: 2px solid;
+    font-size: 22px;
+    font-weight: 500;
     display: inline-block;
-    color: #222;
     margin-bottom: 17px;
+    position: relative;
+}
+.title-block h3::before {
+    bottom: -6px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 35px;
+    background: #fb943b;
 }
 .block-categories .title-block h3 {
     padding-bottom: 4px;
+    position: relative;
+    letter-spacing: -0.2px;
 }
 .block-categories li a {
-	color: #666;
-	display: block;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 39px;
-	padding: 0 30px 0 0;
-    border-bottom: 1px solid #e6e6e6;
+    color: #907459;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 35px;
+    padding: 0 30px 0 15px;
+    font-family: Cabin;
+}
+.block-categories li a::before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background: #fb943b;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.block-categories li:not(:last-child) a{
+    border-bottom: 1px solid #f5f5f5;
 }
 .block-categories .title-block h3:before {
-  bottom: -2px;
+  bottom: -6px;
   content: "";
-  height: 3px;
+  height: 2px;
   left: 0;
   position: absolute;
-  width: 100%;
+  width: 35px;
+  background: #fb943b;
 }
 .block-categories .sub-list li a{
 	color: rgba(17, 17, 17, 0.6);
@@ -83,6 +106,23 @@
 	margin: 0;
 	width: 100%;
 	color:rgba(17,17,17,0.5);
+}
+.product-image > img{
+    border-radius: 5px;
+}
+#product_list .product-preview:hover .border {
+    border-color: transparent;
+}
+#product_list .product-preview{
+    border: 0;
+    box-shadow: unset !important;
+}
+#product_list .product-preview:hover .product_action {
+    left: 15px;
+}
+#product_list .border{
+    border: 1px solid #f0ede8;
+    border-radius: 5px;
 }
 /*img left*/
 #main .images-container .js-qv-mask.scroll {

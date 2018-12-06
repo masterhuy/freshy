@@ -56,7 +56,11 @@
 								  alt = "{$product.cover.legend nofilter}"
 								  data-full-size-image-url = "{$product.cover.large.url nofilter}"
 								>
-						 	</a>				 
+						 	</a>
+						 	{if isset($jpb_wishlist) && $jpb_wishlist}							
+								<a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
+								</a>
+							{/if}			 
 						 </div>
 						{/block}
 						<div class="product-info hotdeal">

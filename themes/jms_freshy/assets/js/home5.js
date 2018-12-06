@@ -349,6 +349,7 @@ jQuery(function ($) {
 				slideSpeed: 800,	
 		});
 	}
+	
 	if($(".instagram-carousel").length) {
 		var instagramCarousel = $(".instagram-carousel");
 		var rtl = false;

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-22 05:11:37
+/* Smarty version 3.1.33, created on 2018-12-06 02:45:21
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\templates\_partials\breadcrumb.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bf680d9995268_84942759',
+  'unifunc' => 'content_5c08d391b0b179_52196833',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '00d264405c19c9e215508fd794858cb3f1ded9ad' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\templates\\_partials\\breadcrumb.tpl',
-      1 => 1542795069,
+      1 => 1544082311,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bf680d9995268_84942759 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c08d391b0b179_52196833 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="breadcrumb">
     <div class="breadcrumb-box container">
+        <span class="title_meta"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['page']->value['meta']['title'], ENT_QUOTES, 'UTF-8');?>
+</span>
         <div data-depth="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['breadcrumb']->value['count'], ENT_QUOTES, 'UTF-8');?>
 " class="breadcrumb-inner hidden-sm-down">
             <ol itemscope itemtype="http://schema.org/BreadcrumbList">
