@@ -76,6 +76,13 @@
 				<a href="{$product.link|escape:'html'}" title="{$product.name|escape:'html':'UTF-8'}" class="product-link">{$product.name|truncate:60:'...'|escape:'html':'UTF-8'}</a>
 			{/block}
 				  
+			{block name='product_quantities'}
+			    <div class="product-quantities">
+			        <label class="label">{l s='Availability:' d='Shop.Theme.Catalog'}</label>
+			        <span>{$product.quantity} in stock</span>
+			    </div>
+			{/block}
+
 			{block name='product_price_and_shipping'}
 				{if $product.show_price}
 				  <div class="content_price">
@@ -97,7 +104,7 @@
 		
 			
 			<div class="product-description">
-				{$product.description_short|truncate:170:'...' nofilter}
+				{$product.description_short|truncate:120:'...' nofilter}
 			</div>
 	        <div class="product_button">
 				<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
@@ -123,6 +130,25 @@
 					{/if}
 				{/if}
 			{/block}
+
+			{block name='product_price_and_shipping'}
+				{if $product.show_price}
+				  <div class="content_price">
+				  	{hook h='displayProductPriceBlock' product=$product type="before_price"}
+					{if $product.has_discount}
+					 	{hook h='displayProductPriceBlock' product=$product type="old_price"}
+					  	<span class="old price">{$product.regular_price}</span>
+					{/if}
+
+					<span class="price new">{$product.price}</span>
+
+					{hook h='displayProductPriceBlock' product=$product type='unit_price'}
+
+					{hook h='displayProductPriceBlock' product=$product type='weight'}
+				  </div>
+				{/if}
+			{/block}
+
 			<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart btn-effect1 product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
 				<span class="fa fa-spin fa-spinner"></span>
 				<span class="fa fa-check"></span>

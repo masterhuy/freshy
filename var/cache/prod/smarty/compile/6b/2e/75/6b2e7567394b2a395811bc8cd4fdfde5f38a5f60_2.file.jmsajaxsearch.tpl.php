@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-03 22:18:56
+/* Smarty version 3.1.33, created on 2018-12-06 22:50:48
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmsajaxsearch\views\templates\hook\jmsajaxsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c05f22036a847_01784932',
+  'unifunc' => 'content_5c09ee18151720_89367580',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c05f22036a847_01784932 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c09ee18151720_89367580 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['jpb_homepage']->value == 4 || $_smarty_tpl->tpl_vars['jpb_homepage']->value == 5) {?>
 <div class="btn-group compact-hidden jms_ajax_search" id="jms_ajax_search">
 	<div class="search-box">

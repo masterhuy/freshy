@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-23 02:00:22
+/* Smarty version 3.1.33, created on 2018-12-07 05:29:25
   from 'module:pscategoryproductsviewste' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bf7a586632d80_07745659',
+  'unifunc' => 'content_5c0a4b85103a06_85693130',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39d31a599d73c039735add7bd5dc7a2a3a72c0ba' => 
     array (
       0 => 'module:pscategoryproductsviewste',
-      1 => 1542795069,
+      1 => 1544178562,
       2 => 'module',
     ),
   ),
@@ -21,10 +21,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5bf7a586632d80_07745659 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c0a4b85103a06_85693130 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="featured-products clearfix mt-3 addon-title">
   <h3>
-    <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'RELATED PRODUCTS','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+    <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'related products','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
 
   </h3>
   <div class="product_box">

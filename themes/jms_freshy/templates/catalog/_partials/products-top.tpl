@@ -25,12 +25,13 @@
 <div id="js-product-list-top" class="filters-panel">
 	<div class="row">
 		<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 view-mode left clearfix">
+			<label class="sort-by">View mode:</label>
 			<div class="button">
 				<a class="view-grid {if $jpb_grid == 1}active{/if}" href="#">
-					<i class="storm-four-dots"></i>
+					<i class="fa fa-th"></i>
 				</a> 
 				<a class="view-list {if $jpb_grid == 0}active{/if}" href="#">
-					<i class="storm-text"></i>
+					<i class="fa fa-th-list"></i>
 				</a>
 			</div>
 		</div>

@@ -38,27 +38,12 @@
 			  />
 			</div>
         <div class="add">
-				<button class="btn-effect product-btn add-to-cart btn-default btn-active" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}>
+				<button class="ajax-add-to-cart btn-effect1 product-btn cart-button btn-shopnow1 " data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}>
 					<span class="fa fa-spin fa-spinner"></span>
 					<span class="fa fa-check"></span>
 					<span class="text-addcart"><i class="flaticon-shopping-basket"></i>{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
 					<span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>
 				</button>
-			
-				{block name='product_availability'}
-				  <span id="product-availability">
-					{if $product.show_availability && $product.availability_message}
-					  {if $product.availability == 'available'}
-						<i class="material-icons product-available">&#xE5CA;</i>
-					  {elseif $product.availability == 'last_remaining_items'}
-						<i class="material-icons product-last-items">&#xE002;</i>
-					  {else}
-						<i class="material-icons product-unavailable">&#xE14B;</i>
-					  {/if}
-					  {$product.availability_message}
-					{/if}
-				  </span>
-				{/block}
 			
         </div>
       </div>

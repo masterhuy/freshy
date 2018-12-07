@@ -5,7 +5,7 @@
 	margin: 28px 0 40px;
 }
 #search_filters .facet {
-    margin-bottom: 44px;
+    margin-bottom: 19px;
     padding-bottom: 0;
 	margin-right:0px;
 }
@@ -43,13 +43,18 @@
 	border: 2px solid #eee;
 }
 #search_filters {
-	margin-bottom: 41px;
+	margin-bottom: 21px;
 }
 #search_filters .facet.size .custom-checkbox {
 	display:none;
 }
 #search_filters .facet li {
-	padding: 8px 0;
+	padding: 6px 0;
+}
+#search_filters .facet.price li {
+	padding: 7px 0;
+}
+#search_filters .facet li:not(:last-child) {
 	border-bottom: 1px solid #e6e6e6;
 }
 #search_filters .facet.color li {
@@ -216,8 +221,12 @@
 	display: block;
 }
 #category .facet ul li a {
-    color: rgba(17, 17, 17, 0.8);
-    font-size: 15px;
+	color: #907459;
+	font-size: 15px;
+	font-family: Cabin;
+}
+#category .facet ul li a:hover{
+	color: #fb943b;
 }
 #category .facet.size ul li a .magnitude {
 	position: absolute;
@@ -286,6 +295,16 @@
 }
 #category .color-style .custom-checkbox {
 	padding: 0;
+}
+.best-sellers_block_right .title-block h3{
+	margin-bottom: 25px;
+}
+.best-sellers_block_right .product-box{
+	padding: 1.5px 0;
+	margin-bottom: 20px;
+}
+.best-sellers_block_right .title-block h3::before{
+	bottom: 5px;
 }
 
 /* Pagination css */

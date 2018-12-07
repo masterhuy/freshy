@@ -71,5 +71,19 @@
     {/block}
 
     {hook h='displayProductPriceBlock' product=$product type="weight" hook_origin='product_sheet'}
+    {block name='product_availability'}
+        <span id="product-availability">
+        {if $product.show_availability && $product.availability_message}
+          {if $product.availability == 'available'}
+          <img src="{$urls.base_url}themes/jms_freshy/assets/img/icon/available.png" alt="">
+          {elseif $product.availability == 'last_remaining_items'}
+          <i class="material-icons product-last-items">&#xE002;</i>
+          {else}
+          <i class="material-icons product-unavailable">&#xE14B;</i>
+          {/if}
+          {$product.availability_message}
+        {/if}
+        </span>
+      {/block}
   </div>
 {/if}

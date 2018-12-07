@@ -45,9 +45,9 @@
                   class="{if $page.type === 'previous'}previous {elseif $page.type === 'next'}next {/if}{['disabled' => !$page.clickable, 'js-search-link' => true]|classnames}"
                 >
                   {if $page.type === 'previous'}
-                    <i class="fa fa-chevron-left"></i>
+                    <i class="fa fa-angle-left"></i>
                   {elseif $page.type === 'next'}
-                   <i class="fa fa-chevron-right"></i>
+                   <i class="fa fa-angle-right"></i>
                   {else}
                     {$page.page}
                   {/if}

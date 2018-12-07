@@ -139,3 +139,12 @@
 		font-size: 22px;
 	}
 }
+#payment-confirmation + #modal .modal-content {
+  padding: 30px;
+}
+#content-hook-order-confirmation-footer .addon-title h3{
+  text-align: center;
+}
+#order-confirmation .title-block h3::before{
+  display: none;
+}
