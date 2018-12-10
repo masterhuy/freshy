@@ -103,7 +103,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eeeeee; }
+  border-top: 1px solid #e1e1e1; }
 
 .wrap {
   width: auto;
@@ -568,7 +568,7 @@ input[type="text"]:-moz-placeholder, input[type="password"]:-moz-placeholder, in
   color: #010101; }
 
 select::-moz-placeholder, textarea::-moz-placeholder {
-  color: #010101;
+  color: #907459 ;
   opacity: 1; }
 
 input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="datetime"]::-moz-placeholder, input[type="datetime-local"]::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="month"]::-moz-placeholder, input[type="time"]::-moz-placeholder, input[type="week"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="url"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="color"]::-moz-placeholder {
@@ -576,7 +576,7 @@ input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder, 
   opacity: 1; }
 
 .inputbox::-moz-placeholder, .form-control::-moz-placeholder {
-  color: #010101;
+  color: #907459 ;
   opacity: 1; }
 
 select:-ms-input-placeholder, textarea:-ms-input-placeholder {
@@ -665,7 +665,7 @@ input[type="text"]:-moz-placeholder, input[type="password"]:-moz-placeholder, in
   color: #010101; }
 
 select::-moz-placeholder, textarea::-moz-placeholder {
-  color: rgba(40, 33, 31, 0.5); }
+  color: #907459 ; }
 
 input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="datetime"]::-moz-placeholder, input[type="datetime-local"]::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="month"]::-moz-placeholder, input[type="time"]::-moz-placeholder, input[type="week"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="url"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="color"]::-moz-placeholder {
   color: rgba(40, 33, 31, 0.5); }
@@ -1170,6 +1170,22 @@ fieldset[disabled] .btn-default {
   cursor: pointer;
 }
 
+.btn-checkout {
+  height: 46px;
+  color: #fb943b;
+  border: 2px solid #fb943b !important;
+  border-radius: 30px;
+  display: inline-flex !important;
+  align-items: center;
+  padding: 0 38px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: transparent;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+}
+
 .btn-shopnow1:hover{
   color: #fff !important;
 }
@@ -1318,14 +1334,14 @@ fieldset[disabled] .btn-default {
   box-shadow: none; }
 
 .btn-transparent:hover {
-  background-color: #111;
-  border-color: #111; }
+  background-color: #fb943b;
+  border-color: #fb943b; }
 
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
-  background-color: #111; }
+  background-color: #fb943b; }
 
 .btn-mega:hover, .btn-mega:focus, .btn-mega:active {
-  background-color: #111; }
+  background-color: #fb943b; }
 
 select:focus, textarea:focus {
   -webkit-box-shadow: none;
@@ -1835,6 +1851,13 @@ ul#order_step li {
 .product-btn .fa-spin, .product-btn .fa-check, .product-btn.checking .text-addcart i{
   display: none; }
 
+.product-btn .fa{
+  color: #fb943b;
+}
+
+.product-btn:hover .fa{
+  color: #fff;
+}
 .product-btn.checked .text-addcart i, .product-btn.checked .fa-spin {
   display: none; }
 
@@ -2785,6 +2808,32 @@ li.product-flag {
       margin-left: 0; }
 
 /* In Category Page */
+.product-layout-3columns .product-variants-item {
+  margin-bottom: 20px;
+}
+.product-layout-3columns .product-quantity {
+  display: inline-block;
+}
+.product-layout-3columns .product-add-to-cart .text {
+  margin-bottom: 10px;
+}
+.product-layout-3columns .product-quantity .qty {
+  margin-bottom: 20px;
+}
+.product-layout-3columns .pb-right-column .product-add-to-cart {
+  margin-top: 6px;
+}
+.product-layout-3columns .images-container .product-images > li.thumb-container > .thumb {
+  width: 107px;
+}
+#product_list.item-gutter-0 .product-preview:hover .product_action {
+  left: 0;
+}
+#product_list.item-gutter-0 .product-preview:hover .border{
+  box-shadow: 0 2px 10px rgba(0,0,0,0.16);
+}
+
+
 .content_scene_cat_bg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2801,8 +2850,6 @@ li.product-flag {
   font-family: "Poppins";
   font-size: 13px;
   margin-bottom: 0;
-  width: 50%;
-  float: right;
 }
 
 #category-description strong {
@@ -5764,7 +5811,12 @@ footer .blog-carousel {
 .setting-img {
   cursor: pointer;
 }
-
+.add-to-cart .text-outofstock {
+  display: none;
+}
+.add-to-cart[disabled] .text-outofstock {
+  display: block;
+}
 
 a,
 button,

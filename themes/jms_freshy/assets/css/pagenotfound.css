@@ -7,15 +7,22 @@
 }
 .page-not-found h3 {
 	text-transform: capitalize;
-	font-weight: 600;
-	font-size: 45px;
-	color: #111;
+	font-weight: 700;
+	font-size: 220px;
+	font-family: Cabin;
+	padding-bottom: 11px;
 }
-.page-not-found p {
-	text-transform: capitalize;
+.page-not-found p.text-1 {
 	font-weight: 500;
+	font-size: 25px;
+	letter-spacing: 0.4px;
+	margin-bottom: 21px;
+}
+.page-not-found p.text-2 {
+	font-family: Cabin;
 	font-size: 16px;
-	color: #888;
+	color: #907459;
+	margin-bottom: 88px;
 }
 .page-not-found .search-box {
 	display:flex;

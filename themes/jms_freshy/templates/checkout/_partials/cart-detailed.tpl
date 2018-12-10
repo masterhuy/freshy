@@ -23,16 +23,23 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="cart-overview js-cart" data-refresh-url="{url entity='cart' params=['ajax' => true, 'action' => 'refresh']}">
-  {if $cart.products}
-  <ul class="cart-items">
-    {foreach from=$cart.products item=product}
-      <li class="cart-item">{include file='checkout/_partials/cart-detailed-product-line.tpl' product=$product}</li>
-      {if $product.customizations|count >1}
-      <hr>
-      {/if}
-    {/foreach}
-  </ul>
-  {else}
-    <span class="no-items">{l s='There are no more items in your cart' d='Shop.Theme.Checkout'}</span>
-  {/if}
+    <div class="container label-title">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">{l s='Products' d='Shop.Theme.Checkout'}</div>
+        <div class="col-lg-2">{l s='Price' d='Shop.Theme.Checkout'}</div>
+        <div class="col-lg-2">{l s='Qty' d='Shop.Theme.Checkout'}</div>
+        <div class="col-lg-2">{l s='Total' d='Shop.Theme.Checkout'}</div>
+    </div>
+    {if $cart.products}
+        <ul class="cart-items">
+            {foreach from=$cart.products item=product}
+                <li class="cart-item">{include file='checkout/_partials/cart-detailed-product-line.tpl' product=$product}</li>
+                {if $product.customizations|count >1}
+                <hr>
+                {/if}
+            {/foreach}
+        </ul>
+    {else}
+        <span class="no-items">{l s='There are no more items in your cart' d='Shop.Theme.Checkout'}</span>
+    {/if}
 </div>

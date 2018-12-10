@@ -375,10 +375,10 @@
 .product-variants-item.size {
     margin-bottom: 23px;
 }
-.product-variants-item.weight{
+.product-variants-item{
     position: relative;
 }
-.product-variants-item.weight::after{
+.product-variants-item::after{
     content: "\f107";
     font-family: FontAwesome;
     position: absolute;
@@ -387,9 +387,10 @@
     transform: translateY(-50%);
     z-index: -1;
 }
-.product-variants-item{
+.product-variants-item {
     display: inline-flex;
     align-items: center;
+    margin-right: 20px;
 }
 .product-variants-item .control-label{
     margin-bottom: 0;
@@ -548,12 +549,14 @@
 	width:100%;
 }
 #block-reassurance .block-reassurance-item span.h6 {
-	font-size:13px;
-	color:rgba(17,17,17,0.6);
-	width:calc(100% - 35px);
-	padding:0 10px;
-	line-height:20px;
-	margin:0;
+    font-size: 16px;
+    color: #907459;
+    width: calc(100% - 35px);
+    padding: 0 10px;
+    line-height: 20px;
+    margin: 0;
+    font-family: Cabin;
+    font-weight: 400;
 }
 #block-reassurance .block-reassurance-item .reassurance-img {
 	width:35px;

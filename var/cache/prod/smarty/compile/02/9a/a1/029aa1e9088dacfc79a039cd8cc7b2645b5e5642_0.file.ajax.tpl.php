@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-22 23:19:49
+/* Smarty version 3.1.33, created on 2018-12-10 05:00:35
   from 'D:\xamppp\htdocs\jms_freshy\admin031gwo77f\themes\default\template\helpers\uploader\ajax.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bf77fe545bc66_92293120',
+  'unifunc' => 'content_5c0e3943c574f9_01809300',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bf77fe545bc66_92293120 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c0e3943c574f9_01809300 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="form-group" style="display: none;">
 	<div class="col-lg-12" id="<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['id']->value,'html','UTF-8' ));?>
 -images-thumbnails">

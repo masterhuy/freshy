@@ -15,7 +15,7 @@
 
       <div class="form-group row">
         <div class="col-md-9 col-md-offset-3">
-          <h3>{l s='Contact us' d='Shop.Theme'}</h3>
+          <h3>{l s='Get In Touch With Us' d='Shop.Theme'}</h3>
         </div>
       </div>
 
@@ -38,7 +38,7 @@
             name="from"
             type="email"
             value="{$contact.email}"
-            placeholder="{l s='your@email.com' d='Shop.Forms.Help'}"
+            placeholder="{l s='Your@email.com' d='Shop.Forms.Help'}"
           >
         </div>
       </div>
@@ -87,7 +87,7 @@
     </section>
 
     <footer class="form-footer text-xs-right">
-      <input class="btn-default btn_submit btn-primary btn-effect" type="submit" name="submitMessage" value="{l s='Submit' d='Shop.Theme.Actions'}">
+      <input class="btn_submit btn-effect1 btn-shopnow1" type="submit" name="submitMessage" value="{l s='Submit' d='Shop.Theme.Actions'}">
     </footer>
 
   </form>

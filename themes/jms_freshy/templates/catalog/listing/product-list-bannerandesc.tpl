@@ -33,7 +33,7 @@
                           <div class="cat_desc">
 							<div class="flex-box">
 								 {if $category.description}
-									<div id="category-description" class="text-muted">{$category.description nofilter}</div>
+									<div id="category-description">{$category.description nofilter}</div>
 								  {/if}
 							</div>
 						</div>						

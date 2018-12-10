@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-27 02:39:45
+/* Smarty version 3.1.33, created on 2018-12-10 05:12:14
   from 'D:\xamppp\htdocs\jms_freshy\modules\jmsmegamenu\views\templates\admin\jmsmegamenu_manager\menuconfig.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bfcf4c19827b4_84535952',
+  'unifunc' => 'content_5c0e3bfe42d450_76299228',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfcf4c19827b4_84535952 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c0e3bfe42d450_76299228 (Smarty_Internal_Template $_smarty_tpl) {
 ?><form action="<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['link']->value->getAdminLink('AdminJmsmegamenuManager'),'html','UTF-8' ));?>
 &configure=jmsmegamenu" method="post">
 <div class="menu-config">
