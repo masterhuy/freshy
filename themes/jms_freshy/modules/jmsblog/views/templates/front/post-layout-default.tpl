@@ -50,6 +50,11 @@
 			<li>
 				<span>{$post.created|escape:'html':'UTF-8'|date_format:"%B %e, %Y"}</span>
 			</li>
+			{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
+				<li>
+					<span>{$comments|@count}{l s=' Comment(s)' d='Modules.JmsBlog'}</span>
+				</li>
+			{/if}
 		</ul>
 		{if $post.link_video && $jmsblog_setting.JMSBLOG_SHOW_MEDIA}
 			<div class="post-video">
@@ -117,11 +122,11 @@
 										<div class="left">
 											<div class="title">
 												<h6>
-													By <span>{$comment.customer_name|escape:'html':'UTF-8'}</span>
-													on {$comment.time_add|escape:'html':'UTF-8'|date_format:'%B %e, %Y'}
+													<span>{$comment.customer_name|escape:'html':'UTF-8'}</span>
+													- {$comment.time_add|escape:'html':'UTF-8'|date_format:'%B %e, %Y'}
 												</h6>
 											</div>
-											<p class="post-comment-content">{$comment.comment|truncate:120:'...'|escape:'html':'UTF-8'}</p>
+											<p class="post-comment-content">{$comment.comment|truncate:200:'...'|escape:'html':'UTF-8'}</p>
 										</div>
 										
 									</div>
@@ -133,31 +138,34 @@
 				</div>
 				{if $jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT || (!$jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT && $logged)}	
 				<div class="commentForm">
+					<h3>{l s='Leave A Comment' d='Modules.JmsBlog'}</h3>
 					<form id="commentForm" enctype="multipart/form-data" method="post" action="index.php?fc=module&module=jmsblog&controller=post&post_id={$post.post_id|escape:'html':'UTF-8'}&action=submitComment">	
 						<div class="row">
-							<div class="col-lg-12 col-md-12 col-sm-12">
-								<label>{l s='Name' d='Modules.JmsBlog'}</label>
+							<div class="col-lg-4 col-md-4 col-sm-12">
 								<div class="form-group">
 									<input id="customer_name" placeholder="Your name *" class="form-control" name="customer_name" type="text" value="{$customer.firstname}{$customer.lastname}" required />
 								</div>	
 							</div>
-							<div class="col-lg-12 col-md-12 col-sm-12">
-								<label>{l s='Email' d='Modules.JmsBlog'}</label>
+							<div class="col-lg-4 col-md-4 col-sm-12">
 								<div class="form-group">
 									<input id="comment_title" placeholder="Your email *" class="form-control" name="email" type="text" value="{$customer.email}" required />
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<div class="form-group">
+									<input id="customer_site" placeholder="Your website" class="form-control" name="customer_site" type="text" value=""/></br>
 								</div>
 							</div>
 						</div>
 						
 						<div class="form-group">
-							<label class="lb-comment">{l s='Comments' d='Modules.JmsBlog'}</label>
-							<textarea id="comment" placeholder="Write your comment..." class="form-control" name="comment" rows="6" required></textarea>
+							<textarea id="comment" placeholder="Your comments *" class="form-control" name="comment" rows="4" required></textarea>
 						</div>
 						<div id="new_comment_form_footer">
 							<input id="item_id_comment_send" name="post_id" type="hidden" value="{$post.post_id|escape:'html':'UTF-8'}" />
 							<input id="item_id_comment_reply" name="post_id_comment_reply" type="hidden" value="" />
 							<p class="">
-								<button id="submitComment" class="btn btn-default" name="submitComment" type="submit">{l s='Post comment' d='Modules.JmsBlog'}</button>
+								<button id="submitComment" class="btn-submitcm btn-shopnow1 btn-effect1" name="submitComment" type="submit">{l s='Submit' d='Modules.JmsBlog'}</button>
 							</p>
 						</div>
 					</form>

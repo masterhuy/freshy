@@ -79,7 +79,11 @@
 			{block name='product_quantities'}
 			    <div class="product-quantities">
 			        <label class="label">{l s='Availability:' d='Shop.Theme.Catalog'}</label>
-			        <span>{$product.quantity} in stock</span>
+			        {if $product.quantity > 0}
+			        	<span>{$product.quantity} in stock</span>
+			        {else}
+			        	<span>Out of stock</span>
+			       	{/if}
 			    </div>
 			{/block}
 

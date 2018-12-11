@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-10 05:08:54
+/* Smarty version 3.1.33, created on 2018-12-11 05:22:03
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmspagebuilder\views\templates\hook\addoncategorytab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c0e3b3688cb64_09933903',
+  'unifunc' => 'content_5c0f8fcbf3b916_36284045',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5c0e3b3688cb64_09933903 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c0f8fcbf3b916_36284045 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 var cattab_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {

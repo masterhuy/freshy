@@ -7,6 +7,17 @@
 	}
 }
 
+@mixin borderBottomColor($home, $color){
+	.home_#{$home}{
+		#search_filters .facet .facet-title,
+		.title-block h3,
+		.widget-title, .title_block{
+			border-bottom-color: #{$color};
+		}
+	}
+	@content;
+}
+
 @mixin flex($vCenter, $hCenter) {
 	display: flex;
 	justify-content: #{$vCenter};
@@ -36,15 +47,6 @@
 }
 
 
-@mixin borderBottomColor($home, $color){
-	.home_#{$home}{
-		#search_filters .facet .facet-title,
-		.title-block h3,
-		.widget-title, .title_block{
-			border-bottom-color: #{$color};
-		}
-	}
-	@content;
-}
+
 
 

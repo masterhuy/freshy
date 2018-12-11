@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-10 04:10:08
+/* Smarty version 3.1.33, created on 2018-12-10 21:51:40
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\templates\catalog\_partials\miniatures\pack-product.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c0e2d707f1b83_20281901',
+  'unifunc' => 'content_5c0f263c7e76f0_88353333',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c0e2d707f1b83_20281901 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c0f263c7e76f0_88353333 (Smarty_Internal_Template $_smarty_tpl) {
 ?><article>
   <div class="card">
     <div class="pack-product-container">

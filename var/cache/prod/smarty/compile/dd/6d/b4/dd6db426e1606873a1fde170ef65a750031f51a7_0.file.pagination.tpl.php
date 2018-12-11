@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-26 01:41:29
+/* Smarty version 3.1.33, created on 2018-12-11 04:38:17
   from 'D:\xamppp\htdocs\jms_freshy\modules\jmsblog\views\templates\admin\jmsblog_post\pagination.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bfb9599995794_94182903',
+  'unifunc' => 'content_5c0f8589e5c203_19894654',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfb9599995794_94182903 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c0f8589e5c203_19894654 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-blog-pagination">	
 	<?php if ($_smarty_tpl->tpl_vars['total']->value > $_smarty_tpl->tpl_vars['limit']->value) {?>
 	<div class="pagination">

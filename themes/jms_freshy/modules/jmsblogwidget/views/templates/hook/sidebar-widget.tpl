@@ -89,7 +89,7 @@
 	<h3 class="widget-title"><span>{l s='Recent Comments' d='Modules.JmsBlogwidget'}</span></h3>
 	{foreach from=$latestcomment key=k item=comment}
 		<article class="comment-item">
-			<p><span>{$comment.customer_name nofilter}:</span> {$comment.comment|truncate:60:'...' nofilter}</p>
+			<p><span>{$comment.customer_name nofilter}:</span> {$comment.comment|truncate:40:'...' nofilter}</p>
 		</article>
 	{/foreach}	
 </aside>
