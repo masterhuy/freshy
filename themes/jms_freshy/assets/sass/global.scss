@@ -1,20 +1,21 @@
 @import "mixin";
 @import "varians";
 
-// @media (min-width: 992px){
-// 	.jms-row.header.fixed,
-// 	.jms-row.menu.fixed{
-// 		top: 0;
-// 		position: fixed;
-// 		width: 100%;
-// 		box-shadow: 0 0 11px rgba(0,0,0,0.15);
-// 	  	z-index: 99;
-// 	  	animation-duration: 0.8s;
-// 		animation-name: slideDown;
-// 		animation-timing-function: ease;
-// 		margin-right: 0 !important;
-// 	}
-// }
+@media (min-width: 992px){
+	.jms-row.header.fixed,
+	.jms-row.menu.fixed{
+		top: 0;
+		position: fixed;
+		width: 100%;
+		box-shadow: 0 0 11px rgba(0,0,0,0.15);
+		background-color: #fff;
+	  	z-index: 99;
+	  	animation-duration: 0.8s;
+		animation-name: slideDown;
+		animation-timing-function: ease;
+		margin-right: 0 !important;
+	}
+}
 
 @keyframes slideDown {
   0% {
@@ -39,7 +40,19 @@
     width: 100%;
 }
 #_desktop_user_info .dropdown-menu{
-	left: -20px;
+	left: -30px;
+	width: 100px;
+	min-width: auto;
+	text-align: center;
+	li > a{
+		
+	}
+}
+.languages-info, #_desktop_currency_selector, #_desktop_user_info {
+	ul > li > a{
+		color: #907459;
+		font-family: Cabin;
+	}
 }
 #_desktop_search_filters_clear_all button {
 	background: $active;
@@ -817,10 +830,24 @@ a.wishlist_top{
 }
 
 .quickview{
+	.product-information .product-desc{
+		margin-bottom: 0;
+	}
+	.arrows.js-arrows i{
+		text-indent: 0;
+		border: 0;
+	}
 	.images-container{
 		display: flex;
+		.js-qv-product-cover {
+			border: 1px solid #ebebeb;
+			border-radius: 5px;
+		}
 		.product-images > li.thumb-container {
 		    display: block;
+		    img{
+		    	width: 90px;
+		    }
 		}
 		.product-cover{
 			order: 2;
@@ -828,10 +855,10 @@ a.wishlist_top{
 		.js-qv-mask{
 			order: 1;
 			width: 35%;
-			max-height: 387px;
+			max-height: 400px;
 			overflow: hidden;
 			margin-right: 0;
-			margin-top: 25px;
+			margin-top: 20px;
 		}
 	}
 	.content_price{
@@ -843,11 +870,11 @@ a.wishlist_top{
 			color: #000;
 		}
 		&.arrow-up{
-			margin-top: 0;
+			margin-top: -6px;
 		}
 		&.arrow-down{
 			position: absolute;
-			bottom: 0;
+			bottom: -9px;
 			top: auto;
 		}
 	}
@@ -856,7 +883,7 @@ a.wishlist_top{
 	    top: 0;
 	    bottom: 0;
 	    max-height: 441px;
-		left: 42px;
+		left: 36px;
 		width: 0;
 	    z-index: 0;
 	}
@@ -866,7 +893,7 @@ a.wishlist_top{
 #search_widget{
 	width: 100%;
 	padding: 0;
-	margin-top: 3px;
+	margin-top: 5px;
 	form{
 		position: relative;
 		&::before{
@@ -1011,9 +1038,8 @@ a.wishlist_top{
 }
 #module-jmsblog-categories{
 	.category-info {
-		margin-top: 10px;
-		text-align: center;
-		margin-bottom: 50px;
+		margin-top: 15px;
+		margin-bottom: 0px;
 	}
 }
 .cat-post-list.more-columns{

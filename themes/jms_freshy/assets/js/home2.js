@@ -354,18 +354,13 @@ jQuery(function ($) {
 
 
 jQuery(document).ready(function($) {
-	var menu = $(".jms-row.menu");
+	var header = $(".jms-row.header");
 
 	$(window).scroll(function () {
     	if ($(window).scrollTop()){
-			menu.addClass("fixed");
+			header.addClass("fixed");
     	} else {
-			menu.removeClass("fixed");
+			header.removeClass("fixed");
     	}
     });
-
-	$("#jms-vermegamenu-container").addClass('collapse');
-	$('.ver_menu').click(function(event) {
-		$(this).parent().toggleClass('open');
-	});
 });

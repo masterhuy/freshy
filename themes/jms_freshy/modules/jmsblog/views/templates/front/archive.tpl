@@ -42,21 +42,35 @@
 						<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}"><img src="{$image_baseurl|escape:'html':'UTF-8'}{$post.image|escape:'html':'UTF-8'}" alt="{$post.title|escape:'htmlall':'UTF-8'}" class="img-responsive" /></a>			 		
 					</div>
 				{/if}
-                <h4 class="post-title"><a href="{jmsblog::getPageLink('jmsblog-post', $params)}">{$post.title|escape:'htmlall':'UTF-8'}</a></h4>
-				<ul class="post-meta">
-					{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
-					<li class="post-category"><span>{l s='In' d='Modules.JmsBlog'} :</span> <a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{$post.category_name|escape:'html':'UTF-8'}</a></li>
-					{/if}					
-					<li class="post-created"><span>{l s='Created' d='Modules.JmsBlog'} :</span> {$post.created|escape:'html':'UTF-8'|date_format:"%b %e, %Y"}</li>
-					{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
-					<li class="post-views"><span>{l s='Views' d='Modules.JmsBlog'} :</span> {$post.views|escape:'html':'UTF-8'}</li>
-					{/if}
-					{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
-					<li class="post-comments"><span>{l s='Comments' d='Modules.JmsBlog'} :</span> {$post.comment_count|escape:'html':'UTF-8'}</li>
-					{/if}	
-				</ul>					
-				<div class="blog-intro">{$post.introtext nofilter}</div>				
-				<a class="btn btn-default blog-readmore btn-effect button-small" href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">{l s='Read more' d='Modules.JmsBlog'} ...</a>
+                <div class="post-info">
+						<ul class="post-meta">
+							{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
+								<li>
+									<span>
+										{l s='In:' d='Modules.JmsBlog'} 
+									</span>
+										<a href="{jmsblog::getPageLink('jmsblog-category', $catparams)}">
+											{$post.category_name|escape:'html':'UTF-8'}
+										</a>
+								</li>
+							{/if}
+							<li>
+								{$post.created|escape:'html':'UTF-8'|date_format:"%b %d, %Y"}
+							</li>
+							{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
+								<li>
+									<span>{$comments|@count}{l s=' Comment(s)' d='Modules.JmsBlog'}</span>
+								</li>
+							{/if}
+						</ul>
+						<h4 class="post-title">
+							<a href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
+						</h4>
+						<div class="post-intro">
+							{$post.introtext|truncate:200:'...' nofilter}
+						</div>
+						<a class="blog-readmore btn-effect1" href="{jmsblog::getPageLink('jmsblog-post', $params)}">{l s='Read more' d='Modules.JmsBlog'}</a>
+					</div>
 			</article>			
 		{/foreach}
 	</div>

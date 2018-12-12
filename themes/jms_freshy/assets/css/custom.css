@@ -254,14 +254,12 @@ h6 {
   font-size: 22px;
   line-height: 24px;
   padding-bottom: 30px;
-  text-transform: uppercase;
   font-weight: 500; }
 
 .page-subheading {
   font-size: 0.86em;
   font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase; }
+  line-height: 24px; }
 
 label {
   font-weight: 400; }
@@ -346,7 +344,10 @@ address {
   display: block;
   margin-bottom: 20px;
   font-style: normal;
-  line-height: 20px; }
+  line-height: 20px;
+  font-family: Cabin;
+  font-size: 16px;
+}
 
 code, kbd, pre, samp {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
@@ -3025,7 +3026,14 @@ ul.footer_links {
   width: 100%; }
 
 .modal-footer {
-  margin-top: 40px; }
+  border: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.modal-footer span{
+  margin-right: 15px;
+}
 
 /* Quick view */
 .modal-dialog.cover_product1 {
@@ -3035,10 +3043,16 @@ ul.footer_links {
     padding: 25px 15px; }
     .modal-dialog.cover_product1 .modal-header .close {
       margin-top: -17px; }
-  .modal-dialog.cover_product1 h2.product-name {
-    text-transform: capitalize;
-    font-weight: 500;
-    color: rgba(17, 17, 17, 0.9); }
+.modal-dialog.cover_product1 h2.product-name {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: -6px;
+  padding-bottom: 20px;
+  font-family: Cabin;
+  letter-spacing: 0.5px;
+}
   .modal-dialog.cover_product1 .content_prices {
     margin-top: 32px; }
     .modal-dialog.cover_product1 .content_prices .old {
@@ -3095,10 +3109,14 @@ ul.footer_links {
         content: "\f0d5"; }
       .modal-dialog.cover_product1 .modal-footer .block-social ul li.pinterest a:before {
         content: "\f0d2"; }
-      .modal-dialog.cover_product1 .modal-footer .block-social ul li a:before {
-        font-family: "FontAwesome";
-        font-size: 20px;
-        color: #333; }
+      .modal-dialog.cover_product1 .modal-footer .block-social ul li a::before {
+  font-family: "FontAwesome";
+  font-size: 20px;
+  color: #907459;
+}
+.modal-dialog.cover_product1 .modal-footer .block-social ul li a:hover::before {
+  color: #fb943b;
+}
   .modal-dialog.cover_product1 .product-cover .layer {
     display: none; }
   .modal-dialog.cover_product1 .product-add-to-cart {
@@ -3516,8 +3534,10 @@ ul.footer_links {
   margin-right: 5px;
 }
 .languages-info .dropdown-menu > li > a,
-#_desktop_currency_selector .dropdown-menu > li > a {
+#_desktop_currency_selector .dropdown-menu > li > a,
+#_desktop_user_info .dropdown-menu > li > a {
   line-height: 28px;
+  text-transform: capitalize;
 }
   .languages-list li img{
     margin-bottom: 0 !important;

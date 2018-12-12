@@ -384,19 +384,26 @@ jQuery(function ($) {
 
 
 jQuery(document).ready(function($) {
-	var menu = $(".jms-row.menu");
+	var header = $(".jms-row.header");
+	var productCarousel = $(".product_carousel");
+	var featuredProduct = $(".featured_product");
 
 	$(window).scroll(function () {
     	if ($(window).scrollTop()){
-			menu.addClass("fixed");
+			header.addClass("fixed");
     	} else {
-			menu.removeClass("fixed");
+			header.removeClass("fixed");
     	}
     });
-    
-	$(".product_carousel .product-miniature").hover(function(){
-	    $(".product_carousel").css("z-index", "3");
+
+    $(".product_carousel .product-miniature").hover(function(){
+	    productCarousel.css("z-index", "3");
 		}, function(){
-        $(".product_carousel").css("z-index", "1");
+        productCarousel.css("z-index", "1");
+	});
+	$(".featured_product .product-miniature").hover(function(){
+	    featuredProduct.css("z-index", "3");
+		}, function(){
+        featuredProduct.css("z-index", "1");
 	});
 });

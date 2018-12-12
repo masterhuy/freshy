@@ -93,6 +93,9 @@
 .menu {
   position: relative;
   z-index: 998; }
+  .menu.fixed #jms-megamenu-container .nav.level0 {
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important; }
   .menu .features .image {
     margin-bottom: 28px; }
   .menu .features .dropdown-menu::before {

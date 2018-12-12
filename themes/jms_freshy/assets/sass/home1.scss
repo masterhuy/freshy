@@ -94,6 +94,9 @@
 .menu{
 	position: relative;
 	z-index: 998;
+	&.fixed #jms-megamenu-container .nav.level0{
+		box-shadow: unset !important;
+	}
 	.features{
 		.image{
 			margin-bottom: 28px;

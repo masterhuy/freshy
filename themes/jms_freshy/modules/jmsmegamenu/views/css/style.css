@@ -60,8 +60,7 @@
     text-transform: uppercase;
 }
 .jms-megamenu .nav > li > a:hover, .jms-megamenu .nav > li > a:focus {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #111111;
+    color: #fb943b;
 }
 .jms-megamenu .nav > li:hover, .jms-megamenu .nav > li.open {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;

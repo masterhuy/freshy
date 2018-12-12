@@ -129,6 +129,9 @@
 		display: flex;
 		justify-content: flex-end;
 		padding-right: 8px;
+		.shoppingcart-box::before {
+			right: 66px;
+		}
 		.ajax_cart_quantity{
 			background-color: #fff;
 			color: $active;
@@ -166,11 +169,14 @@
 		.home{
 			padding-left: 0;
 		}
+		.menu-align-left > .dropdown-menu {
+			left: -22px;
+		}
 		.stores .dropdown-menu::before {
-			left: 462px;
+			left: 438px;
 		}
 		.features .dropdown-menu::before {
-			left: 566px;
+			left: 543px;
 		}
 	}
 	#jms-vermegamenu-container{
@@ -396,7 +402,7 @@
 }
 
 //blog
-.blog{
+.jms-row.blog{
 	background: #f7f4ef;
 	padding: 87px 0 55px;
 	.addon-title h3{

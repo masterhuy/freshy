@@ -169,6 +169,9 @@
 .menu{
 	position: relative;
 	z-index: 2;
+	&.fixed{
+		background: #7cbb2c !important;
+	}
 	.container{
 		background: #7cbb2c;
 		border-radius: 8px;
@@ -239,6 +242,12 @@
 			transition: all .4s;
 		}
 	}
+	#jms-vermegamenu-container{
+		box-shadow: unset;
+		border-left: 1px solid #ebebeb;
+		border-right: 1px solid #ebebeb;
+		border-radius: 0;
+	}
 	.all-department{
 		background-color: #7cbb2c;
 		border-radius: 10px 10px 0 0;
@@ -268,6 +277,7 @@
 			line-height: 44px;
 			background-color: #603813;
 			letter-spacing: 0.3px;
+			margin-top: -2px;
 		}
 	}
 	.jms-vermegamenu li.page{
@@ -450,6 +460,8 @@
 
 //catetab
 .cate_tab{
+	position: relative;
+	z-index: 1;
 	.addon-title{
 		float: left;
 	}

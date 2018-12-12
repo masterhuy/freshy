@@ -4,6 +4,8 @@
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   z-index: 999; }
+  .header.fixed {
+    padding: 10px 0; }
   .header .container > .row {
     display: -webkit-box;
     display: -ms-flexbox;

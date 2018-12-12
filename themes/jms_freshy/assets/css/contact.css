@@ -19,14 +19,16 @@
 	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
-#contact textarea::placeholder{
-	color: #907459;
-}
-#contact input::placeholder{
-	color: #907459;
-}
+#contact textarea,
+#contact textarea::placeholder,
+#contact input,
+#contact input::placeholder,
+#contact select,
 #contact select::placeholder{
 	color: #907459;
+}
+#contact .contact-form .alert-danger{
+	margin-bottom: 50px;
 }
 #contact #wrapper #content-wrapper {
 	padding:0px 30px;

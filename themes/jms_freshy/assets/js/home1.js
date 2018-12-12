@@ -245,3 +245,15 @@ jQuery(function ($) {
 		});
 	}
 });
+
+jQuery(document).ready(function($) {
+	var menu = $(".jms-row.menu");
+
+	$(window).scroll(function () {
+    	if ($(window).scrollTop()){
+			menu.addClass("fixed");
+    	} else {
+			menu.removeClass("fixed");
+    	}
+    });
+});

@@ -381,3 +381,17 @@ jQuery(function ($) {
 	}
  	
 });
+
+jQuery(document).ready(function($) {
+	var menu = $(".jms-row.menu");
+	var cateTab = $(".cate_tab");
+
+	$(window).scroll(function () {
+    	if ($(window).scrollTop() > 200){
+			menu.addClass("fixed");
+    	} else {
+			menu.removeClass("fixed");
+    	}
+    });
+
+});

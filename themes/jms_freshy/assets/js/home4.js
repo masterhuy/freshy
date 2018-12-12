@@ -349,5 +349,18 @@ jQuery(function ($) {
 });
 
 jQuery(document).ready(function($) {
-	$("#jms-vermegamenu-container").addClass('collapse in');
+	var menu = $(".jms-row.menu");
+
+	$("#jms-vermegamenu-container").addClass('collapse');
+	$(".page-index #jms-vermegamenu-container").addClass('collapse in');
+
+	$(window).scroll(function () {
+    	if ($(window).scrollTop()){
+			menu.addClass("fixed");
+			$(".page-index #jms-vermegamenu-container").removeClass('in');
+    	} else {
+			menu.removeClass("fixed");
+			$(".page-index #jms-vermegamenu-container").addClass('in');
+    	}
+    });
 });

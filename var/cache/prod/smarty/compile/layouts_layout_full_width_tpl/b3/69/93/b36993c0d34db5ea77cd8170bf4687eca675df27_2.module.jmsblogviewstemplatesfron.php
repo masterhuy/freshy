@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-11 05:05:46
+/* Smarty version 3.1.33, created on 2018-12-11 22:56:36
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c0f8bfae78b53_44874823',
+  'unifunc' => 'content_5c1086f49e60d7_98103139',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c0f8bfae78b53_44874823 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c1086f49e60d7_98103139 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?> 
 	<?php $_smarty_tpl->_assignInScope('layout', "layouts/layout-left-column.tpl");
 } elseif ($_smarty_tpl->tpl_vars['sidebar']->value == 'right') {?>

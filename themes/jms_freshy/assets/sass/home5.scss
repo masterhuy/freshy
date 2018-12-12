@@ -142,6 +142,12 @@
 	box-shadow: 0 0 2px rgba(0,0,0,0.1);
 	position: relative;
 	z-index: 2;
+	&.fixed{
+		padding: 10px 0;
+		.jms-megamenu .open .dropdown-menu {
+			top: calc(100% + 20px);
+		}
+	}
 	.container-fluid{
 		max-width: 1810px;
 		width: 100%;
@@ -274,8 +280,17 @@
 	z-index: 2;
 	display: inline-block;
 	width: 100%;
+	li.page{
+		display: none;
+	}
+	#jms-vermegamenu-container{
+		box-shadow: unset;
+		border-radius: 0;
+		border-left: 1px solid #ebebeb;
+		border-right: 1px solid #ebebeb;
+	}
 	.left{
-		.all{
+		.all-dpm{
 			background-color: #7cbb2c;
 			border-radius: 10px 10px 0 0;
 			img{
@@ -293,7 +308,7 @@
 				letter-spacing: 0.2px;
 			}
 		}
-		.more{
+		.more-cates{
 			a{
 				display: block;
 				color: #fff;
@@ -304,44 +319,6 @@
 				line-height: 44px;
 				background-color: #603813;
 				letter-spacing: 0.3px;
-			}
-		}
-		ul{
-			border: 1px solid #ebebeb;
-			border-top: 0;
-			border-bottom: 0;
-			margin-bottom: 0;
-		}
-		li{
-			padding: 0 15px;
-			&:not(:last-child) {
-			    border-bottom: 1px solid #f5f5f5;
-			}
-			a{
-				font-family: "Cabin",serif;
-				font-size: 16px;
-				line-height: 30px;
-				padding: 7.25px 0px;
-				position: relative;
-				text-transform: capitalize;
-				white-space: nowrap;
-				text-overflow: ellipsis;
-				letter-spacing: 0.3px;
-				font-weight: 500;
-				display: block;
-				&:hover i{
-					color: $active;
-				}
-				i{
-					font-size: 23px;
-					position: relative;
-					top: 3px;
-					padding-right: 7px;
-					width: 38.3px;
-					text-align: center;
-					color: #b4aba4;
-					transition: all .4s;
-				}
 			}
 		}
 	}
@@ -428,7 +405,16 @@
 	.product-box .flexbox {
 		margin-right: 10px;
 	}
+	.featured_product{
+		position: relative;
+		z-index: 1;
+		.owl-stage-outer{
+			padding-bottom: 60px;
+		}
+	}
 	.banner2{
+		position: relative;
+		z-index: 2;
 		margin-top: -24px;
 	}
 	.blog{
@@ -464,6 +450,9 @@
 		.flex-box.product-box {
 			margin-bottom: 25px;
 			min-height: 125px;
+		}
+		.product-box .flexbox{
+			width: 85%;
 		}
 	}
 	.testimonial {

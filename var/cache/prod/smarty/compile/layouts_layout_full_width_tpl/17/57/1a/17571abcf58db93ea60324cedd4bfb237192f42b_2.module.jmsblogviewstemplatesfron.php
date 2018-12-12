@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-11 05:23:04
+/* Smarty version 3.1.33, created on 2018-12-11 22:56:45
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c0f9008a4fb06_22950083',
+  'unifunc' => 'content_5c1086fdb01530_12040491',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '17571abcf58db93ea60324cedd4bfb237192f42b' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1542795068,
+      1 => 1544583259,
       2 => 'module',
     ),
   ),
@@ -20,28 +20,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c0f9008a4fb06_22950083 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c1086fdb01530_12040491 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6087684755c0f90089ee072_22068161', 'head_seo_title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3820247495c1086fdac2d39_96589348', 'head_seo_title');
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6057346895c0f90089f1ef1_22724843', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14763563255c1086fdac2d30_74386314', "page_content");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block 'head_seo_title'} */
-class Block_6087684755c0f90089ee072_22068161 extends Smarty_Internal_Block
+class Block_3820247495c1086fdac2d39_96589348 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'head_seo_title' => 
   array (
-    0 => 'Block_6087684755c0f90089ee072_22068161',
+    0 => 'Block_3820247495c1086fdac2d39_96589348',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -50,12 +50,12 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['current_category']->value['title']
 }
 /* {/block 'head_seo_title'} */
 /* {block "page_content"} */
-class Block_6057346895c0f90089f1ef1_22724843 extends Smarty_Internal_Block
+class Block_14763563255c1086fdac2d30_74386314 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_6057346895c0f90089f1ef1_22724843',
+    0 => 'Block_14763563255c1086fdac2d30_74386314',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -95,12 +95,6 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 						</div>
 					<?php }?>
 					<div class="post-info">
-						<h4 class="post-title">
-							<a href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value), ENT_QUOTES, 'UTF-8');?>
-" alt="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Blog Images','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
-"><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['title'],'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
-</a>
-						</h4>
 						<ul class="post-meta">
 							<?php if ($_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_SHOW_CATEGORY']) {?>
 								<li>
@@ -116,23 +110,28 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 								</li>
 							<?php }?>
 							<li>
-								<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Posted: ','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
-</span><?php echo htmlspecialchars(smarty_modifier_date_format(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['created'],'html','UTF-8' )),"%b %d, %Y"), ENT_QUOTES, 'UTF-8');?>
+								<?php echo htmlspecialchars(smarty_modifier_date_format(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['created'],'html','UTF-8' )),"%b %d, %Y"), ENT_QUOTES, 'UTF-8');?>
 
 							</li>
-							<?php if ($_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_SHOW_VIEWS']) {?>
+							<?php if ($_smarty_tpl->tpl_vars['jmsblog_setting']->value['JMSBLOG_SHOW_COMMENTS']) {?>
 								<li>
-									<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'View(s): ','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
-</span><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['views'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
-
+									<span><?php echo htmlspecialchars(count($_smarty_tpl->tpl_vars['comments']->value), ENT_QUOTES, 'UTF-8');
+echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>' Comment(s)','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+</span>
 								</li>
 							<?php }?>
 						</ul>
+						<h4 class="post-title">
+							<a href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value), ENT_QUOTES, 'UTF-8');?>
+" alt="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Blog Images','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
+"><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['title'],'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+</a>
+						</h4>
 						<div class="post-intro">
-							<?php echo $_smarty_tpl->tpl_vars['post']->value['introtext'];?>
+							<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['introtext'],200,'...' ));?>
 
 						</div>
-						<a class="btn btn-default blog-readmore btn-effect button-small" href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value), ENT_QUOTES, 'UTF-8');?>
+						<a class="blog-readmore btn-effect1" href="<?php echo htmlspecialchars(jmsblog::getPageLink('jmsblog-post',$_smarty_tpl->tpl_vars['params']->value), ENT_QUOTES, 'UTF-8');?>
 "><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Read more','d'=>'Modules.JmsBlog'),$_smarty_tpl ) );?>
 </a>
 					</div>

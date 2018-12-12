@@ -40,7 +40,10 @@
             <i class="material-icons arrow-up js-arrow-up">&#xE316;</i>
             <i class="material-icons arrow-down js-arrow-down">&#xE313;</i>
           </div>
-					
+					<div class="modal-footer">
+          <span>Share with:</span>
+		   {hook h='displayProductButtons' product=$product}
+		  </div>
         </div>
 		
         <div class="col-md-5 col-sm-5 right">
@@ -48,10 +51,13 @@
 		  {block name='product_prices'}
 					{include file='catalog/_partials/product-prices.tpl'}
 		  {/block}
+      <div class="product-information">
           {block name='product_description_short'}
-            <div id="product-description-short" itemprop="description">{$product.description_short|truncate:90:'...' nofilter}</div>
+            
+            <div id="product-description-short-{$product.id}" class="product-desc"itemprop="description">{$product.description_short|strip_tags|truncate:150:"..."}</div>
+            
           {/block}
-		 <ul class="other-info">
+		    <ul class="other-info">
 						{if $product.reference}
 												<!-- number of item in stock -->
 						<li id="product_reference">
@@ -102,9 +108,8 @@
 				
             </form>
           </div>
-		  <div class="modal-footer">
-		   {hook h='displayProductButtons' product=$product}
-		  </div>
+        </div>
+		  
         {/block}
         </div>
       </div>

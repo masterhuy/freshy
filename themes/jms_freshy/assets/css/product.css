@@ -260,7 +260,7 @@
     position: absolute;
     cursor: pointer;
 }
-#product .product-prices.content_price .price.new {
+.product-prices.content_price .price.new {
     font-size: 28px;
 }
 #product .pb-right-column .content_prices .shipping_cost {
@@ -905,7 +905,7 @@
     width: 100%;
     padding-top: 5px;
     text-align: left;
-    padding-right: 15px;
+    padding-right: 10px;
 }
 /*product Layout*/
 #product .product-layout-3columns .pb-left-column {

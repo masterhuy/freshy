@@ -219,7 +219,6 @@
 .page-heading {
 	border:none;
 	font-size:30px;
-	color:#111;
 }
 .post-img img {
 	width:100%;
@@ -237,6 +236,12 @@
 .cat-post-list .item:last-child {
 	margin-bottom:0;
 }
+.cat-post-list .post-intro p {
+	line-height: 2.15;
+	font-family: Cabin;
+	font-size: 16px;
+	color: #907459;
+}
 .cat-post-list .item .post-title, #module-jmsblog-archive .post-title {
 	padding:0;
 	overflow: hidden;
@@ -245,35 +250,52 @@
 	white-space: nowrap;
 	width:100%;
 	display:block;
-	margin-top:20px;
-	margin-bottom:5px;
-	font-size:18px;
+	margin-top:-1px;
+	margin-bottom:-7px;
+	font-size:22px;
 	font-weight:500;
 	line-height:2;
 }
 
-.cat-post-list .item .post-meta {
-    display: flex;
-    margin: 15px 0 0;
+.cat-post-list .post-meta {
+    margin: 18px 0 0;
 }
-.cat-post-list .item .post-meta li {
-    color: rgba(17, 17, 17, 0.5);
+.cat-post-list .post-meta li {
+    color: #907459;
     font-size: 13px;
-    margin-right: 15px;
+    margin-right: 5px;
     padding: 0;
 }
-.cat-post-list .item .post-meta a {
-    font-weight: 700;
+.cat-post-list .post-meta li:not(:last-child)::after{
+	content: "-";
+	margin-left: 5px;
 }
-.cat-post-list .item .post-meta li span {
-	color:rgba(17,17,17,0.6);
-	font-size:13px;
+.cat-post-list .post-meta a {
+	color: #907459;
 }
-.cat-post-list .item .post-meta li:last-child {
+.cat-post-list .post-meta a:hover{
+	color: #fb943b;
+}
+.cat-post-list .post-meta li span {
+	color: #907459;
+	font-size: 13px;
+}
+.cat-post-list .post-meta li:last-child {
 	margin-right:0;
 }
 .blog-readmore {
-	margin-top:10px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 500;
+	border: 1px solid #ebebeb;
+	padding: 5px 15px;
+	border-radius: 30px;
+	letter-spacing: 0.8px;
+}
+.blog-readmore:hover{
+	border-color: #fb943b;
+	color: #fff;
 }
 .post-intro {
 	margin:10px 0;
@@ -429,4 +451,23 @@ h4.heading {
 	.cat-post-list .item .post-meta {
 		display: block;
 	}
+}
+
+/*categories*/
+#module-jmsblog-categories #search_widget{
+	margin-top: 0;
+}
+.category-title{
+	padding-bottom: 0;
+}
+.category-title a{
+	font-size: 22px;
+	font-weight: 500;
+}
+.cat-intro p{
+	font-size: 16px;
+	font-family: Cabin;
+	color: #907459;
+	line-height: 2.15;
+	margin-bottom: 15px;
 }
