@@ -118,7 +118,6 @@
 	font-size: 16px;
 	font-weight: 600;
 	text-transform: capitalize;
-	color: #000;
 }
 #checkout section#content #js-checkout-summary p a {
 	font-size: 14px;
@@ -131,7 +130,6 @@
 	margin-bottom:15px;
 }
 #checkout section#content #js-checkout-summary .card-block .label {
-	color: #000;
 	font-family: Poppins;
 	font-size: 16px;
 	font-weight: 600;
@@ -143,7 +141,6 @@
 	font-family: Poppins;
 	font-size: 14px;
 	font-weight: 600;
-	color: #000;
 }
 .price .product-price {
     display: block;
@@ -230,7 +227,6 @@ body#checkout section.checkout-step.-complete .step-title {
 }
 body#checkout section.checkout-step .step-title {
     background-color: #f5f5f5;
-	color: #454545;
 	cursor: pointer;
 	font-size: 16px;
 	margin: 0;
@@ -297,7 +293,6 @@ body#checkout section.checkout-step.-reachable.-complete .content {
   margin-right: 1rem;
 } 
 body#checkout section.checkout-step.-current .content .address {
-	color: rgba(17, 17, 17, 0.75);
 	font-size: 14px;
 	font-weight: 400;
 	padding: 0 20px;

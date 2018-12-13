@@ -35,40 +35,6 @@ $(window).load(function(){
 });
 jQuery(function ($) {
     "use strict";
-    if($(".categories-carousel2").length) {
-		var cateCarousel = $(".categories-carousel2");
-		var rtl = false;
-		if ($("body").hasClass("rtl")) rtl = true;				
-		cateCarousel.owlCarousel({
-			responsiveClass:true,
-			responsive:{			
-				1199:{
-					items:cs_itemsDesktop
-					},
-				991:{
-					items:cs_itemsDesktopSmall
-				},
-				768:{
-					items:cs_itemsTablet
-				},
-				481:{
-					items:2
-				},
-				0: {
-					items:1
-				}
-
-			},
-			rtl: rtl,
-			margin: 30,
-			nav: cs_nav,
-			dots: cs_pag,
-			autoplay: cs_auto_play_carousel,
-			slideSpeed: 200,
-			loop: true
-		});
-	}
-	
     if($(".product-carousel").length) {		
 		var productCarousel = $(".product-carousel");			
 		var rtl = false;
@@ -102,79 +68,6 @@ jQuery(function ($) {
 			autoplay: auto_play_carousel,
 			loop: true,
 			slideSpeed: 800,
-		});
-	}
-
-	if($(".product-carousel-ol").length) {		
-		var productCarouselol = $(".product-carousel-ol");			
-		var rtl = false;
-		if ($("body").hasClass("rtl")) rtl = true;				
-		productCarouselol.owlCarousel({
-			responsiveClass:true,
-			responsive:{			
-				1199:{
-					items:p_ol_itemsDesktop
-				},
-				991:{
-					items:p_ol_itemsDesktopSmall
-				},
-				768:{
-					items:p_ol_itemsTablet
-				},
-				481:{
-					items:p_ol_itemsMobile
-				},
-				361:{
-					items:1
-				},
-				0:{
-					items:1
-				}
-			},
-			rtl: rtl,
-			margin:30,
-			nav: p_ol_nav,
-			dots: p_ol_pag,
-			autoplay: p_ol_auto_play_carousel,
-			loop: true,
-			slideSpeed: 800,
-		});
-	}
-
-	if($(".categorytab-carousel").length) {
-		var categorytabCarousel = $(".categorytab-carousel");			
-		var rtl = false;
-		if ($("body").hasClass("rtl")) rtl = true;				
-		categorytabCarousel.owlCarousel({
-			responsiveClass:true,
-			responsive:{			
-				1199:{
-					items:cattab_itemsDesktop
-				},
-				991:{
-					items:cattab_itemsDesktopSmall
-				},
-				768:{
-					items:cattab_itemsTablet
-				},
-				481:{
-					items:cattab_itemsMobile
-				},
-				361:{
-					items:1
-				},
-				0: {
-					items:1
-				}
-			},
-			rtl: rtl,
-				margin: 0,
-			    nav: cattab_nav,
-		        dots: cattab_pag,
-				autoplay: cattab_auto_play_carousel,
-				loop:true,
-			    navigationText: ["", ""],
-			    slideSpeed: 200
 		});
 	}
 
@@ -215,6 +108,110 @@ jQuery(function ($) {
 		});
 	}
 
+    if($(".categories-carousel2").length) {
+		var cateCarousel = $(".categories-carousel2");
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		cateCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:cs_itemsDesktop
+					},
+				991:{
+					items:cs_itemsDesktopSmall
+				},
+				768:{
+					items:cs_itemsTablet
+				},
+				481:{
+					items:2
+				},
+				0: {
+					items:1
+				}
+
+			},
+			rtl: rtl,
+			margin: 30,
+			nav: cs_nav,
+			dots: cs_pag,
+			autoplay: cs_auto_play_carousel,
+			slideSpeed: 200,
+			loop: true
+		});
+	}
+
+	if($(".categorytab-carousel").length) {
+		var categorytabCarousel = $(".categorytab-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		categorytabCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:cattab_itemsDesktop
+				},
+				991:{
+					items:cattab_itemsDesktopSmall
+				},
+				768:{
+					items:cattab_itemsTablet
+				},
+				481:{
+					items:cattab_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0: {
+					items:1
+				}
+			},
+			rtl: rtl,
+				margin: 0,
+			    nav: cattab_nav,
+		        dots: cattab_pag,
+				autoplay: cattab_auto_play_carousel,
+				loop:true,
+			    navigationText: ["", ""],
+			    slideSpeed: 200
+		});
+	}
+
+	if($(".testimonial-carousel").length) {
+		var testimonialCarousel = $(".testimonial-carousel");		
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		testimonialCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:testi_itemsDesktop
+				},
+				991:{
+					items:testi_itemsDesktopSmall
+				},
+				768:{
+					items:testi_itemsTablet
+				},
+				481:{
+					items:testi_itemsMobile
+				},
+				0: {
+					items:1
+				}
+			},
+				rtl: rtl,
+				margin: 30,
+				nav: p_nav_testi,
+		        dots: p_pag_testi,
+				autoplay:auto_play_testi,
+				slideSpeed: 800,
+				loop: true
+		});
+	}
+
 	if($(".hotdeal-carousel").length) {		
 		var hotdealCarousel = $(".hotdeal-carousel");			
 		var rtl = false;
@@ -247,6 +244,42 @@ jQuery(function ($) {
 			dots: h_pag,
 			loop:true,
 			autoplay: h_auto_play_carousel,
+			slideSpeed: 800,
+		});
+	}
+
+	if($(".product-carousel-ol").length) {		
+		var productCarouselol = $(".product-carousel-ol");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarouselol.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:p_ol_itemsDesktop
+				},
+				991:{
+					items:p_ol_itemsDesktopSmall
+				},
+				768:{
+					items:p_ol_itemsTablet
+				},
+				481:{
+					items:p_ol_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:30,
+			nav: p_ol_nav,
+			dots: p_ol_pag,
+			autoplay: p_ol_auto_play_carousel,
+			loop: true,
 			slideSpeed: 800,
 		});
 	}
@@ -314,6 +347,37 @@ jQuery(function ($) {
 				autoplay:auto_play_brand,
 				loop: true,
 				slideSpeed: 200,	
+		});
+	}
+
+	if($(".instagram-carousel").length) {
+		var instagramCarousel = $(".instagram-carousel");
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		instagramCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:8
+					},
+				991:{
+					items:5
+				},
+				768:{
+					items:3
+				},
+			
+				318:{
+					items:2
+				}
+			},
+			rtl: rtl,
+			margin: 0,
+			nav: false,
+			dots: false,
+			autoplay: true,
+			slideSpeed: 200,
+			loop: true
 		});
 	}
 });

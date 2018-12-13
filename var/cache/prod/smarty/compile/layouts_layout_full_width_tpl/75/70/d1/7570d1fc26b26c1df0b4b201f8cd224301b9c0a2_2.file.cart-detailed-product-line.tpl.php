@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-09 23:27:22
+/* Smarty version 3.1.33, created on 2018-12-12 22:45:28
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\templates\checkout\_partials\cart-detailed-product-line.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c0deb2a682428_19825966',
+  'unifunc' => 'content_5c11d5d8dfba40_08341795',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c0deb2a682428_19825966 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c11d5d8dfba40_08341795 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="product-line-grid">
     <!-- remove button -->
     <div class="remove-button col-lg-1">

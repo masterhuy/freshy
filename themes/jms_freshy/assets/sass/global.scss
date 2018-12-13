@@ -49,9 +49,14 @@
 	}
 }
 .languages-info, #_desktop_currency_selector, #_desktop_user_info {
-	ul > li > a{
-		color: #907459;
-		font-family: Cabin;
+	ul > li{
+		&.current > a{
+			color: $active;
+		}
+		> a{
+			color: #907459;
+			font-family: Cabin;
+		}
 	}
 }
 #_desktop_search_filters_clear_all button {
@@ -1361,5 +1366,21 @@ a.wishlist_top{
 .product-carousel, .categorytab-carousel, .hotdeal-carousel{
 	.owl-stage-outer{
 		padding-bottom: 60px;
+	}
+}
+.menu .features .image img {
+	width: 100%;
+}
+
+
+@media (max-width: 1366px){
+	.jms-megamenu .menu-align-center > .dropdown-menu{
+		width: 991px !important;
+	}
+}
+
+@media (max-width: 1199px){
+	.jms-megamenu .menu-align-center > .dropdown-menu{
+		width: 750px !important;
 	}
 }

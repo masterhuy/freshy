@@ -35,14 +35,16 @@
                     </div>
 					{/if}	
                     <div class="right-info">
-                        <a href="{$product.link nofilter}" title="{$product.name nofilter}">
+                        <a class="product-link" href="{$product.link nofilter}" title="{$product.name nofilter}">
                             {$product.name|truncate:35:'...' nofilter}
                         </a>
                         {if $show_desc == 1}
                             <p class="desc">{$product.desc|truncate:$desc_count:'...' nofilter}</p>
                         {/if}
                         {if $show_price == 1}
-                            <span class="price">{$product.price nofilter}</span>
+                        <div class="content_price">
+                            <span class="price new">{$product.price nofilter}</span>
+                        </div>
                         {/if}
                     </div>
                 </div>

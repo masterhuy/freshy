@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-09 23:08:56
+/* Smarty version 3.1.33, created on 2018-12-12 22:45:20
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\templates\checkout\_partials\cart-voucher.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c0de6d82bc590_10050278',
+  'unifunc' => 'content_5c11d5d093af18_57826386',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '16ae93688e1b9dd725206b591be79ce9a9188f7c' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\templates\\checkout\\_partials\\cart-voucher.tpl',
-      1 => 1542795069,
+      1 => 1544672472,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c0de6d82bc590_10050278 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c11d5d093af18_57826386 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['cart']->value['vouchers']['allowed']) {?>
   <div class="block-promo">
     <div class="cart-voucher">
@@ -61,7 +61,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
           <input type="hidden" name="addDiscount" value="1">
           <input class="promo-input" type="text" name="discount_name" placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Promo code','d'=>'Shop.Theme.Checkout'),$_smarty_tpl ) );?>
 ">
-          <button type="submit" class="btn-default btn btn-primary"><span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Add','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+          <button type="submit" class="btn-addcode btn-effect1 btn-shopnow1"><span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Add','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 </span></button>
         </form>
         <div class="alert alert-danger js-error" role="alert">

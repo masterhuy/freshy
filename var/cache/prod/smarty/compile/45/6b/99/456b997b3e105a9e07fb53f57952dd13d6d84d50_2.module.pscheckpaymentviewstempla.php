@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-06 05:28:43
+/* Smarty version 3.1.33, created on 2018-12-12 23:07:00
   from 'module:pscheckpaymentviewstempla' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c08f9dbeb7270_71236558',
+  'unifunc' => 'content_5c11dae40379b7_94376308',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c08f9dbeb7270_71236558 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c11dae40379b7_94376308 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section>
   <p><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Please send us your check following these rules:','d'=>'Modules.Checkpayment.Shop'),$_smarty_tpl ) );?>

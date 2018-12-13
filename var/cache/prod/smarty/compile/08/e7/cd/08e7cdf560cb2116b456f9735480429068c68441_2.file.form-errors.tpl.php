@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-11 23:12:28
+/* Smarty version 3.1.33, created on 2018-12-12 22:59:08
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\templates\_partials\form-errors.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c108aaca51490_79475266',
+  'unifunc' => 'content_5c11d90ccb7053_35011690',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c108aaca51490_79475266 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c11d90ccb7053_35011690 (Smarty_Internal_Template $_smarty_tpl) {
 if (count($_smarty_tpl->tpl_vars['errors']->value)) {?>
   <div class="help-block">
     <ul>

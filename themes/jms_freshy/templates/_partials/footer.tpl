@@ -22,8 +22,8 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- <div class="back-to-top" id="back-to-top">
-			<span class="fa fa-angle-up"></span>
+ <div class="back-to-top" id="back-to-top" title="Back to top">
+	<span class="fa fa-arrow-up"></span>
 </div>
 {hook h='displayFooter'}
 

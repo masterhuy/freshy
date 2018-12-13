@@ -12,6 +12,9 @@
 	box-shadow:2px 2px 11px 0 rgba(0, 0, 0, 0.1);
 	padding:30px 20px;
 }
+#my-account .wishlist_top.home_page{
+	display: none;
+}
 #my-account .links .link-item {
 	font-size:16px;
 }

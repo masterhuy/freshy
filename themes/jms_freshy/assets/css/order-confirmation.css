@@ -42,7 +42,6 @@
   margin: 0 auto 1rem; }
 #order-items table tr.total {
 	font-weight:500;
-	color:#111;
 }
 #order-confirmation .title-block{
 	background-color: #4cbb6c;
@@ -60,7 +59,6 @@
 #order-confirmation .card-title{
 	text-transform:uppercase;
 	font-weight:300;
-	color:#111;
 	font-size:20px;
 	padding:0;
 	font-weight:400;
@@ -82,9 +80,6 @@
 }
 #order-confirmation #content-hook_payment_return, #order-confirmation .page-order-confirmation { 
 	padding:30px 15px;
-}
-#order-confirmation #content-hook_payment_return .payment_return strong{
-	color:#111;
 }
   .definition-list dl {
   display: -webkit-box;
@@ -116,7 +111,6 @@
     background: #ebebeb;
     padding: 0.625rem;
     margin: 0.125rem; 
-	color:rgba(17,17,17,0.6);
 	line-height:28px;
 }
     .definition-list dl dd:nth-of-type(even),
@@ -147,4 +141,7 @@
 }
 #order-confirmation .title-block h3::before{
   display: none;
+}
+.orders .status{
+  margin-bottom: 20px;
 }

@@ -26,7 +26,7 @@
 {if $banner}
 	
 		<a href="{if $banner_link}{$banner_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"{/if}>
-			<img src="{$root_url|escape:'html':'UTF-8'}{$banner|escape:'html':'UTF-8'}" alt="{$alt_text|escape:'htmlall':'UTF-8'}" />
+			<img class="img-responsive" src="{$root_url|escape:'html':'UTF-8'}{$banner|escape:'html':'UTF-8'}" alt="{$alt_text|escape:'htmlall':'UTF-8'}" />
 		</a>
 
 {/if}

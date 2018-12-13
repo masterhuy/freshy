@@ -342,3 +342,123 @@
 		padding-bottom: 29px;
 	}
 }
+
+
+@media (max-width: 1366px){
+	.menu{
+		.stores .dropdown-menu::before {
+			left: 322px;
+		}
+		.features{
+			.dropdown-menu::before {
+				left: 429px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1199px){
+	.menu{
+		.stores .dropdown-menu::before {
+			left: 202px;
+		}
+		.features{
+			.dropdown-menu::before {
+				left: 308px;
+			}
+		}
+	}
+}
+@media (max-width: 1199px) and (min-width: 992px){
+	.banner{
+		.center{
+			.banner-content{
+				left: 35px;
+				.text-1{
+					font-size: 38px;
+				}
+				.text-2{
+					font-size: 32px;
+				}
+				.btn-shopnow{
+					font-size: 14px;
+				}
+			}
+		}
+		.right{
+			.banner-content p{
+				font-size: 22px;
+			}
+		}
+	}
+	.footer_t .number_phone{
+		font-size: 14px;
+	}
+	#footer #social_block ul li {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 991px){
+	.page-index #wrapper{
+		margin-top: 0;
+	}
+	.jms-row.menu, .setting-img{
+		display: none;
+	}
+	.header{
+		.left{
+			p{
+				margin-bottom: 0;
+			}
+			.addon-box{
+				:not(:first-child)::before {
+					display: none;
+				}
+				&:nth-child(2){
+					display: none;
+				}
+			}
+		}
+		.right{
+			.addon-box:not(:last-child){
+				display: none;
+			}
+		}
+	}
+	.cates_tab .jms-tab ul .nav-item {
+		margin: 0;
+	}
+}
+@media (max-width: 991px) and (min-width: 768px){
+	.countdown-section {
+		margin: 0 2.5px;
+		min-width: 46px;
+		.countdown-section .countdown-amount {
+			font-size: 16px;
+		}
+	}
+	.banner{
+		.center{
+			.banner-content{
+				left: 28px;
+				.text-1{
+					font-size: 20px;
+				}
+				.text-2{
+					font-size: 16px;
+				}
+				.btn-shopnow{
+					font-size: 10px;
+				}
+			}
+		}
+		.right{
+			.banner-content{
+				.text-1{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

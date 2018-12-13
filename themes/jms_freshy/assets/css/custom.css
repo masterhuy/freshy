@@ -171,7 +171,7 @@ cite {
   font-style: normal; }
 
 .text-muted {
-  color: #010101; }
+  color: #603813; }
 
 .text-primary {
   color: #f2735a; }
@@ -824,7 +824,7 @@ table.std td, table.table_block td {
     vertical-align: bottom;
     border-bottom: 2px solid #d6d4d4;
     border-bottom-width: 1px;
-    color: #333333;
+    color: #603813;
     vertical-align: middle; }
   .table thead > tr.danger > th, .table thead > tr.danger > td {
     background-color: #f3515c;
@@ -853,7 +853,7 @@ table.std td, table.table_block td {
 
 .table-bordered {
   border: 1px solid #ddd;
-  color: #333;
+  color: #907459;
   font-weight: 400; }
   .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
     border: 1px solid #ddd;
@@ -1070,8 +1070,11 @@ table td[class*="col-"], table table th[class*="col-"] {
   text-transform: uppercase;
   -webkit-box-shadow: 0 0 1px transparent;
   box-shadow: 0 0 1px transparent; }
-
+.btn-default:hover{
+  border-color: #fb943b;
+}
 .btn-default {
+  color: #603813;
   border: 1px solid #ccc;
   border-radius: 3px;
   font-size: 16px;
@@ -2502,7 +2505,8 @@ li.product-flag {
   margin-top: 30px; }
 
 .product-preview .preview img {
-  width: 100%; }
+  width: 100%;
+  transition: all 1s; }
 
 .products-list-in-row .product-preview .border {
   display: -webkit-box;
