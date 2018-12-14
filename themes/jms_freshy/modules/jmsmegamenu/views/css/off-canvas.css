@@ -26,6 +26,7 @@
 }
 #off-canvas-menu .open > .dropdown-menu .dropdown-menu {
     transform: unset;
+    border: 0;
     opacity: 1;
     position: unset;
     box-shadow: unset;
@@ -35,12 +36,13 @@
     display: block;
 }
 #off-canvas-menu .dropdown-menu > li > a {
-    font-family: "Poppins"; 
+    font-family: "Cabin"; 
     font-weight:400;
     line-height: 35px;
     padding: 3px 0px 3px 50px;
     text-transform: capitalize;
-    position: relative
+    position: relative;
+    color: #907459;
 }
 #off-canvas-menu .dropdown-menu > li > a::before {
     top: 50%;
@@ -53,7 +55,7 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-color: #444;
+    background-color: #fb943b;
     z-index: 2;
 }
 #off-canvas-menu .dropdown-menu > li > a:focus, #off-canvas-menu .dropdown-menu > li > a:hover {
@@ -62,7 +64,6 @@
 }
 #off-canvas-menu li a {
     border-radius: 0;
-    color: #222;
     display: block;
     font-family: Poppins;
     font-weight: 600;
@@ -89,7 +90,6 @@
 }
 #off-canvas-menu .currency-info a , #off-canvas-menu .user-info a, #off-canvas-menu .languages-info a, 
 #off-canvas-menu .currency-info .btn-name{
-    color: #222;
     font-size: 14px;
     font-weight: 600;
 }
@@ -104,14 +104,17 @@
     border: 1px solid #e6e6e6;
     border-radius: 3px;
 }
+#off-canvas-menu #search_widget form::before{
+    display: none;
+}
 #off-canvas-menu #search_widget button {
-    width: 40px;
-    height: 40px;
+    width: 45px;
     padding: 0;
     border: 0;
-    border-radius: 3px;
     position: relative;
-    top: 5px;
+    top: 3px;
+    display: inline-block;
+    background: transparent;
 }
 #off-canvas-menu #search_widget button i{
     font-size: 18px;
@@ -129,7 +132,6 @@
     padding: 0 30px;
 }
 #off-canvas-menu .btn-group > ul li span, #off-canvas-menu .btn-group > ul li a {
-    color: #222;
     font-family: "Poppins";
     font-size: 13px;
 }
@@ -175,10 +177,10 @@
 }
 #off-canvas-menu li > a em {
     float: right;
-    font-size: 15px;
+    font-size: 10px;
     width: 20px;
     height: 20px;
     line-height: 20px;
-    margin-top: 0;
+    margin-top: 1px;
     text-align: right;
 }

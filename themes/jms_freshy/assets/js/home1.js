@@ -350,7 +350,7 @@ jQuery(document).ready(function($) {
 	var menu = $(".jms-row.menu");
 
 	$(window).scroll(function () {
-    	if ($(window).scrollTop()){
+    	if ($(window).scrollTop() > 300){
 			menu.addClass("fixed");
     	} else {
 			menu.removeClass("fixed");

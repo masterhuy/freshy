@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-12 01:54:26
+/* Smarty version 3.1.33, created on 2018-12-14 05:25:00
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmspagebuilder\views\templates\hook\addoncategoryshow2.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c10b0a2e882f2_67979846',
+  'unifunc' => 'content_5c1384fca54830_77133402',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c10b0a2e882f2_67979846 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c1384fca54830_77133402 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 	var cs_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {

@@ -205,6 +205,7 @@
 	}
 	.feature-box{
 		padding: 50.5px 0;
+		background-size: cover !important;
 	}
 	.include_content_s{
 		.text-1, .text-2{
@@ -344,31 +345,6 @@
 }
 
 
-@media (max-width: 1366px){
-	.menu{
-		.stores .dropdown-menu::before {
-			left: 322px;
-		}
-		.features{
-			.dropdown-menu::before {
-				left: 429px;
-			}
-		}
-	}
-}
-
-@media (max-width: 1199px){
-	.menu{
-		.stores .dropdown-menu::before {
-			left: 202px;
-		}
-		.features{
-			.dropdown-menu::before {
-				left: 308px;
-			}
-		}
-	}
-}
 @media (max-width: 1199px) and (min-width: 992px){
 	.banner{
 		.center{
@@ -391,12 +367,6 @@
 			}
 		}
 	}
-	.footer_t .number_phone{
-		font-size: 14px;
-	}
-	#footer #social_block ul li {
-		margin-right: 0;
-	}
 }
 
 @media (max-width: 991px){
@@ -412,7 +382,7 @@
 				margin-bottom: 0;
 			}
 			.addon-box{
-				:not(:first-child)::before {
+				&:not(:first-child)::before {
 					display: none;
 				}
 				&:nth-child(2){
@@ -431,13 +401,6 @@
 	}
 }
 @media (max-width: 991px) and (min-width: 768px){
-	.countdown-section {
-		margin: 0 2.5px;
-		min-width: 46px;
-		.countdown-section .countdown-amount {
-			font-size: 16px;
-		}
-	}
 	.banner{
 		.center{
 			.banner-content{
@@ -460,5 +423,67 @@
 				}
 			}
 		}
+	}
+}
+
+@media (max-width: 767px){
+	.testimonial{
+		&::before, &::after{
+			display: none;
+		}
+	}
+	.jms-tab .nav {
+		flex-direction: column;
+	}
+	.cates_tab .jms-tab ul .nav-item {
+		text-align: center;
+		&:not(:last-child){
+			margin-bottom: 50px;
+		}
+	}
+}
+
+@media (max-width: 481px){
+	.slides::after{
+		display: none;
+	}
+	.intro{
+		.title h3 {
+			font-size: 25px;
+		}
+		.intro .include_content_s h4 {
+			font-size: 20px;
+		}
+	}
+	.banner{
+		.center{
+			.banner-content{
+				left: 24px;
+				.text-1{
+					font-size: 16px;
+				}
+				.text-2{
+					font-size: 12px;
+					margin-bottom: 0;
+				}
+				.btn-shopnow{
+					font-size: 10px;
+				}
+			}
+		}
+		.right{
+			.banner-content p{
+				font-size: 20px;
+			}
+		}
+	}
+	.countdown-section{
+		min-width: 51px;
+		.countdown-amount{
+			font-size: 20px;
+		}
+	}
+	.testimonial {
+		padding: 70px 0 100px;
 	}
 }

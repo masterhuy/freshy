@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-03 21:58:11
+/* Smarty version 3.1.33, created on 2018-12-14 03:50:51
   from 'D:\xamppp\htdocs\jms_freshy\modules\jmsajaxsearch\views\templates\hook\search-ajax.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c05ed43d5cb79_78272664',
+  'unifunc' => 'content_5c136eeb5a0e90_63636528',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'eea06f704b59031e972417b9f950ed60778491f3' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\modules\\jmsajaxsearch\\views\\templates\\hook\\search-ajax.tpl',
-      1 => 1542078179,
+      1 => 1544667480,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c05ed43d5cb79_78272664 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c136eeb5a0e90_63636528 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="result_div">
     <?php if ($_smarty_tpl->tpl_vars['products']->value) {?>
         <div class="results">
@@ -43,7 +43,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
                     </div>
 					<?php }?>	
                     <div class="right-info">
-                        <a href="<?php echo $_smarty_tpl->tpl_vars['product']->value['link'];?>
+                        <a class="product-link" href="<?php echo $_smarty_tpl->tpl_vars['product']->value['link'];?>
 " title="<?php echo $_smarty_tpl->tpl_vars['product']->value['name'];?>
 ">
                             <?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],35,'...' ));?>
@@ -54,8 +54,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
 </p>
                         <?php }?>
                         <?php if ($_smarty_tpl->tpl_vars['show_price']->value == 1) {?>
-                            <span class="price"><?php echo $_smarty_tpl->tpl_vars['product']->value['price'];?>
+                        <div class="content_price">
+                            <span class="price new"><?php echo $_smarty_tpl->tpl_vars['product']->value['price'];?>
 </span>
+                        </div>
                         <?php }?>
                     </div>
                 </div>

@@ -387,7 +387,7 @@ jQuery(document).ready(function($) {
 	var header = $(".jms-row.header");
 
 	$(window).scroll(function () {
-    	if ($(window).scrollTop()){
+    	if ($(window).scrollTop() > 300){
 			header.addClass("fixed");
     	} else {
 			header.removeClass("fixed");

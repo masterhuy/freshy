@@ -7,7 +7,7 @@
 **/
 jQuery(function ($) {
     "use strict";
-    $("#off-canvas-menu .mega .fa-angle-down").click(function (e) {		
+    $("#off-canvas-menu .mega .fa-plus").click(function (e) {		
     	e.preventDefault();		
         var _parent = $(this).parent();
         var _dropdown = _parent.next('.dropdown-menu');
@@ -15,16 +15,16 @@ jQuery(function ($) {
         if(_grandparent.hasClass('open')) {
         	_grandparent.removeClass('open');
         	_dropdown.slideUp("normal");
-			$(this).removeClass('fa-angle-up');
-			$(this).addClass('fa-angle-down');
+			$(this).removeClass('fa-minus');
+			$(this).addClass('fa-plus');
         } else {			
         	_grandparent.addClass('open');        	
         	_dropdown.slideDown("normal"); 
-			$(this).removeClass('fa-angle-down');
-			$(this).addClass('fa-angle-up');
+			$(this).removeClass('fa-plus');
+			$(this).addClass('fa-minus');
         }
     })
-    $(".mega .fa-angle-down").mouseover(function (e) {       
+    $(".mega .fa-plus").mouseover(function (e) {       
         e.preventDefault();
         return false;        
     })

@@ -279,6 +279,23 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .nav > li.open > a{
     color: #fb943b;
 }
+.jms-megamenu .nav > li > a::after {
+    content: "";
+    left: 50%;
+    opacity: 0;
+    bottom: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fb943b;
+    transform: translateX(-50%);
+}
+.jms-megamenu .nav > li.open > a::after {
+    opacity: 1;
+    transition-delay: .3s;
+}
 .jms-megamenu .nav > .item-fullwidth .mega-nav li {
     border-bottom: medium none;
 }

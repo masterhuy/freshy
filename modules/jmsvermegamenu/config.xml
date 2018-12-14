@@ -2,7 +2,7 @@
 <module>
     <name>jmsvermegamenu</name>
     <displayName><![CDATA[Jms Vertical MegaMenu.]]></displayName>
-    <version><![CDATA[1.1.0]]></version>
+    <version><![CDATA[2.0.0]]></version>
     <description><![CDATA[Vertical Megamenu for prestashop site.]]></description>
     <author><![CDATA[Joommasters]]></author>
     <tab><![CDATA[front_office_features]]></tab>

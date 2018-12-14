@@ -1,11 +1,12 @@
 .header {
-  padding: 25px 0;
   position: relative;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   z-index: 999; }
-  .header.fixed {
+  .header.fixed .center {
     padding: 10px 0; }
+  .header.fixed .jms-megamenu .nav > li > a {
+    line-height: 101px; }
   .header .container-fluid {
     max-width: 1810px;
     padding: 0 15px;
@@ -20,6 +21,8 @@
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
+  .header .jms-megamenu .nav > li > a {
+    line-height: 131px; }
   .header #_desktop_user_info .type1, .header #_desktop_user_info .type3 {
     display: none; }
   .header .languages-info.type2, .header .languages-info.type3, .header .languages-info.type4 {
@@ -51,30 +54,32 @@
     .header .left .btn-search {
       position: relative;
       top: -3px; }
-  .header .center .logo {
-    position: relative;
-    z-index: 99; }
-  .header .center .addon-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .header .center .addon-box:nth-child(2) {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 100%;
-      z-index: 98; }
-  .header .center .features {
-    padding-right: 335px; }
+  .header .center {
+    padding: 25px 0; }
+    .header .center .logo {
+      position: relative;
+      z-index: 99; }
+    .header .center .addon-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .header .center .addon-box:nth-child(2) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+        z-index: 98; }
+    .header .center .features {
+      padding-right: 335px; }
   .header .right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -103,10 +108,6 @@
     .header .right .cart-icon {
       position: relative;
       top: -3px; }
-  .header .jms-megamenu .open .dropdown-menu {
-    top: calc(100% + 33px); }
-  .header .jms-megamenu .dropdown-menu {
-    top: calc(100% + 33px); }
   .header .jms-megamenu .stores .dropdown-menu::before {
     left: 287px; }
   .header .jms-megamenu .features .dropdown-menu::before {
@@ -307,3 +308,111 @@
     top: 3px; }
   .blog .blog-carousel {
     padding-top: 74px; }
+
+@media (max-width: 1400px) {
+  .header .center .features {
+    padding-right: 200px; }
+  .header .jms-megamenu .stores .dropdown-menu::before {
+    left: 234px; }
+  .header .jms-megamenu .features .dropdown-menu::before {
+    left: 340px; }
+  .newsletter::before {
+    left: -18%; }
+  .newsletter::after {
+    right: -60px; } }
+
+@media (max-width: 1199px) {
+  .jms-megamenu .nav > li {
+    padding: 0 15px; }
+  .header .center .features {
+    padding-right: 150px; }
+  .deal .layout-column {
+    width: 65%; }
+  #newsletter-input {
+    width: 330px; } }
+
+@media (max-width: 991px) {
+  .header .left .setting-img {
+    display: none; }
+  .header .left .addon-box:not(:first-child) {
+    display: none; }
+  .header .center .addon-box:last-child {
+    display: none; }
+  .header .right .addon-box:first-child {
+    display: none; }
+  .deal .countdown-box {
+    padding-left: 0; }
+    .deal .countdown-box .countdown-section:not(:last-child) {
+      margin-right: 50px; }
+      .deal .countdown-box .countdown-section:not(:last-child)::after {
+        right: -30px; }
+  .newsletter::before, .newsletter::after {
+    display: none; }
+  .newsletter .block_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center; }
+  .newsletter #newsletter_block_left .textnews_h2 {
+    margin-right: 0;
+    margin-bottom: 20px; } }
+
+@media (max-width: 767px) {
+  .deal .layout-column {
+    width: 70%; }
+  .jms-tab .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .cates_tab .jms-tab ul .nav-item {
+    text-align: center; }
+    .cates_tab .jms-tab ul .nav-item:not(:last-child) {
+      margin-bottom: 50px; }
+  .banner .left {
+    margin-bottom: 15px; }
+  #newsletter-input {
+    width: 250px; } }
+
+@media (max-width: 481px) {
+  .deal .layout-column {
+    width: 100%; }
+    .deal .layout-column .countdown-box .btn-shopnow {
+      font-size: 14px;
+      height: 40px;
+      padding: 0 20px; }
+    .deal .layout-column .countdown-box .countdown-period {
+      font-size: 14px; }
+    .deal .layout-column .countdown-box .countdown-section:not(:last-child) {
+      margin-right: 5px; }
+    .deal .layout-column .countdown-box .countdown-section::after {
+      right: -7px;
+      font-size: 20px;
+      top: 12px; }
+    .deal .layout-column .countdown-box .countdown-amount {
+      font-size: 30px; }
+    .deal .layout-column .countdown-box p {
+      font-size: 14px; }
+    .deal .layout-column .countdown-box h2 {
+      font-size: 20px; }
+  .newsletter {
+    margin-top: 40px;
+    padding: 60px 0 160px; }
+    .newsletter .news_content {
+      width: 100%; }
+    .newsletter .form-group {
+      display: block; }
+    .newsletter #newsletter-input {
+      width: 100%;
+      text-align: center;
+      padding: 0; }
+    .newsletter .newsletter-btn.btn-popup {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  .testimonial #testimonial {
+    padding: 20px 20px; } }
