@@ -462,7 +462,7 @@ jQuery(document).ready(function($) {
 	var featuredProduct = $(".featured_product");
 
 	$(window).scroll(function () {
-    	if ($(window).scrollTop()){
+    	if ($(window).scrollTop() > 300){
 			header.addClass("fixed");
     	} else {
 			header.removeClass("fixed");

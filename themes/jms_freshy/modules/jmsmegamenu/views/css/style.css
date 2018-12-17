@@ -40,6 +40,9 @@
 .jms-megamenu .img-first img {
     padding: 0;
 }
+.jms-megamenu .item-fullwidth img{
+    width: 100%;
+}
 .jms-megamenu .nav > li {
     display: inline-block;
     float: inherit;

@@ -359,6 +359,8 @@
     margin-bottom: 20px; } }
 
 @media (max-width: 767px) {
+  .header .center {
+    padding: 10px 0; }
   .deal .layout-column {
     width: 70%; }
   .jms-tab .nav {
@@ -415,4 +417,6 @@
       -ms-flex-pack: center;
       justify-content: center; }
   .testimonial #testimonial {
-    padding: 20px 20px; } }
+    padding: 20px 20px; }
+    .testimonial #testimonial .testimonial-box {
+      padding: 15px 20px; } }

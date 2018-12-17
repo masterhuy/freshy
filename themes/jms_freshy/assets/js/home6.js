@@ -386,7 +386,7 @@ jQuery(document).ready(function($) {
 	var cateTab = $(".cate_tab");
 
 	$(window).scroll(function () {
-    	if ($(window).scrollTop() > 200){
+    	if ($(window).scrollTop() > 300){
 			menu.addClass("fixed");
     	} else {
 			menu.removeClass("fixed");

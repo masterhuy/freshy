@@ -633,6 +633,9 @@ a.wishlist_top {
     margin: 10px 0; }
     .service .feature-box i {
       margin-right: 0 !important; }
+    .service .feature-box .include_content_s {
+      margin-left: 0;
+      margin-top: 10px; }
   .footer_t div.layout-column {
     min-height: auto; }
   .footer_t .layout-column:not(:last-child) {
@@ -651,12 +654,7 @@ a.wishlist_top {
     width: auto; }
   .ver_mobile {
     display: block; }
-  .ver_mobile .addon-box.open + .addon-box {
-    opacity: 1;
-    visibility: visible; }
   .ver_mobile .addon-box:last-child {
-    opacity: 0;
-    visibility: hidden;
     position: absolute;
     z-index: 1000;
     width: calc(100% - 30px);

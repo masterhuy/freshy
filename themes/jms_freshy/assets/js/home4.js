@@ -394,10 +394,10 @@ jQuery(function ($) {
 					items:4
 				},
 				768:{
-					items:3
+					items:4
 				},
 				481:{
-					items:2
+					items:3
 				},
 				0: {
 					items:1
@@ -417,10 +417,11 @@ jQuery(document).ready(function($) {
 	var menu = $(".jms-row.menu");
 
 	$("#jms-vermegamenu-container").addClass('collapse');
+	$("#mobile-vermegamenu").addClass('collapse');
 	$(".page-index #jms-vermegamenu-container").addClass('collapse in');
 
 	$(window).scroll(function () {
-    	if ($(window).scrollTop()){
+    	if ($(window).scrollTop() > 300){
 			menu.addClass("fixed");
 			$(".page-index #jms-vermegamenu-container").removeClass('in');
     	} else {

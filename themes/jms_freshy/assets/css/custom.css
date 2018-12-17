@@ -3300,6 +3300,7 @@ ul.footer_links {
   font-family: Cabin;
   font-size: 15px;
   line-height: 2;
+  margin-bottom: 0;
 }
 .footer_b ul li{
   display: inline-block;
@@ -4166,6 +4167,7 @@ footer .blog-carousel {
 }
 .post-readmore:hover{
   color: #fff;
+  border-color: #fb943b;
 }
 .post-fulltext .image {
   float: left;

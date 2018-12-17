@@ -141,6 +141,14 @@
     float: left;
     width: 67%;
 }
+#search_result .result_div .right-info .product-link{
+    text-align: left;
+    padding: 0;
+}
+#search_result .result_div .right-info .product-link{
+    text-align: left;
+    padding: 0;
+}
 .jms_ajax_search form#searchbox {
     display: table;
     position: relative;
@@ -156,7 +164,7 @@
     width: 100%;
 }
 #search_result .result_div .price {
-    
+    text-align: left;
     font-weight:600;
     float: left;
     font-weight: 700;

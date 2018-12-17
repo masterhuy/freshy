@@ -438,6 +438,9 @@
 }
 
 @media (max-width: 767px){
+	.header .center {
+		padding: 10px 0;
+	}
 	.deal .layout-column {
 		width: 70%;
 	}
@@ -514,5 +517,8 @@
 	}
 	.testimonial #testimonial {
 		padding: 20px 20px;
+		.testimonial-box {
+			padding: 15px 20px;
+		}
 	}
 }
