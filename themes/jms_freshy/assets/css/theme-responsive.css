@@ -134,11 +134,6 @@
 		height:auto;
 		position:absolute;
 	}
-	.home_3 .top_menu_second, .home_6 .top_menu_second{
-		overflow:hidden;
-		height:100%;
-		
-	}
 	.top_menu p::before{
 		display:none;
 	}

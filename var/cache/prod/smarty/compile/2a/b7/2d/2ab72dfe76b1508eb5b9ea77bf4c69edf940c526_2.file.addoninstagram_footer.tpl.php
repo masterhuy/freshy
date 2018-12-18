@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-17 02:22:52
+/* Smarty version 3.1.33, created on 2018-12-18 05:15:10
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmspagebuilder\views\templates\hook\addoninstagram_footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c174ecc8a1d51_41312125',
+  'unifunc' => 'content_5c18c8ae866449_02823728',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c174ecc8a1d51_41312125 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c18c8ae866449_02823728 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="addon-title">
 	<h3>
 		<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'INSTAGRAM','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>

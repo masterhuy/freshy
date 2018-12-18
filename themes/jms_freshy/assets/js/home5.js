@@ -317,6 +317,7 @@ jQuery(function ($) {
 				nav: p_nav_testi,
 		        dots: p_pag_testi,
 				autoplay:auto_play_testi,
+				loop: true,
 				slideSpeed: 800,	
 		});
 	}

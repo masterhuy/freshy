@@ -497,6 +497,9 @@
 	.newsletter{
 		margin-top: 40px;
 		padding: 60px 0 160px;
+		.newsletter #newsletter_block_left .textnews_h2 .text-2 {
+			font-size: 25px;
+		}
 		.news_content{
 			width: 100%;
 		}

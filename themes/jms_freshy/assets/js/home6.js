@@ -385,6 +385,8 @@ jQuery(document).ready(function($) {
 	var menu = $(".jms-row.menu");
 	var cateTab = $(".cate_tab");
 
+	$("#mobile-vermegamenu").addClass('collapse');
+
 	$(window).scroll(function () {
     	if ($(window).scrollTop() > 300){
 			menu.addClass("fixed");

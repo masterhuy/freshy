@@ -335,6 +335,8 @@
   .newsletter {
     margin-top: 40px;
     padding: 60px 0 60px; }
+    .newsletter #newsletter_block_left .textnews_h2 .text-2 {
+      font-size: 25px; }
     .newsletter .news_content {
       width: 100%; }
     .newsletter .form-group {

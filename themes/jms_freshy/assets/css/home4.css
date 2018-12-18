@@ -182,7 +182,7 @@
   .slides .text-2 {
     font-family: Cabin; }
   .slides .btn-shopnow1 {
-    padding: 0 33px; }
+    padding: 0 1.7vw; }
 
 .service .left .feature-box {
   border: 1px solid #81b502; }
@@ -548,7 +548,38 @@
       padding-left: 15px; } }
 
 @media (max-width: 767px) {
+  .service {
+    margin-top: 30px; }
   .deal .left .addon-box {
     margin-left: 0; }
   .deal .right .addon-box {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .slides .btn-shopnow1 {
+    border-width: 1px !important; } }
+
+@media (max-width: 481px) {
+  .deal .countdown-box {
+    text-align: center;
+    padding: 20px; }
+  .deal .text-1 {
+    font-size: 25px; }
+  .deal .text-2 {
+    padding-left: 0; }
+  .deal .left .addon-title img {
+    width: 100%; }
+  .deal .countdown.is-countdown {
+    text-align: center; }
+  .deal .countdown-section {
+    min-width: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px; }
+    .deal .countdown-section .countdown-amount {
+      font-size: 18px; }
+  .deal .countdown-period {
+    font-size: 14px; }
+  .deal .btn-shopnow1 {
+    font-size: 14px;
+    height: 35px;
+    padding: 0 15px; } }

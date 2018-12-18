@@ -651,7 +651,7 @@ a.wishlist_top{
 		padding-top: 0;
 	}
 	.jms-vermegamenu .dropdown-menu.fullwidth {
-		width: 751px !important;
+		max-width: 751px;
 	}
 }
 
@@ -830,7 +830,7 @@ a.wishlist_top{
 	}
 }
 
-@media (max-width: 991px) and (min-width: 767px){
+@media (max-width: 991px) and (min-width: 768px){
 	div.service .feature-box {
 		justify-content: flex-start;
 		padding-left: 15px;

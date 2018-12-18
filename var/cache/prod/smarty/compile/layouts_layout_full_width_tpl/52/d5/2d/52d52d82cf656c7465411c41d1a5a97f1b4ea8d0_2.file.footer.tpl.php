@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-17 05:31:01
+/* Smarty version 3.1.33, created on 2018-12-18 05:15:10
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\templates\_partials\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c177ae5e3e381_26404303',
+  'unifunc' => 'content_5c18c8ae948d79_02671314',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c177ae5e3e381_26404303 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c18c8ae948d79_02671314 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="back-to-top" id="back-to-top" title="Back to top">
 	<span class="fa fa-arrow-up"></span>
 </div>

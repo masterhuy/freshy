@@ -543,7 +543,7 @@ a.wishlist_top {
     padding-bottom: 0;
     padding-top: 0; }
   .jms-vermegamenu .dropdown-menu.fullwidth {
-    width: 751px !important; } }
+    max-width: 751px; } }
 
 @media (max-width: 1199px) and (min-width: 992px) {
   div.footer_t .number_phone {
@@ -676,7 +676,7 @@ a.wishlist_top {
     -ms-flex-pack: center;
     justify-content: center; } }
 
-@media (max-width: 991px) and (min-width: 767px) {
+@media (max-width: 991px) and (min-width: 768px) {
   div.service .feature-box {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
