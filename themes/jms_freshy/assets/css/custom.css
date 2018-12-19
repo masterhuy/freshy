@@ -363,10 +363,7 @@ code, kbd, pre, samp {
   float: left;
   margin: -2px 5px 0 0;
   padding: 0 10px;
-  color: #000;
   font: 49px/16px Arial, Helvetica, sans-serif; }
-  .dropcap.color {
-    color: #000000; }
   .dropcap.dark {
     color: #fff;
     background-color: #000000; }
@@ -440,11 +437,6 @@ code, kbd, pre, samp {
   background-color: #000000;
   color: #fff;
   padding: 2px 2px 0; }
-
-.color {
-  color: #000000; }
-  .color:hover {
-    color: #000000; }
 
 .underline {
   text-decoration: underline; }
@@ -1117,15 +1109,9 @@ fieldset[disabled] .btn-default {
   padding: 8px 16px; }
 
 .btn-active {
-  background: #1ec7a6;
+  background: #fb943b;
   color: #fff;
-  border-color: #1ec7a6; }
-
-.btn-active:hover{
-  background: #111;
-  border-color: #111;
-  color: #fff;
-}
+  border-color: #fb943b; }
 
 .btn-shopnow {
   border: 0;
@@ -3196,6 +3182,7 @@ ul.footer_links {
 /*Breadcrumb*/
 .breadcrumb {
   background: url("../img/breadcrumb_bg.jpg") no-repeat scroll;
+  background-size: cover;
   padding: 45px 0;
   margin-bottom: 86px;
   border-radius: 0;
@@ -3300,7 +3287,6 @@ ul.footer_links {
   font-family: Cabin;
   font-size: 15px;
   line-height: 2;
-  margin-bottom: 0;
 }
 .footer_b ul li{
   display: inline-block;

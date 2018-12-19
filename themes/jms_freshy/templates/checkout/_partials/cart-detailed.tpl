@@ -23,12 +23,12 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="cart-overview js-cart" data-refresh-url="{url entity='cart' params=['ajax' => true, 'action' => 'refresh']}">
-    <div class="container label-title">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5">{l s='Products' d='Shop.Theme.Checkout'}</div>
-        <div class="col-lg-2">{l s='Price' d='Shop.Theme.Checkout'}</div>
-        <div class="col-lg-2">{l s='Qty' d='Shop.Theme.Checkout'}</div>
-        <div class="col-lg-2">{l s='Total' d='Shop.Theme.Checkout'}</div>
+    <div class="container label-title hidden-xs">
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <div class="col-lg-5 col-md-5 col-sm-5">{l s='Products' d='Shop.Theme.Checkout'}</div>
+        <div class="col-lg-2 col-md-2 col-sm-2">{l s='Price' d='Shop.Theme.Checkout'}</div>
+        <div class="col-lg-2 col-md-2 col-sm-2">{l s='Qty' d='Shop.Theme.Checkout'}</div>
+        <div class="col-lg-2 col-md-2 col-sm-2">{l s='Total' d='Shop.Theme.Checkout'}</div>
     </div>
     {if $cart.products}
         <ul class="cart-items">

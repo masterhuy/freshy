@@ -373,7 +373,7 @@
 }
 @media(max-width:481px) {
 	.filters-panel .right {
-		text-align: left;
+		text-align: right;
 	}
 	#category-description > p {
 		width: 100% !important;

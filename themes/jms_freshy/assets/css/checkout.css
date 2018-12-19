@@ -317,6 +317,11 @@ body#checkout section.checkout-step.-current .content .form-control-select {
 	padding-right: 2rem;
 	width:100%;
 }
+@media (max-width: 1199px){
+	.cart-grid-right .right-box .card.cart-summary {
+		margin-top: 0;
+	}
+}
 @media (max-width: 481px){
 	body#checkout section.checkout-step .step-title {
 		font-size: 14px;

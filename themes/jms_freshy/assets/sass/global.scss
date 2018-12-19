@@ -34,6 +34,9 @@
 		font-size: 15px;
 		color: #907459;
 		font-weight: 500;
+		&:hover{
+			color: $active;
+		}
 	}
 }
 .jms-advsearch .input-group.keyword-group {
@@ -664,6 +667,30 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 481px){
+	#category #footer {
+		margin-top: 0;
+	}
+	.sort-by{
+		display: none;
+	}
+	div.products-list-in-row{
+		.product-preview{
+			.preview{
+				width: 100%;
+			}
+			.product-info{
+				width: 100%;
+				border-right: 0;
+				padding: 0 20px;
+			}
+			.product_action{
+				width: 100%;
+			}
+			.border{
+				display: block;
+			}
+		}
+	}
 	div.addon-title h3, div.jms-tab ul .nav-item {
 		font-size: 20px;
 	}
@@ -691,10 +718,6 @@ a.wishlist_top{
     }
 	div.products-list-in-row .product-preview{
 		flex-direction: column;
-		.product-info{
-			padding: 0;
-			margin-top: 15px;
-		}
 	}
 	#searchbox #selector_cat{
 		max-width: 121px !important;
@@ -774,9 +797,6 @@ a.wishlist_top{
 	.footer_t div.layout-column {
 		min-height: auto;
 	}
-	.footer_t .layout-column:not(:last-child){
-		margin-bottom: 20px;
-	}
 	.footer_b .addon-box p {
 		line-height: 2;
 		img{
@@ -785,15 +805,38 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 991px){
+	div.modal-dialog.cover_product1 {
+		width: 750px;
+	}
+	div.modal-dialog.cover_product1 .product-add-to-cart {
+		margin-top: 0;
+	}
+	div.quickview .arrows.js-arrows i.arrow-down {
+		bottom: 35px;
+	}
+	div.quickview .images-container .js-qv-mask {
+		width: 70%;
+		max-height: 300px;
+	}
+	.product-variants .product-variants-item:not(:last-child){
+		margin-bottom: 15px;
+	}
+	div.quickview .product-add-to-cart .text{
+		display: none;
+	}
+	div.quickview .product-quantity .qty {
+		margin-right: 15px;
+	}
+	div.quickview .product-quantity .add-to-cart{
+		padding: 12px 15px;
+	}
+
 	#product{
 		.product-box .flexbox {
 			width: auto;
 		}
 	}
 	#category{
-		.product-preview .product-info{
-			border-right: 1px solid #fff;
-		}
 		.product-box .flexbox {
 			width: auto;
 		}
@@ -837,12 +880,6 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 767px){
-	#category{
-		.filters-panel .right {
-			text-align: left;
-			margin-top: 15px;
-		}
-	}
 	.container{
 		padding: 0 15px !important;
 	}
@@ -852,6 +889,9 @@ a.wishlist_top{
 	#advsearch_result {
 	    width: 100% !important;
 	    min-width: auto !important;
+	}
+	.footer_t .layout-column:not(:last-child){
+		margin-bottom: 20px;
 	}
 }
 

@@ -24,7 +24,7 @@
  *}
 <div class="product-line-grid">
     <!-- remove button -->
-    <div class="remove-button col-lg-1">
+    <div class="row_cs remove-button col-lg-1 col-md-1 col-sm-1 col-xs-12">
         <div class="cart-line-product-actions ">
             <a
                 class                     = "remove-from-cart"
@@ -43,7 +43,7 @@
         </div>
     </div> 
     <!--  products -->
-    <div class="product-info col-lg-5">
+    <div class="row_cs product-info col-lg-5 col-md-5 col-sm-5 col-xs-12">
         <span class="product-image media-middle">
             <img src="{$product.cover.bySize.large_default.url}" alt="{$product.name|escape:'quotes'}">
             <div class="product-line-info">
@@ -95,7 +95,7 @@
     </div>
 
     <!--  price -->
-    <div class="product-price col-lg-2">
+    <div class="row_cs product-price col-lg-2 col-md-2 col-sm-2 col-xs-12">
         <div class="product-line-info">
     		<span class="value">{$product.price}</span>
             {if $product.unit_price_full}
@@ -105,7 +105,7 @@
     </div>
 
     <!--  qty -->
-    <div class="product-qty col-lg-2">
+    <div class="row_cs product-qty col-lg-2 col-md-2 col-sm-2 col-xs-12">
         {if isset($product.is_gift) && $product.is_gift}
             <span class="gift-quantity">{$product.quantity}</span>
         {else}
@@ -124,7 +124,7 @@
     </div>
 
     <!--  total -->
-    <div class="product-total col-lg-2">
+    <div class="row_cs product-total col-lg-2 col-md-2 col-sm-2 col-xs-12">
         <span class="product-price">
             <span class="value">
                 {if isset($product.is_gift) && $product.is_gift}
