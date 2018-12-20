@@ -27,7 +27,7 @@
 			<input type="text" id="ajax_advsearch" name="search_query" placeholder="{l s='Search everything here' mod='jmsadvsearch'}" class="input-search" />
 		</div>
 		<span class="input-group-addon input-group-search">
-			{l s='Search' mod='jmsadvsearch'}
+			<button>{l s='Search' mod='jmsadvsearch'}</button>
 		</span>
 	</form>
 	<div id="advsearch_result">

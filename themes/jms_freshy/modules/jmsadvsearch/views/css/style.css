@@ -129,6 +129,10 @@
     background: #ed2b2b;
     color: #fff;
 }
+.jms-advsearch .input-group-addon.input-group-search button{
+    background: transparent;
+    border: 0;
+}
 .jms-advsearch .input-group-addon.input-group-search {
     border: 0;
     background: #fb943b;

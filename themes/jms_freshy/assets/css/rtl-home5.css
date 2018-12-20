@@ -39,10 +39,26 @@
   left: 15px;
 }
 .owl-theme .owl-controls div {
-  margin-left: 0;
-  margin-right: 5px;
+  margin-left: 0 !important;
+  margin-right: 5px !important;
 }
 .addon-title h3::after {
   right: 0;
   left: auto;
+}
+
+.newsletter #newsletter_block_left .textnews_h2 {
+  margin-left: 40px;
+  margin-right: 0;
+}
+.newsletter .newsletter-btn.btn-popup {
+  margin-right: 20px;
+  margin-left: 0;
+}
+.blog .owl-theme .owl-controls {
+  right: auto;
+  left: 0;
+}
+.two_column .blog .owl-dots {
+  text-align: right;
 }

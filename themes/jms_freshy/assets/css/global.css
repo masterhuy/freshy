@@ -364,7 +364,8 @@ a.wishlist_top {
   text-align: center; }
 
 #more_info_block + .featured-products .owl-theme .owl-controls {
-  top: -51px; }
+  top: -51px;
+  right: 15px; }
 
 #more_info_block + .featured-products h3 {
   padding-bottom: 75px;
@@ -377,6 +378,10 @@ a.wishlist_top {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
+
+#search .search-box {
+  width: 300px;
+  margin: 0 auto; }
 
 #more_info_block .panel.panel-default {
   border: 0;
@@ -407,7 +412,8 @@ a.wishlist_top {
   #more_info_block .panel-heading a {
     font-size: 20px;
     font-weight: 500;
-    color: #603813; }
+    color: #603813;
+    position: relative; }
     #more_info_block .panel-heading a::after {
       content: "\f107";
       font-family: FontAwesome;
@@ -1185,6 +1191,41 @@ a.wishlist_top {
 
 .menu .features .image img {
   width: 100%; }
+
+.home_5 #more_info_block + .featured-products h3 {
+  padding-bottom: 0; }
+
+.jms-banner a::before {
+  background: rgba(0, 0, 0, 0.1) url(http://magento2.flytheme.net/themes/sm_smarket/pub/static/frontend/Sm/smarket/en_US/images/iconbr.png) no-repeat scroll center center;
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(0.5) rotateY(180deg);
+  -moz-transform: scale(0.5) rotateY(180deg);
+  -webkit-transform: scale(0.5) rotateY(180deg);
+  -ms-transform: scale(0.5) rotateY(180deg);
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 9; }
+
+.jms-banner a:hover::before {
+  transform: scale(1) rotateY(0deg);
+  -moz-transform: scale(1) rotateY(0deg);
+  -webkit-transform: scale(1) rotateY(0deg);
+  -ms-transform: scale(1) rotateY(0deg);
+  visibility: visible;
+  opacity: 1;
+  -moz-opacity: 1;
+  -webkit-opacity: 1; }
 
 @media (max-width: 1366px) {
   .jms-megamenu .menu-align-center > .dropdown-menu {

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-18 04:34:57
+/* Smarty version 3.1.33, created on 2018-12-20 04:42:35
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmsadvsearch\views\templates\hook\jmsadvsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c18bf41ccb453_77920657',
+  'unifunc' => 'content_5c1b640ba7a253_85264044',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c76cc4e9bab6cf4dda58003dd7b97a13cc83f648' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\modules\\jmsadvsearch\\views\\templates\\hook\\jmsadvsearch.tpl',
-      1 => 1543981302,
+      1 => 1545295183,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c18bf41ccb453_77920657 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c1b640ba7a253_85264044 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-advsearch">
 	<form method="get" action="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('search');?>
 " class="input-group" id="searchbox">
@@ -61,8 +61,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 " class="input-search" />
 		</div>
 		<span class="input-group-addon input-group-search">
-			<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search','mod'=>'jmsadvsearch'),$_smarty_tpl ) );?>
-
+			<button><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search','mod'=>'jmsadvsearch'),$_smarty_tpl ) );?>
+</button>
 		</span>
 	</form>
 	<div id="advsearch_result">

@@ -406,10 +406,14 @@
 .brand .addon-box {
   border-radius: 10px; }
 
-#footer {
+.page-index #footer {
   margin-top: -78px; }
-  #footer #social_block ul li {
-    margin-right: 4px; }
+
+#footer #social_block ul li {
+  margin-right: 4px; }
+
+#footer .addon-title h3::after {
+  display: none; }
 
 .footer_t {
   padding: 135px 0 41px; }

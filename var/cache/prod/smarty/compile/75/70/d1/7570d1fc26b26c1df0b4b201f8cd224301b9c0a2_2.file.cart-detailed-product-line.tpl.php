@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-12 22:45:20
+/* Smarty version 3.1.33, created on 2018-12-19 23:44:32
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\templates\checkout\_partials\cart-detailed-product-line.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c11d5d08a67f5_92909604',
+  'unifunc' => 'content_5c1b1e3089a174_16948664',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7570d1fc26b26c1df0b4b201f8cd224301b9c0a2' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\templates\\checkout\\_partials\\cart-detailed-product-line.tpl',
-      1 => 1544416038,
+      1 => 1545192323,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c11d5d08a67f5_92909604 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c1b1e3089a174_16948664 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="product-line-grid">
     <!-- remove button -->
-    <div class="remove-button col-lg-1">
+    <div class="row_cs remove-button col-lg-1 col-md-1 col-sm-1 col-xs-12">
         <div class="cart-line-product-actions ">
             <a
                 class                     = "remove-from-cart"
@@ -47,7 +47,7 @@ function content_5c11d5d08a67f5_92909604 (Smarty_Internal_Template $_smarty_tpl)
         </div>
     </div> 
     <!--  products -->
-    <div class="product-info col-lg-5">
+    <div class="row_cs product-info col-lg-5 col-md-5 col-sm-5 col-xs-12">
         <span class="product-image media-middle">
             <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['bySize']['large_default']['url'], ENT_QUOTES, 'UTF-8');?>
 " alt="<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],'quotes' )), ENT_QUOTES, 'UTF-8');?>
@@ -134,7 +134,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </div>
 
     <!--  price -->
-    <div class="product-price col-lg-2">
+    <div class="row_cs product-price col-lg-2 col-md-2 col-sm-2 col-xs-12">
         <div class="product-line-info">
     		<span class="value"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['price'], ENT_QUOTES, 'UTF-8');?>
 </span>
@@ -146,7 +146,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </div>
 
     <!--  qty -->
-    <div class="product-qty col-lg-2">
+    <div class="row_cs product-qty col-lg-2 col-md-2 col-sm-2 col-xs-12">
         <?php if (isset($_smarty_tpl->tpl_vars['product']->value['is_gift']) && $_smarty_tpl->tpl_vars['product']->value['is_gift']) {?>
             <span class="gift-quantity"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['quantity'], ENT_QUOTES, 'UTF-8');?>
 </span>
@@ -172,7 +172,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </div>
 
     <!--  total -->
-    <div class="product-total col-lg-2">
+    <div class="row_cs product-total col-lg-2 col-md-2 col-sm-2 col-xs-12">
         <span class="product-price">
             <span class="value">
                 <?php if (isset($_smarty_tpl->tpl_vars['product']->value['is_gift']) && $_smarty_tpl->tpl_vars['product']->value['is_gift']) {?>

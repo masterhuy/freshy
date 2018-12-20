@@ -32,7 +32,6 @@
 	font-size: 25px;
 	font-weight: 700;
 	padding: 0;
-	color: #454545;
 	line-height: 1;
 	margin-bottom: 20px;
 }
@@ -52,7 +51,7 @@
 #pagenotfound .small-text, #search .small-text {
 	font-size: 16px;
 	font-weight: 400;
-	color: rgba(17,17,17,0.4);
+	color: #907459;
 }
 @media(max-width:767px) {
 	#search .page-content, #pagenotfound .page-content{

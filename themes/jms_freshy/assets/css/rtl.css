@@ -362,10 +362,6 @@ left:auto !important;
   float: right; }
 .cat-post-list .item .post-meta li {
 	margin-right:0 !important;
-	margin-left:15px !important;
-}
-.cat-post-list .item .post-meta li span {
-	float: right;
 }
 .blog-widget .date .label {
 	float:right;
@@ -665,8 +661,8 @@ ul.footer_links li {
     margin-left: 20px;
     margin-right: 0; }
 #product .product-cover .layer {
-	left: 25px;
-	right:auto;
+  left: 10px;
+  right: auto;
 }
 .quantity-box .option {
 	float: right;
@@ -785,19 +781,25 @@ ul.footer_links li {
 	display:none;
 }
 .images-container .product-images > li.thumb-container > .thumb {
-    margin-left: 23px;
-    margin-right: 0;
+  margin-left: 21px;
+  margin-right: 0;
 }
 .product-quantity .bootstrap-touchspin-down{
 	left:-40px !important;
 }
-.product-quantity input#quantity_wanted{
-	margin-right:40px;
-	margin-left:0;
-}
 .pack-product-container .mask > img {
     margin-left: 0;
     margin-right: -12px;
+}
+.product-information .addToWishlist::before {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.scroll-box-arrows.scroll {
+  left: 20px;
+  right: auto;
+  display: flex;
+  flex-flow: row-reverse;
 }
 /* Checkout Page */
 	.cart-summary .label {
@@ -1143,16 +1145,17 @@ footer .post-created {
 .jms-advsearch .input-group-addon.input-group-search {
   right: -2px;
   left: auto;
-  border-radius: 4px 0 0 4px;
+  border-radius: 30px 0 0 30px;
 }
 #searchbox .input-group-addon.icon-drop-down::after {
   left: 11px;
   right: auto;
 }
 .jms-advsearch .input-group-addon.icon-drop-down::before {
-  right: 0;
+  right: auto;
   left: 0;
 }
+
 #ajax_advsearch {
   padding-right: 20px;
   padding-left: 10px;
@@ -1245,7 +1248,6 @@ footer .post-created {
 .breadcrumb-inner ol li:not(:last-child)::before {
   content: "\f100";
   font-family: FontAwesome;
-  color: #888;
   margin: 0 3px;
 }
 #product .content_price, .quickview .content_price {
@@ -1299,7 +1301,7 @@ footer .post-created {
   margin-right: 0;
 }
 .single-blog .post-meta li {
-  padding-left: 13px;
+  padding-left: 5px;
   padding-right: 0;
 }
 .single-blog .post-fulltext .p2::after {
@@ -1485,4 +1487,122 @@ img.attachment-widget.wp-post-image.img-responsive {
 }
 .testimonial-comment {
   text-align: right;
+}
+.owl-controls.disabled {
+  display: none !important;
+}
+#product-availability {
+  margin-right: 36px;
+  margin-left: 0;
+}
+.content_price .price.old {
+  margin-left: 18px;
+  margin-right: 0;
+}
+#product-availability img {
+  margin-left: 3px;
+  margin-right: 0;
+}
+.product-variants-item {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.product-variants-item::after {
+  left: 20px;
+  right: auto;
+}
+#atstbx > a{
+  float: right;
+}
+#more_info_block .panel-heading a::after {
+  position: absolute;
+  left: -20px;
+  right: auto;
+  top: -13px;
+}
+#more_info_block .panel-title > a.collapsed::after {
+  transform: rotate(180deg);
+  top: -10px;
+}
+.block-categories .title-block h3::before {
+  right: 0;
+  left: auto;
+}
+.block-categories li a {
+  padding: 0 15px 0 0px;
+}
+.block-categories li a::before,
+.title-block h3::before {
+  right: 0;
+  left: auto;
+}
+#search_filters .facet .facet-title::before {
+  right: 0;
+  left: auto;
+}
+#category .products-list-in-column .addToWishlist.product-btn {
+  left: 20px;
+  right: auto;
+}
+.quickview .product-variants .product-variants-item:not(:last-child){
+  margin-bottom: 15px;
+}
+.cart-grid .product-image.media-middle > img {
+  margin-left: 23px;
+  margin-right: 0;
+}
+.js-cart-line-product-quantity.form-control {
+  border-left: 0;
+  border-right: 1px solid #ebebeb;
+}
+.cart-box .btn-shopping {
+  float: right;
+}
+.widget-title::before, .title_block::before {
+  right: 0;
+  left: auto;
+}
+.widget-categories li a {
+  padding-right: 14px;
+  padding-left: 0;
+}
+.widget-categories li a::before {
+  right: 0;
+  left: auto;
+}
+.blog-widget .comment-item p {
+  padding-right: 15px;
+  padding-left: 0;
+}
+.blog-widget .comment-item p::before {
+  left: auto;
+  right: 0;
+}
+.widget-archives li a {
+  padding-right: 15px;
+  padding-left: 0;
+}
+.widget-archives li a::before {
+  right: 0;
+  left: auto;
+}
+.post-fulltext .cmt::before {
+  right: 0;
+  left: auto;
+}
+.post-fulltext .cmt {
+  padding-right: 33px;
+  padding-left: 0;
+}
+.post-fulltext .info .name {
+  margin-right: 9px;
+  margin-left: 0;
+}
+.post-fulltext .info {
+  right: -4px;
+  left: auto;
+}
+.commentForm > h3::before {
+  right: 0;
+  left: auto;
 }

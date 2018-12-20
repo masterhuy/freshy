@@ -452,10 +452,11 @@
 		}
 		.owl-dots {
 			position: absolute;
-			width: 100%;
+			width: auto;
 			text-align: left;
 			left: 50px;
 			bottom: 46px;
+			display: inline-block;
 		}
 	}
 }
