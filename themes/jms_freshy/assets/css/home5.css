@@ -1,3 +1,43 @@
+.jms-banner a::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 70px solid rgba(255, 255, 255, 0);
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+.jms-banner a::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.5;
+  border: 30px solid #fff;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+.jms-banner a:hover::before {
+  border: 0 solid rgba(255, 255, 255, 0.7); }
+
+.jms-banner a:hover::after {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s; }
+
 .addon-title h3 {
   text-align: left !important; }
   .addon-title h3::before {

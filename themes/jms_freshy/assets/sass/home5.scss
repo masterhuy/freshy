@@ -1,6 +1,11 @@
 @import "mixin";
 @import "varians";
 
+@include BannerEffect4_1();
+@include BannerEffect4_2();
+@include hoverBannerEffect4_1();
+@include hoverBannerEffect4_2();
+
 .addon-title h3{
 	text-align: left !important;
 	&::before {

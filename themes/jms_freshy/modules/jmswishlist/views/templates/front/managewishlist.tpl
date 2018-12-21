@@ -50,8 +50,8 @@
 		<div class="wlp_bought">
 			<ul class="clearfix wlp_bought_list">
 				{foreach from=$products item=product name=i}
-				<li id="wlp_{$product.id_product}_{$product.id_product_attribute}" class="clearfix address {if $smarty.foreach.i.index % 2}alternate_{/if}item">
-					
+				<li id="wlp_{$product.id_product}_{$product.id_product_attribute}" class="col-lg-3 col-md-3 col-sm-6 col-xs-12 clearfix address {if $smarty.foreach.i.index % 2}alternate_{/if}item">
+					<div class="product-box">
 					<div class="clearfix">
 					<div class="clearfix">
 					<div class="clearfix">
@@ -61,7 +61,7 @@
 							</a>
 						</div>
 						<div class="product_infos">
-							<p id="s_title" class="product_name">{$product.name|truncate:40:'...'|escape:'html':'UTF-8'}</p>
+							<p id="s_title" class="product-link">{$product.name|truncate:40:'...'|escape:'html':'UTF-8'}</p>
 							<span class="wishlist_product_detail">
 								{if isset($product.attributes_small)}
 								<a href="{$link->getProductlink($product.id_product, $product.link_rewrite, $product.category_rewrite)|escape:'html'}" title="{l s='Product detail' d='Shop.Theme'}">{$product.attributes_small|escape:'html':'UTF-8'}</a>
@@ -96,7 +96,7 @@
 								{/if}
 							</span>
 						</div>
-
+					</div>
 					</div>
 					<br />
 					<div class="group_btn">

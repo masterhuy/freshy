@@ -1440,7 +1440,7 @@ ul#order_step li {
 
 .cart_block_list {
   margin-bottom: 0;
-  max-height: 410px;
+  max-height: 415px;
   overflow: auto;
 }
 .cart_block_list li {
@@ -1718,7 +1718,7 @@ ul#order_step li {
 }
   .product-miniature .preview {
     position: relative;
-    overflow: hidden; }
+     }
     .product-miniature .preview .block-label {
     position: absolute;
     text-align: center;
@@ -2074,18 +2074,16 @@ ul#order_step li {
   z-index: 2; }
 
 .product-preview .color_to_pick_list {
-  padding-bottom: 15px;
+  position: absolute;
   margin: 0;
   opacity: 0;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  visibility: hidden; }
-.home_3 .product-preview .color_to_pick_list > .variant-links,
-.home_4 .product-preview .color_to_pick_list > .variant-links {
-  padding: 0px 30px 15px;
+  visibility: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  bottom: 0;
 }
+
       .product-preview .color_to_pick_list > .variant-links {
     display: -webkit-box;
     display: flex;
@@ -2096,9 +2094,8 @@ ul#order_step li {
     padding: 0; }
 
 .product-preview .color_to_pick_list a {
-  height: 30px;
-  /* margin: 0; */
-  width: 30px;
+  height: 15px;
+  width: 15px;
   display: block;
   margin: 0 5px;
   border-radius: 3px;
@@ -3034,6 +3031,14 @@ ul.footer_links {
 }
 
 /* Quick view */
+.quickview .product-actions .product-variants select {
+   -moz-appearance: menulist; 
+   -webkit-appearance: menulist; 
+  border-radius: 0;
+}
+.quickview .product-variants .product-variants-item:not(:last-child){
+  margin-bottom: 15px;
+}
 .modal-dialog.cover_product1 {
   width: 991px;
   margin: 66px auto; }
@@ -3169,6 +3174,18 @@ ul.footer_links {
   display: inline-block;
   padding: 0 15px;
   margin-bottom: 30px;
+}
+.wlp_bought_list .product-box{
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding: 1%;
+}
+.wlp_bought_list .product_infos {
+  text-align: center;
+}
+.wlp_bought_list .group_btn {
+  margin-bottom: 20px;
+  text-align: center;
 }
 #s_title {
   margin-top: 10px;
@@ -5923,6 +5940,22 @@ sup.required {
 .add-to-cart[disabled] .text-outofstock {
   display: block;
 }
+.jms-banner{
+  overflow: hidden;
+}
+.jms-banner a img{
+  transition: 1s all;
+}
+.jms-banner > a{
+  display: block;
+}
+
+
+
+
+
+
+
 
 a,
 button,

@@ -1,6 +1,9 @@
 @import "mixin";
 @import "varians";
 
+@include BannerEffect2();
+@include hoverBannerEffect2();
+
 // header
 .header{
 	position: relative;

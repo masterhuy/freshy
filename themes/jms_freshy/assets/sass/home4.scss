@@ -1,6 +1,9 @@
 @import "mixin";
 @import "varians";
 
+@include BannerEffect3();
+@include hoverBannerEffect3();
+
 //topbar
 .topbar{
 	background: $active;
@@ -16,8 +19,7 @@
 		}
 		.type3{
 			display: block;
-		}
-	}
+		}	}
 	.languages-info{
 		&.type1, &.type3, &.type4{
 			display: none;
@@ -282,6 +284,9 @@
 				display: none;
 			}
 		}
+	}
+	.jms-banner > a::before{
+		display: none;
 	}
 	.right{
 		width: 75% !important;

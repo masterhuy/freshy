@@ -7,6 +7,129 @@
 	}
 }
 
+// effect1
+@mixin hoverBannerEffect1(){
+	.jms-banner:hover a img{
+	  transform: scale(1.05);
+	}
+}
+
+// effect2
+@mixin BannerEffect2(){
+	.jms-banner a::before {
+	    background-color: rgba(255,255,255,0.2);
+	    display: block;
+	  	width: 100%;
+		height: 100%;
+		left: -100%;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		position: absolute;
+		top: 0;
+		transition: all .3s ease 0s;
+		content: "";
+		z-index: 1;
+	}
+}
+
+@mixin hoverBannerEffect2(){
+	.jms-banner a:hover::before {
+	    left: 0;
+	    opacity: 1;
+	}
+}
+
+// effect3
+@mixin BannerEffect3(){
+	.jms-banner a::before {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 75%);
+	  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 75%);
+	  content: '';
+	  opacity: 0;
+	  transform: translate3d(0, 50%, 0);
+	  transition: opacity .35s,transform .35s;
+	}
+}
+
+@mixin hoverBannerEffect3(){
+	.jms-banner a:hover::before{
+	  opacity: 1;
+	  transform: translate3d(0, 0, 0);
+	}
+}
+
+// effect4
+@mixin BannerEffect4_1(){
+	.jms-banner a::before {
+	  content: "";
+	  height: 100%;
+	  width: 100%;
+	  position: absolute;
+	  border: 70px solid rgba(255, 255, 255, 0);
+	  top: 0;
+	  left: 0;
+	  transition: all 0.5s ease-in-out;
+	}
+}
+
+@mixin BannerEffect4_2(){
+	.jms-banner a::after {
+	  content: "";
+	  height: 100%;
+	  width: 100%;
+	  position: absolute;
+	  opacity: 0.5;
+	  border: 30px solid #fff;
+	  top: 0;
+	  left: 0;
+	  transform: scale(0);
+	  transition: all 0.5s ease-in-out;
+	}
+}
+
+@mixin hoverBannerEffect4_1(){
+	.jms-banner a:hover::before {
+	  border: 0 solid rgba(255, 255, 255, 0.7);
+	}
+}
+
+@mixin hoverBannerEffect4_2(){
+	.jms-banner a:hover::after {
+	  transform: scale(0.8);
+	  opacity: 0;
+	  transition-delay: 0.1s;
+	}
+}
+
+// effect5
+@mixin BannerEffect5(){
+	.jms-banner a::after {
+		background-color: rgba(255, 255, 255, 0.3);
+		content: "";
+		display: inline-block;
+		height: 100%;
+		position: absolute;
+		right: 200%;
+		top: 0;
+		transform: skew(-45deg, 0deg);
+		vertical-align: middle;
+		width: 100%;
+	}
+}
+
+@mixin hoverBannerEffect5(){
+	.jms-banner a:hover::after {
+	  opacity: 1;
+	  right: -200%;
+	  transition: all 0.6s ease-in-out 0s;
+	}
+}
+
 @mixin borderBottomColor($home, $color){
 	.home_#{$home}{
 		#search_filters .facet .facet-title,

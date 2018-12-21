@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-20 01:39:20
+/* Smarty version 3.1.33, created on 2018-12-21 02:44:16
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmswishlist\views\templates\front\managewishlist.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c1b3918dab132_22324228',
+  'unifunc' => 'content_5c1c99d0d01216_47356933',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e5c0aae4519f348368d57381158bfd67e662bf06' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\modules\\jmswishlist\\views\\templates\\front\\managewishlist.tpl',
-      1 => 1542795069,
+      1 => 1545378246,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c1b3918dab132_22324228 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c1c99d0d01216_47356933 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_freshy\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
 
@@ -74,8 +74,8 @@ $_smarty_tpl->tpl_vars['__smarty_foreach_i']->value['index']++;
 ?>
 				<li id="wlp_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_product'], ENT_QUOTES, 'UTF-8');?>
 _<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_product_attribute'], ENT_QUOTES, 'UTF-8');?>
-" class="clearfix address <?php if ((isset($_smarty_tpl->tpl_vars['__smarty_foreach_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_foreach_i']->value['index'] : null)%2) {?>alternate_<?php }?>item">
-					
+" class="col-lg-3 col-md-3 col-sm-6 col-xs-12 clearfix address <?php if ((isset($_smarty_tpl->tpl_vars['__smarty_foreach_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_foreach_i']->value['index'] : null)%2) {?>alternate_<?php }?>item">
+					<div class="product-box">
 					<div class="clearfix">
 					<div class="clearfix">
 					<div class="clearfix">
@@ -89,7 +89,7 @@ _<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_produc
 							</a>
 						</div>
 						<div class="product_infos">
-							<p id="s_title" class="product_name"><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],40,'...' )),'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+							<p id="s_title" class="product-link"><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],40,'...' )),'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 </p>
 							<span class="wishlist_product_detail">
 								<?php if (isset($_smarty_tpl->tpl_vars['product']->value['attributes_small'])) {?>
@@ -168,7 +168,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 								<?php }?>
 							</span>
 						</div>
-
+					</div>
 					</div>
 					<br />
 					<div class="group_btn">

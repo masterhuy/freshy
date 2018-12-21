@@ -121,8 +121,9 @@ line-height: 1.64;
 }
 #dontshowagain {
   position: relative;
-  top: 2px;
+  top: 5px;
   left: 2px;
+  margin-bottom: 18px;
 }
 .dontshow input,
 .dontshow > div {

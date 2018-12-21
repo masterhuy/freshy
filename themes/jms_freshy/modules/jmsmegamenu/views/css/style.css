@@ -290,6 +290,7 @@ div.jms-megamenu .dropdown-menu::before{
     position: absolute;
     width: 0;
     height: 0;
+    bottom: -10px;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-bottom: 5px solid #fb943b;
@@ -297,7 +298,10 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .jms-megamenu .nav > li.open > a::after {
     opacity: 1;
-    transition-delay: .3s;
+    bottom: 0;
+}
+.jms-megamenu .nav > li > a::after {
+    transition: .4s all;
 }
 .jms-megamenu .nav > .item-fullwidth .mega-nav li {
     border-bottom: medium none;

@@ -1,3 +1,29 @@
+.jms-banner a::after {
+  background-color: rgba(255, 255, 255, 0.3);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  right: 200%;
+  top: 0;
+  -webkit-transform: skew(-45deg, 0deg);
+  -ms-transform: skew(-45deg, 0deg);
+  transform: skew(-45deg, 0deg);
+  vertical-align: middle;
+  width: 100%; }
+
+.jms-banner a:hover::after {
+  opacity: 1;
+  right: -200%;
+  -webkit-transition: all 0.6s ease-in-out 0s;
+  -o-transition: all 0.6s ease-in-out 0s;
+  transition: all 0.6s ease-in-out 0s; }
+
+.jms-banner:hover a img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05); }
+
 .top_menu_second {
   left: auto;
   right: -430px; }
@@ -251,6 +277,14 @@
     margin-top: -2px; }
   .slides .jms-vermegamenu li.page {
     display: none; }
+
+.cates .jms-banner > a::after {
+  display: none; }
+
+.cates .jms-banner > a img {
+  -webkit-transform: unset;
+  -ms-transform: unset;
+  transform: unset; }
 
 .cates .banner-content {
   bottom: 11px;

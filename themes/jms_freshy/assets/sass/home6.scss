@@ -1,6 +1,10 @@
 @import "mixin";
 @import "varians";
 
+@include BannerEffect5();
+@include hoverBannerEffect5();
+@include hoverBannerEffect1();
+
 .top_menu_second{
 	left: auto;
 	right: -430px;
@@ -289,6 +293,14 @@
 
 //category
 .cates{
+	.jms-banner > a{
+		&::after{
+			display: none;
+		}
+		img{
+			transform: unset;
+		}
+	}
 	.banner-content{
 		bottom: 11px;
 		top: auto;

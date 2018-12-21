@@ -61,6 +61,7 @@
 						{/block}
 						<a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '26', false, 1); return false;" data-id-product="26" title="Add to Wishlist"></a>
 
+
 						<div class="product-info hotdeal">
 							<div class="countdown" id="countdown-{$hotdeals[$k].id_hotdeals nofilter}">{$hotdeals[$k].deals_time nofilter}</div>
 							{block name='product_name'}
@@ -88,24 +89,7 @@
 							{/block}
 						</div>
 
-						<div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down">
-						  	{block name='product_variants'}
-								{if $product.main_variants}
-							  		{include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
-								{/if}
-						  	{/block}
-						</div>
-
 						<div class="product_action">
-							{block name='product_variants'}
-								{if $product.main_variants}
-									{if isset($jpb_pcolor) && $jpb_pcolor == 1}
-										<div class="color_to_pick_list">
-											{include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
-										</div>
-									{/if}
-								{/if}
-							{/block}
 							<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart product-btn cart-button btn-effect1 {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
 								<span class="fa fa-spin fa-spinner"></span>
 								<span class="fa fa-check"></span>
