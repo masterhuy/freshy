@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-11 22:43:36
+/* Smarty version 3.1.33, created on 2018-12-23 22:03:17
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c1083e84b3740_16032154',
+  'unifunc' => 'content_5c204c75b86c23_68767701',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4de7b37e878e81afc918258b84fbbfc4842924e2' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1544586101,
+      1 => 1545620567,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c1083e84b3740_16032154 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c204c75b86c23_68767701 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?> 
@@ -32,19 +32,19 @@ if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?>
 }?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10191056495c1083e84904b0_73712987', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16452976175c204c75b86c23_72728359', "page_content");
 ?>
 
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block "page_content"} */
-class Block_10191056495c1083e84904b0_73712987 extends Smarty_Internal_Block
+class Block_16452976175c204c75b86c23_72728359 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_10191056495c1083e84904b0_73712987',
+    0 => 'Block_16452976175c204c75b86c23_72728359',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -78,8 +78,8 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 "><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['category']->value['title'],'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 </a></h4>	
 					<div class="cat-intro">
-						<p><?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['category']->value['introtext'],70,'...' ));?>
-</p>
+						<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['category']->value['introtext'],70,'...' ));?>
+
 					</div>
 				</div>				
 			</div>

@@ -1175,7 +1175,9 @@ fieldset[disabled] .btn-default {
   cursor: pointer;
 }
 
-.btn-shopnow1:hover{
+.btn-shopnow1:hover,
+.btn-shopnow1:active,
+.btn-shopnow1:focus{
   color: #fff !important;
 }
 .btn-effect1, .btn-effect {
@@ -2222,7 +2224,7 @@ ul#order_step li {
   margin-bottom: 0; }
 
 li.product-flag {
-  background: #111 none repeat scroll 0 0;
+  background: #fb943b none repeat scroll 0 0;
   color: #fff;
   display: block;
   font-weight: 700;
@@ -2231,7 +2233,9 @@ li.product-flag {
   padding: 0.3125rem 0.4375rem;
   position: absolute;
   text-transform: uppercase;
-  z-index: 2; }
+  z-index: 2;
+  border-radius: 3px;
+}
 
 .product-flag.discount, .product-flag.new, .product-flag.on-sale {
   display: none; }

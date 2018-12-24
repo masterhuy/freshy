@@ -690,6 +690,9 @@
 		.center{
 			order: 1;
 			justify-content: flex-start;
+			p{
+				margin-bottom: 0;
+			}
 			.addon-box:first-child{
 				display: none;
 			}

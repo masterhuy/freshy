@@ -350,3 +350,6 @@ a:hover, a:focus, a:active, a:focus {
 .fraction-slider .prev:hover, .fraction-slider .next:hover {
   background: rgba(128,168,227,1);
 }
+li.product-flag {
+  background: #80a8e3 none repeat scroll 0 0;
+}

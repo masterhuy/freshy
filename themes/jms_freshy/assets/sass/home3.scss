@@ -161,6 +161,7 @@
 		}
 		p{
 			margin-right: 15px;
+			text-align: right;
 		}
 		.content{
 			text-align: right;
@@ -313,8 +314,10 @@
 	.jms-megamenu .nav > li{
 		padding: 0 15px;
 	}
+	#newsletter-input {
+		width: 330px;
+	}
 }
-
 @media (max-width: 991px){
 	.header{
 		padding: 10px 0;

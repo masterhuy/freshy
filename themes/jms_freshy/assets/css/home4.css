@@ -558,7 +558,9 @@
   .deal .right {
     margin-top: 100px; }
   .jms-row.blog .testimonial {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .footer_t p.e_mail {
+    margin-bottom: 0; } }
 
 @media (max-width: 991px) and (min-width: 768px) {
   .product-box .flexbox {
@@ -575,6 +577,8 @@
       padding-left: 15px; } }
 
 @media (max-width: 767px) {
+  #newsletter-input {
+    width: 100%; }
   .service {
     margin-top: 30px; }
   .deal .left .addon-box {

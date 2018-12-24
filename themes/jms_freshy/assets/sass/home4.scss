@@ -611,6 +611,9 @@
 	.jms-row.blog .testimonial {
 		margin-top: 30px;
 	}
+	.footer_t p.e_mail{
+		margin-bottom: 0;
+	}
 }
 @media (max-width: 991px) and (min-width: 768px){
 	.product-box .flexbox {
@@ -635,6 +638,9 @@
 }
 
 @media (max-width: 767px){
+	#newsletter-input {
+		width: 100%;
+	}
 	.service{
 		margin-top: 30px;
 	}

@@ -610,6 +610,8 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start; }
+    .header .center p {
+      margin-bottom: 0; }
     .header .center .addon-box:first-child {
       display: none; }
   .header .right {
