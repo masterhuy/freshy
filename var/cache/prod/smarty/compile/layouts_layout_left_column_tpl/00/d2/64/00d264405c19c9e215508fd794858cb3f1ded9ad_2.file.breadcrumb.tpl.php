@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-23 23:43:48
+/* Smarty version 3.1.33, created on 2018-12-25 04:10:40
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\templates\_partials\breadcrumb.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c20640474e983_75682778',
+  'unifunc' => 'content_5c21f410ede5a1_96276971',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c20640474e983_75682778 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c21f410ede5a1_96276971 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="breadcrumb">
     <div class="breadcrumb-box container">
         <span class="title_meta"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['page']->value['meta']['title'], ENT_QUOTES, 'UTF-8');?>

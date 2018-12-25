@@ -103,16 +103,15 @@ line-height: 1.64;
 }
 .jms-popup-overlay {
 	display: block;	
-	background-color: rgba(0, 0, 0, 0.2);
-	background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));    
+	background-color: rgba(0, 0, 0, 0.75);  
 	height: 100%;
-    left: 0;
-    opacity: 1;
-    pointer-events: auto;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 99998;
+  left: 0;
+  opacity: 1;
+  pointer-events: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99998;
 }
 .dontshow {
   margin-top: 26px;

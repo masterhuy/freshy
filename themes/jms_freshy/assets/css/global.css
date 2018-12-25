@@ -1196,7 +1196,7 @@ a.wishlist_top {
   width: 100%; }
 
 .home_5 #more_info_block + .featured-products h3 {
-  padding-bottom: 0; }
+  padding-bottom: 0.67em; }
 
 @media (max-width: 1366px) {
   .jms-megamenu .menu-align-center > .dropdown-menu {

@@ -647,8 +647,12 @@
 #footer {
 	margin-top: 0;
 }
+.page-index .footer_t{
+	border-top: 0;
+}
 .footer_t{
 	padding-top: 57px;
+	border-top: 1px solid #ebebeb;
 	#social_block ul li {
 		margin-right: 4px;
 	}

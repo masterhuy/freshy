@@ -275,6 +275,9 @@
     right: -8px; }
   .testimonial .addon-title h3 {
     letter-spacing: 0.2px; }
+  .testimonial .testimonial-box {
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.08); }
 
 .blog {
   margin-top: 53px; }

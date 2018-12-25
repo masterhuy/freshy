@@ -568,8 +568,12 @@
 #footer {
   margin-top: 0; }
 
+.page-index .footer_t {
+  border-top: 0; }
+
 .footer_t {
-  padding-top: 57px; }
+  padding-top: 57px;
+  border-top: 1px solid #ebebeb; }
   .footer_t #social_block ul li {
     margin-right: 4px; }
 

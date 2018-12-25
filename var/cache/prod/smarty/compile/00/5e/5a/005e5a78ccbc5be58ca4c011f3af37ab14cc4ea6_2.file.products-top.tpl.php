@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-23 21:16:17
+/* Smarty version 3.1.33, created on 2018-12-25 03:38:23
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\templates\catalog\_partials\products-top.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c204171e67a55_72006904',
+  'unifunc' => 'content_5c21ec7fb4c977_75547737',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/sort-orders.tpl' => 1,
   ),
 ),false)) {
-function content_5c204171e67a55_72006904 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c21ec7fb4c977_75547737 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -41,7 +41,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 		<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 right">
 			<div class="view-mode ">
 				<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1100850165c204171e67a53_86465879', 'sort_by');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7965042085c21ec7fb4c975_90201278', 'sort_by');
 ?>
 
 			</div>
@@ -50,12 +50,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1100850165c204171e
 </div>
 <?php }
 /* {block 'sort_by'} */
-class Block_1100850165c204171e67a53_86465879 extends Smarty_Internal_Block
+class Block_7965042085c21ec7fb4c975_90201278 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'sort_by' => 
   array (
-    0 => 'Block_1100850165c204171e67a53_86465879',
+    0 => 'Block_7965042085c21ec7fb4c975_90201278',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
