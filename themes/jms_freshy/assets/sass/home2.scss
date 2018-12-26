@@ -1,9 +1,6 @@
 @import "mixin";
 @import "varians";
 
-@include BannerEffect2();
-@include hoverBannerEffect2();
-
 // header
 .header{
 	position: relative;
@@ -234,6 +231,9 @@
 	margin-top: 132px;
 	.addon-title h3{
 		letter-spacing: 0.3px;
+	}
+	.product-preview {
+		margin-bottom: 30px;
 	}
 }
 

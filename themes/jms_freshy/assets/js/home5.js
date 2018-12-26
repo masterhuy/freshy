@@ -475,9 +475,9 @@ jQuery(document).ready(function($) {
 		}, function(){
         productCarousel.css("z-index", "1");
 	});
-	$(".featured_product .product-miniature").hover(function(){
-	    featuredProduct.css("z-index", "3");
+	$(".featured_product .addon-box:first-child").hover(function(){
+	    $(this).css("z-index", "3");
 		}, function(){
-        featuredProduct.css("z-index", "1");
+        $(this).css("z-index", "1");
 	});
 });

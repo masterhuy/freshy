@@ -1,4 +1,9 @@
-.jms-banner a::before {
+.jms-banner > a:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05); }
+
+.jms-banner > a::before {
   content: "";
   height: 100%;
   width: 100%;
@@ -10,13 +15,13 @@
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
 
-.jms-banner a::after {
+.jms-banner > a::after {
   content: "";
   height: 100%;
   width: 100%;
   position: absolute;
   opacity: 0.5;
-  border: 30px solid #fff;
+  border: 70px solid #fff;
   top: 0;
   left: 0;
   -webkit-transform: scale(0);
@@ -26,10 +31,10 @@
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
 
-.jms-banner a:hover::before {
+.jms-banner > a:hover::before {
   border: 0 solid rgba(255, 255, 255, 0.7); }
 
-.jms-banner a:hover::after {
+.jms-banner > a:hover::after {
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
@@ -317,14 +322,65 @@
     letter-spacing: 0.3px; }
   .banner .right .jms-banner {
     float: left; }
+    .banner .right .jms-banner p {
+      margin-bottom: 0; }
+    .banner .right .jms-banner .banner-content {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
   .banner .right .b1 {
     width: 50%;
     padding-right: 15px; }
+    .banner .right .b1 .banner-content {
+      right: 41px;
+      min-width: 190px; }
+    .banner .right .b1 p {
+      font-size: 42px;
+      font-family: PlayBall;
+      color: #7cbb2c; }
+      .banner .right .b1 p.text-2 {
+        text-align: right;
+        margin-top: -8px; }
   .banner .right .b2 {
     width: 50%;
     padding-left: 15px; }
+    .banner .right .b2 .banner-content {
+      right: 22px;
+      text-align: center; }
+    .banner .right .b2 .text-1 {
+      font-size: 36px;
+      color: #ff7e00;
+      text-shadow: 2px 2px #fff;
+      font-weight: 600; }
+    .banner .right .b2 .text-2 {
+      font-size: 24px;
+      font-family: Cabin;
+      color: #603813;
+      font-weight: 500; }
   .banner .right .b3 {
     margin-top: 30px; }
+    .banner .right .b3 .banner-content {
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center; }
+    .banner .right .b3 .text-1 {
+      font-size: 40px;
+      font-family: PlayBall;
+      color: #f93c3c; }
+    .banner .right .b3 .text-2 {
+      font-size: 36px;
+      font-weight: 600;
+      color: #7cbb2c;
+      text-shadow: 2px 2px #fff;
+      letter-spacing: 0.6px; }
+    .banner .right .b3 .btn-shopnow {
+      color: #fb943b;
+      margin-top: 8px; }
+      .banner .right .b3 .btn-shopnow::after {
+        background: #fb943b; }
 
 .newsletter {
   padding: 42px 0 32px; }
@@ -372,6 +428,23 @@
     display: block;
     margin-left: 20px; }
 
+.two_column .banner-right {
+  margin-top: -108px; }
+  .two_column .banner-right .banner-content {
+    top: 20px;
+    width: 100%;
+    text-align: center; }
+  .two_column .banner-right p {
+    font-family: PlayBall;
+    font-size: 37px;
+    color: #8da92e;
+    letter-spacing: 0.8px; }
+  .two_column .banner-right .text-1 {
+    margin-bottom: -6px;
+    padding-right: 39px; }
+  .two_column .banner-right .text-2 {
+    padding-left: 33px; }
+
 .two_column .addon-title h3 {
   font-size: 25px; }
   .two_column .addon-title h3::after {
@@ -386,44 +459,70 @@
 .two_column .product-box .flexbox {
   margin-right: 10px; }
 
-.two_column .featured_product {
+.two_column .featured_product .addon-box:first-child {
   position: relative;
   z-index: 1; }
-  .two_column .featured_product .owl-stage-outer {
-    padding-bottom: 60px; }
+
+.two_column .featured_product .addon-box:last-child {
+  position: relative;
+  z-index: 2; }
+
+.two_column .featured_product .owl-stage-outer {
+  padding-bottom: 60px; }
 
 .two_column .banner2 {
-  position: relative;
-  z-index: 2;
-  margin-top: -24px; }
+  margin-top: -5px; }
+  .two_column .banner2 p {
+    margin-bottom: 0; }
+  .two_column .banner2 .banner-content {
+    left: 50%;
+    top: 50%;
+    min-width: 450px;
+    text-align: right;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .two_column .banner2 .banner-content .text-1 {
+      font-size: 37px;
+      font-family: Cabin;
+      color: #fb943b;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 5px; }
+    .two_column .banner2 .banner-content .text-2 {
+      font-size: 23px;
+      font-weight: 500;
+      letter-spacing: 0.5px; }
 
-.two_column .blog .blog-carousel {
-  padding-top: 28px; }
-
-.two_column .blog .post-title {
-  padding-bottom: 4px; }
-  .two_column .blog .post-title a {
-    line-height: 1.68; }
-
-.two_column .blog .post-meta {
-  margin-bottom: 7px; }
-
-.two_column .blog .post-intro p {
-  color: #907459;
-  line-height: 1.85;
-  font-family: Cabin;
-  font-size: 16px; }
-
-.two_column .blog .owl-dots {
-  text-align: left;
-  bottom: -34px; }
-
-.two_column .blog .owl-dots .owl-dot {
-  margin: 0;
-  margin-right: 5px; }
+.two_column .blog {
+  margin-top: -168px; }
+  .two_column .blog .blog-carousel {
+    padding-top: 28px; }
+  .two_column .blog .post-title {
+    padding-bottom: 4px; }
+    .two_column .blog .post-title a {
+      line-height: 1.68;
+      display: block;
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+  .two_column .blog .post-meta {
+    margin-bottom: 7px; }
+  .two_column .blog .post-intro p {
+    color: #907459;
+    line-height: 1.85;
+    font-family: Cabin;
+    font-size: 16px; }
+  .two_column .blog .owl-dots {
+    text-align: left;
+    bottom: -34px; }
+  .two_column .blog .owl-dots .owl-dot {
+    margin: 0;
+    margin-right: 5px; }
 
 .two_column .recommend {
-  margin-top: -319px; }
+  margin-top: 57px; }
   .two_column .recommend .flex-box.product-box {
     margin-bottom: 25px;
     min-height: 125px; }
@@ -471,7 +570,9 @@
   .banner .left .all-dpm a {
     font-size: 16px; }
   #newsletter-input {
-    width: 330px; } }
+    width: 330px; }
+  .best_seller .product-name {
+    font-size: 16px; } }
 
 @media (max-width: 991px) {
   .header .left .addon-box:first-child {
@@ -482,6 +583,8 @@
     display: none; }
   .header .right .addon-box:first-child {
     display: none; }
+  .two_column .banner-right {
+    margin-top: 0; }
   .newsletter .block_content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -491,6 +594,8 @@
   .newsletter #newsletter_block_left .textnews_h2 {
     margin-right: 0;
     margin-bottom: 20px; }
+  .best_seller {
+    margin-top: 30px; }
   .banner {
     margin-top: 30px; }
   .ver_mobile .ver_menu {
@@ -501,7 +606,23 @@
   .two_column .testimonial .id_testimonial {
     right: 0; } }
 
+@media (max-width: 991px) and (min-width: 768px) {
+  .two_column .banner-right p {
+    font-size: 20px; } }
+
 @media (max-width: 767px) {
+  .two_column .banner2 .banner-content {
+    min-width: auto; }
+    .two_column .banner2 .banner-content .text-1 {
+      font-size: 16px; }
+    .two_column .banner2 .banner-content .text-2 {
+      font-size: 14px; }
+  .banner .right .b3 .text-2 {
+    font-size: 20px; }
+  .banner .right .b3 .text-1 {
+    font-size: 20px; }
+  .banner .right .b3 .btn-shopnow {
+    font-size: 14px; }
   .service {
     margin-top: 30px; }
   .btn-shopnow1 {
@@ -514,8 +635,26 @@
     margin-top: 60px; } }
 
 @media (max-width: 481px) {
+  .two_column .banner2 .banner-content .text-1 {
+    font-size: 10px; }
+  .two_column .banner2 .banner-content .text-2 {
+    font-size: 9px; }
   .banner {
     margin-top: 30px; }
+    .banner .right .b1 p {
+      font-size: 25px; }
+    .banner .right .b1 .banner-content {
+      right: 20px;
+      min-width: 120px; }
+    .banner .right .b2 .text-1 {
+      font-size: 26px; }
+    .banner .right .b2 .text-2 {
+      font-size: 14px; }
+    .banner .right .b3 .text-2 {
+      font-size: 14px; }
+    .banner .right .b3 .btn-shopnow {
+      font-size: 10px;
+      margin-top: 0; }
   .newsletter {
     margin-top: 40px;
     padding: 60px 0 60px; }

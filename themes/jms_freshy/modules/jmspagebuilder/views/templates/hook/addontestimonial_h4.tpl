@@ -52,7 +52,7 @@
 						<div class="testimonial-box">
 						<div class="testimonial-info">
 							<div class="testimonial-comment" >
-								{$testimonial.comment|truncate:85:'...'|escape:'html':'UTF-8'}
+								{$testimonial.comment|truncate:120:'...'|escape:'html':'UTF-8'}
 							</div>
 							{if $show_time}
 								<div class="testimonial-date">

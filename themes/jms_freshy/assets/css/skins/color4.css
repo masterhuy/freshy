@@ -353,3 +353,14 @@ a:hover, a:focus, a:active, a:focus {
 li.product-flag {
   background: #b9ce8d none repeat scroll 0 0;
 }
+.cates .jms-banner:hover {
+  border-color: #b9ce8d;
+}
+.product-preview .product_action button.cart-button:hover{
+  background: #b9ce8d;
+}
+.btn-shopnow1:hover,
+.btn-shopnow1:active,
+.btn-shopnow1:focus{
+  background: #b9ce8d;
+}

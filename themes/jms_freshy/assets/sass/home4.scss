@@ -1,9 +1,6 @@
 @import "mixin";
 @import "varians";
 
-@include BannerEffect3();
-@include hoverBannerEffect3();
-
 //topbar
 .topbar{
 	background: $active;
@@ -261,6 +258,14 @@
 	padding: 60px 0;
 	position: relative;
 	margin-top: -6px;
+	.jms-banner > a{
+		&::before, &::after{
+			display: none;
+		}
+		img{
+			transform: unset;
+		}
+	}
 	&::before{
 		content: url("../img/h4_cates_img1.png");
 		position: absolute;
@@ -303,7 +308,7 @@
 		}
 	}
 	.banner-content{
-		bottom: 13px;
+		bottom: 24px;
 		top: auto;
 		font-size: 16px;
 		font-weight: 500;

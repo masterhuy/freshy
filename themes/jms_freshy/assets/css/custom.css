@@ -1179,8 +1179,9 @@ fieldset[disabled] .btn-default {
 .btn-shopnow1:active,
 .btn-shopnow1:focus{
   color: #fff !important;
+  background: #fb943b;
 }
-.btn-effect1, .btn-effect {
+/*.btn-effect1, .btn-effect {
   -webkit-transform: perspective(1px) translateZ(0px);
   -ms-transform: perspective(1px) translateZ(0px);
   -o-transform: perspective(1px) translateZ(0px);
@@ -1238,7 +1239,7 @@ fieldset[disabled] .btn-default {
   transform: scale(1);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   -o-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }*/
 
 .btn-effect:hover::before, .btn-effect:focus::before, .btn-effect:active::before {
   -webkit-transform: scale(1);
@@ -1479,6 +1480,7 @@ ul#order_step li {
   letter-spacing: 0.3px;
   padding: 6.5px;
   background: transparent;
+  display: block;
 }
 #cart_block #button_order_cart:hover{
   color: #fff;
@@ -5809,6 +5811,7 @@ sup.required {
 
 .product-preview .product_action button.cart-button:hover{
   color: #fff;
+  background: #fb943b;
 }
 
 

@@ -1,10 +1,11 @@
 @import "mixin";
 @import "varians";
 
-@include BannerEffect4_1();
-@include BannerEffect4_2();
-@include hoverBannerEffect4_1();
-@include hoverBannerEffect4_2();
+@include hoverBannerEffect1();
+@include BannerEffect2_1();
+@include BannerEffect2_2();
+@include hoverBannerEffect2_1();
+@include hoverBannerEffect2_2();
 
 .addon-title h3{
 	text-align: left !important;
@@ -337,17 +338,77 @@
 	.right{
 		.jms-banner{
 			float: left;
+			p{
+				margin-bottom: 0;
+			}
+			.banner-content{
+				top: 50%;
+				transform: translateY(-50%);
+			}
 		}
 		.b1{
 			width: 50%;
 			padding-right: 15px;
+			.banner-content{
+				right: 41px;
+				min-width: 190px;
+			}
+			p{
+				font-size: 42px;
+				font-family: PlayBall;
+				color: #7cbb2c;
+				&.text-2{
+					text-align: right;
+					margin-top: -8px;
+				}
+			}
 		}
 		.b2{
 			width: 50%;
 			padding-left: 15px;
+			.banner-content{
+				right: 22px;
+				text-align: center;
+			}
+			.text-1{
+				font-size: 36px;
+				color: #ff7e00;
+				text-shadow: 2px 2px #fff;
+				font-weight: 600;
+			}
+			.text-2{
+				font-size: 24px;
+				font-family: Cabin;
+				color: #603813;
+				font-weight: 500;
+			}
 		}
 		.b3{
 			margin-top: 30px;
+			.banner-content{
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-align: center;
+			}
+			.text-1{
+				font-size: 40px;
+				font-family: PlayBall;
+				color: #f93c3c;
+			}
+			.text-2{
+				font-size: 36px;
+				font-weight: 600;
+				color: #7cbb2c;
+				text-shadow: 2px 2px #fff;
+				letter-spacing: 0.6px;
+			}
+			.btn-shopnow{
+				color: $active;
+				margin-top: 8px;
+				&::after{
+					background: $active;
+				}
+			}
 		}
 	}
 }
@@ -399,6 +460,28 @@
 
 //featured product
 .two_column{
+	//banner-right
+	.banner-right{
+		margin-top: -108px;
+		.banner-content{
+			top: 20px;
+			width: 100%;
+			text-align: center;
+		}
+		p{
+			font-family: PlayBall;
+			font-size: 37px;
+			color: #8da92e;
+			letter-spacing: 0.8px;
+		}
+		.text-1{
+			margin-bottom: -6px;
+			padding-right: 39px;
+		}
+		.text-2{
+			padding-left: 33px;
+		}
+	}
 	.addon-title{
 		h3{
 			font-size: 25px;
@@ -418,18 +501,49 @@
 		margin-right: 10px;
 	}
 	.featured_product{
-		position: relative;
-		z-index: 1;
+		.addon-box{
+			&:first-child{
+				position: relative;
+				z-index: 1;
+			}
+			&:last-child{
+				position: relative;
+				z-index: 2;
+			}
+		}
+		
 		.owl-stage-outer{
 			padding-bottom: 60px;
 		}
 	}
 	.banner2{
-		position: relative;
-		z-index: 2;
-		margin-top: -24px;
+		margin-top: -5px;
+		p{
+			margin-bottom: 0;
+		}
+		.banner-content{
+			left: 50%;
+			top: 50%;
+			min-width: 450px;
+			text-align: right;
+			transform: translate(-50%, -50%);
+			.text-1{
+				font-size: 37px;
+				font-family: Cabin;
+				color: $active;
+				font-weight: 700;
+				letter-spacing: -0.5px;
+				margin-bottom: 5px;
+			}
+			.text-2{
+				font-size: 23px;
+				font-weight: 500;
+				letter-spacing: 0.5px;
+			}
+		}
 	}
 	.blog{
+		margin-top: -168px;
 		.blog-carousel{
 			padding-top: 28px;
 		}
@@ -437,6 +551,10 @@
 			padding-bottom: 4px;
 			a {
 				line-height: 1.68;
+				display: block;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
 			}
 		}
 		.post-meta {
@@ -458,7 +576,7 @@
 		}
 	}
 	.recommend{
-		margin-top: -319px;
+		margin-top: 57px;
 		.flex-box.product-box {
 			margin-bottom: 25px;
 			min-height: 125px;
@@ -527,6 +645,9 @@
 	#newsletter-input {
 		width: 330px;
 	}
+	.best_seller .product-name{
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 991px){
@@ -550,6 +671,9 @@
 			}
 		}
 	}
+	.two_column .banner-right {
+		margin-top: 0;
+	}
 	.newsletter{
 		.block_content {
 			flex-direction: column;
@@ -559,6 +683,9 @@
 			margin-right: 0;
 			margin-bottom: 20px;
 		}
+	}
+	.best_seller{
+		margin-top: 30px;
 	}
 	.banner{
 		margin-top: 30px;
@@ -576,8 +703,32 @@
 		right: 0;
 	}
 }
-
+@media (max-width: 991px) and (min-width: 768px){
+	.two_column .banner-right p {
+		font-size: 20px;
+	}
+}
 @media (max-width: 767px){
+	.two_column .banner2 .banner-content {
+		min-width: auto;
+		.text-1{
+			font-size: 16px;
+		}
+		.text-2{
+			font-size: 14px;
+		}
+	}
+	.banner .right .b3{
+		.text-2 {
+			font-size: 20px;
+		}
+		.text-1{
+			font-size: 20px;
+		}
+		.btn-shopnow{
+			font-size: 14px;
+		}
+	}
 	.service {
 		margin-top: 30px;
 	}
@@ -596,8 +747,44 @@
 }
 
 @media (max-width: 481px){
+	.two_column .banner2 .banner-content{
+		.text-1 {
+			font-size: 10px;
+		}
+		.text-2{
+			font-size: 9px;
+		}
+	}
 	.banner{
 		margin-top: 30px;
+		.right{
+			.b1{
+				p{
+					font-size: 25px;
+				}
+				.banner-content {
+					right: 20px;
+					min-width: 120px;
+				}
+			}
+			.b2{
+				.text-1{
+					font-size: 26px;
+				}
+				.text-2 {
+					font-size: 14px;
+				}
+			}
+			.b3{
+				.text-2 {
+					font-size: 14px;
+				}
+				.btn-shopnow {
+				    font-size: 10px;
+				    margin-top: 0;
+				}
+			}
+		}
 	}
 	.newsletter{
 		margin-top: 40px;

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-25 05:30:29
+/* Smarty version 3.1.33, created on 2018-12-26 05:28:26
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmspagebuilder\views\templates\hook\addonsliderlayer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c2206c5a0cd33_00549746',
+  'unifunc' => 'content_5c2357cad6aef2_97943606',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c2206c5a0cd33_00549746 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2357cad6aef2_97943606 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-slider-wrapper">
 	<div class="responisve-container">
 		<div class="slider" >

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-25 04:55:40
+/* Smarty version 3.1.33, created on 2018-12-26 03:15:52
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmspagebuilder\views\templates\hook\addontestimonial_h4.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c21fe9c39a397_34068001',
+  'unifunc' => 'content_5c2338b8b6c024_43372328',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e518774cae0c7eacebe7a840ec3ba57d3dd7aa15' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\modules\\jmspagebuilder\\views\\templates\\hook\\addontestimonial_h4.tpl',
-      1 => 1543889492,
+      1 => 1545794166,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c21fe9c39a397_34068001 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2338b8b6c024_43372328 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_freshy\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
 
@@ -73,7 +73,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['testimonial']->value) {
 						<div class="testimonial-box">
 						<div class="testimonial-info">
 							<div class="testimonial-comment" >
-								<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['comment'],85,'...' )),'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
+								<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['testimonial']->value['comment'],120,'...' )),'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 
 							</div>
 							<?php if ($_smarty_tpl->tpl_vars['show_time']->value) {?>

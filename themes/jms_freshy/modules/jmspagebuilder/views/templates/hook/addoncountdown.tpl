@@ -38,6 +38,6 @@
 		{$expire_time|escape:'html':'UTF-8'}
 	</div>
 	{if $button_text}
-		<a href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"{/if} class="btn-effect1 btn-shopnow">{$button_text|escape:'htmlall':'UTF-8'}</a>
+		<a href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"{/if} class="btn-effect1 btn-shopnow1">{$button_text|escape:'htmlall':'UTF-8'}</a>
 	{/if}
 </div>	

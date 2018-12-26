@@ -1,8 +1,11 @@
 @import "mixin";
 @import "varians";
 
-@include BannerEffect3();
-@include hoverBannerEffect3();
+@include hoverBannerEffect1();
+@include BannerEffect2_1();
+@include BannerEffect2_2();
+@include hoverBannerEffect2_1();
+@include hoverBannerEffect2_2();
 
 // header
 .header{
@@ -78,6 +81,50 @@
 .slides{
 	position: relative;
 	z-index: 9;
+}
+
+// banner
+.banner{
+	.left{
+		.banner-content{
+			color: #fff;
+			right: 30px;
+			bottom: 12px;
+			top: auto;
+			text-align: right;
+			.text-1{
+				font-family: PlayBall;
+				font-size: 26px;
+				margin-bottom: -9px;
+				padding-right: 7px;
+			}
+			.text-2{
+				font-size: 48px;
+				font-weight: 600;
+				text-shadow: 1px 1px #ff5a00;
+				letter-spacing: 0.3px;
+			}
+		}
+	}
+	.center{
+		.banner-content{
+			top: 79px;
+			padding: 0 30px;
+			width: 100%;
+		}
+		p{
+			font-size: 30px;
+			font-family: Rokkitt;
+			letter-spacing: -0.4px;
+		}
+	}
+	.right{
+		.banner-content{
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
 }
 
 // cate_tab
@@ -284,9 +331,13 @@
 		padding: 80px 0;
 	}
 }
+.page-index #footer{
+	border-top: 0;
+}
 
 #footer{
 	margin-top: 0;
+	border-top: 1px solid #ebebeb;
 	#social_block ul li {
 		margin-right: 4px;
 	}
@@ -371,7 +422,24 @@
 		}
 	}
 }
-
+@media (max-width: 991px) and (min-width: 768px){
+	.banner{
+		.left .banner-content{
+			.text-1 {
+				font-size: 16px;
+			}
+			.text-2{
+				font-size: 30px;
+			}
+		}
+		.center .banner-content {
+			top: 50px;
+			p{
+				font-size: 18px;
+			}
+		}
+	}
+}
 @media (max-width: 767px){
 	.banner{
 		.left, .center{

@@ -29,6 +29,7 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Playball:400,500,600,700" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet"> 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="{$urls.theme_assets}/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />

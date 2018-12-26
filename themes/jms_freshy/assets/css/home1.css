@@ -3,7 +3,7 @@
   display: inline-block;
   width: 100%; }
 
-.jms-banner:hover a img {
+.jms-banner > a:hover img {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05); }
