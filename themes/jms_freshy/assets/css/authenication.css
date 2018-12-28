@@ -1,12 +1,14 @@
-#authentication .show-pass button{
-	height:40px;
-	font-size:0px;
-	border:none;
-	background:none;
-	min-width:30px;
-	color:rgba(17,17,17,0.45);
-	line-height:40px;
-}#authentication .show-pass button:before {
+#authentication .show-pass button {
+	height: 40px;
+	font-size: 0px;
+	border: none;
+	background: none;
+	min-width: 30px;
+	position: relative;
+	right: 10px;
+	color: #111 !important;
+}
+#authentication .show-pass button:before {
 	content:"\f06e";
 	font-family:"FontAwesome";
 	font-size:14px;

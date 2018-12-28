@@ -1,11 +1,102 @@
 @import "mixin";
 @import "varians";
 
-@include hoverBannerEffect1();
-@include BannerEffect2_1();
-@include BannerEffect2_2();
-@include hoverBannerEffect2_1();
-@include hoverBannerEffect2_2();
+
+//topbar
+.topbar{
+	font-family: cabin;
+	font-size: 15px;
+	border-bottom: 1px solid #f0f0f0;
+	p{
+		margin-bottom: 0;
+	}
+	#_desktop_user_info{
+		.type1, .type2{
+			display: none;
+		}
+		.type3{
+			display: block;
+		}
+	}
+	.languages-info{
+		&.type1, &.type3, &.type4{
+			display: none;
+		}
+		&.type2{
+			display: block;
+		}
+		@include icon_dropdown(1);
+		.dropdown-menu{
+			min-width: 140px;
+		}
+	}
+	#_desktop_currency_selector{
+		&.type3, &.type2{
+			display: none;
+		}
+		&.type1{
+			display: block;
+		}
+		@include icon_dropdown(7);
+		.dropdown-menu{
+			min-width: 106px;
+		}
+	}
+	.left{
+		a{
+			line-height: 42px;
+		}
+		span{
+			margin-right: 36px;
+			letter-spacing: 0.1px;
+			position: relative;
+			line-height: 45px;
+			&::after{
+				content: "";
+				height: 45px;
+				width: 1px;
+				background: #ebebeb;
+				position: absolute;
+				right: -21px;
+				top: -13px;
+			}
+		}
+		.locator::before{
+			content: "\e953";
+			font-family: typo-icon;
+			font-size: 15px;
+			margin-right: 6px;
+		}
+	}
+	.right{
+		display: flex;
+		justify-content: flex-end;
+		.dropdown-menu{
+			left: -21px;
+			border-top: 0;
+			&::before{
+				display: none;
+			}
+		}
+		.addon-box{
+			margin-left: 44px;
+			position: relative;
+			line-height: 45px;
+			&:not(:first-child)::before{
+				content: "";
+				height: 45px;
+				width: 1px;
+				background: #ebebeb;
+				position: absolute;
+				left: -21px;
+				top: 0;
+			}
+		}
+		.title{
+			letter-spacing: 0.5px;
+		}
+	}
+}
 
 // header
 .header{

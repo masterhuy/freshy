@@ -3,11 +3,6 @@
   display: inline-block;
   width: 100%; }
 
-.jms-banner > a:hover img {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05); }
-
 .header {
   padding: 20px 0;
   position: relative;
@@ -327,6 +322,8 @@
     font-size: 14px; } }
 
 @media (max-width: 767px) {
+  .countdown-section {
+    margin-bottom: 10px; }
   .testimonial::before, .testimonial::after {
     display: none; }
   .jms-tab .nav {

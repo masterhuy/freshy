@@ -1,7 +1,6 @@
 @import "mixin";
 @import "varians";
 
-
 .page-index{
 	#wrapper{
 		margin-top: -181px;
@@ -9,7 +8,6 @@
 		width: 100%;
 	}
 }
-@include hoverBannerEffect1();
 
 // header
 .header{
@@ -429,8 +427,10 @@
 		}
 	}
 }
-
 @media (max-width: 767px){
+	.countdown-section{
+		margin-bottom: 10px;
+	}
 	.testimonial{
 		&::before, &::after{
 			display: none;

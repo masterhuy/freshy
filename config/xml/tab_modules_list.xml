@@ -260,7 +260,7 @@
 <module name="wirecardceecheckoutseamless" position="23"/>
 <module name="klarnaofficial" position="24"/>
 <module name="mollie" position="25"/>
-<module name="santanderrechnungskauf" position="26"/>
+<module name="santanderpaymentsolutions" position="26"/>
 <module name="paygreen" position="27"/>
 <module name="paypal" position="28"/>
 <module name="viabill" position="29"/>
@@ -307,7 +307,7 @@
 <module name="correosexpress" position="5"/>
 <module name="colissimo" position="6"/>
 <module name="dhlexpress" position="7"/>
-<module name="envoimoinscher" position="8"/>
+<module name="boxtalconnect" position="8"/>
 <module name="dpdfrance" position="9"/>
 <module name="chronopost" position="10"/>
 <module name="upela" position="11"/>
@@ -361,8 +361,6 @@
 </tab>
 <tab class_name="AdminLocalization" display_type="slider_list">
 <module name="etranslation" position="1"/>
-<module name="bablic" position="2"/>
-<module name="zendesk" position="3"/>
 </tab>
 <tab class_name="AdminZones" display_type="slider_list">
 <module name="etranslation" position="1"/>

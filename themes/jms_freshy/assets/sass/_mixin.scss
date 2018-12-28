@@ -9,51 +9,33 @@
 
 // effect1
 @mixin hoverBannerEffect1(){
-	.jms-banner > a:hover img{
+	.jms-banner:hover > a img{
 	  transform: scale(1.05);
 	}
 }
 
 // effect2
-@mixin BannerEffect2_1(){
+@mixin BannerEffect2(){
 	.jms-banner > a::before {
-	  content: "";
-	  height: 100%;
-	  width: 100%;
-	  position: absolute;
-	  border: 70px solid rgba(255, 255, 255, 0);
-	  top: 0;
-	  left: 0;
-	  transition: all 0.5s ease-in-out;
+		content: "";
+	  	bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: all 0.4s;
+		z-index: 1;
+		border: 100px double transparent;
+		opacity: 1;
+		visibility: visible;
 	}
 }
 
-@mixin BannerEffect2_2(){
-	.jms-banner > a::after {
-	  content: "";
-	  height: 100%;
-	  width: 100%;
-	  position: absolute;
-	  opacity: 0.5;
-	  border: 70px solid #fff;
-	  top: 0;
-	  left: 0;
-	  transform: scale(0);
-	  transition: all 0.5s ease-in-out;
-	}
-}
-
-@mixin hoverBannerEffect2_1(){
-	.jms-banner > a:hover::before {
-	  border: 0 solid rgba(255, 255, 255, 0.7);
-	}
-}
-
-@mixin hoverBannerEffect2_2(){
-	.jms-banner > a:hover::after {
-	  transform: scale(0.8);
-	  opacity: 0;
-	  transition-delay: 0.1s;
+@mixin hoverBannerEffect2(){
+	.jms-banner:hover > a::before {
+		opacity: 0;
+		border: 0 double rgba(255, 255, 255, 0.7);
+		visibility: hidden;
 	}
 }
 

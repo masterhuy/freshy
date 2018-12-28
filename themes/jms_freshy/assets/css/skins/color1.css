@@ -364,3 +364,12 @@ li.product-flag {
 .btn-shopnow1:focus{
   background: #80a8e3;
 }
+#cart_block #button_order_cart:hover{
+  background: #80a8e3;
+}
+.btn-effect1:hover{
+  background: #80a8e3;
+}
+#contact .btn_submit{
+  color: #80a8e3;
+}

@@ -1,47 +1,79 @@
-.jms-banner > a:hover img {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05); }
-
-.jms-banner > a::before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  border: 70px solid rgba(255, 255, 255, 0);
-  top: 0;
-  left: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
-
-.jms-banner > a::after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  opacity: 0.5;
-  border: 70px solid #fff;
-  top: 0;
-  left: 0;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
-
-.jms-banner > a:hover::before {
-  border: 0 solid rgba(255, 255, 255, 0.7); }
-
-.jms-banner > a:hover::after {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  opacity: 0;
-  -webkit-transition-delay: 0.1s;
-  -o-transition-delay: 0.1s;
-  transition-delay: 0.1s; }
+.topbar {
+  font-family: cabin;
+  font-size: 15px;
+  border-bottom: 1px solid #f0f0f0; }
+  .topbar p {
+    margin-bottom: 0; }
+  .topbar #_desktop_user_info .type1, .topbar #_desktop_user_info .type2 {
+    display: none; }
+  .topbar #_desktop_user_info .type3 {
+    display: block; }
+  .topbar .languages-info.type1, .topbar .languages-info.type3, .topbar .languages-info.type4 {
+    display: none; }
+  .topbar .languages-info.type2 {
+    display: block; }
+  .topbar .languages-info a.dropdown-toggle::after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    padding-left: 1px; }
+  .topbar .languages-info .dropdown-menu {
+    min-width: 140px; }
+  .topbar #_desktop_currency_selector.type3, .topbar #_desktop_currency_selector.type2 {
+    display: none; }
+  .topbar #_desktop_currency_selector.type1 {
+    display: block; }
+  .topbar #_desktop_currency_selector a.dropdown-toggle::after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    padding-left: 7px; }
+  .topbar #_desktop_currency_selector .dropdown-menu {
+    min-width: 106px; }
+  .topbar .left a {
+    line-height: 42px; }
+  .topbar .left span {
+    margin-right: 36px;
+    letter-spacing: 0.1px;
+    position: relative;
+    line-height: 45px; }
+    .topbar .left span::after {
+      content: "";
+      height: 45px;
+      width: 1px;
+      background: #ebebeb;
+      position: absolute;
+      right: -21px;
+      top: -13px; }
+  .topbar .left .locator::before {
+    content: "\e953";
+    font-family: typo-icon;
+    font-size: 15px;
+    margin-right: 6px; }
+  .topbar .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .topbar .right .dropdown-menu {
+      left: -21px;
+      border-top: 0; }
+      .topbar .right .dropdown-menu::before {
+        display: none; }
+    .topbar .right .addon-box {
+      margin-left: 44px;
+      position: relative;
+      line-height: 45px; }
+      .topbar .right .addon-box:not(:first-child)::before {
+        content: "";
+        height: 45px;
+        width: 1px;
+        background: #ebebeb;
+        position: absolute;
+        left: -21px;
+        top: 0; }
+    .topbar .right .title {
+      letter-spacing: 0.5px; }
 
 .header {
   position: relative;

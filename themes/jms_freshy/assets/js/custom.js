@@ -405,9 +405,9 @@ jQuery(function ($) {
     "use strict";
     
     var bodyEl = $("body"),
-		content = $('.main-site'),
+		content = $('.top_menu_second .first'),
 		openbtn = $('.setting-img'),
-		closebtn = $('.main-site' ),
+		closebtn = $('.top_menu_second .first' ),
 		isOpen = false;
 
 	function init() {

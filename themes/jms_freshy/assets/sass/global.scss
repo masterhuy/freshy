@@ -2,10 +2,8 @@
 @import "varians";
 
 @include hoverBannerEffect1();
-@include BannerEffect2_1();
-@include BannerEffect2_2();
-@include hoverBannerEffect2_1();
-@include hoverBannerEffect2_2();
+@include BannerEffect2();
+@include hoverBannerEffect2();
 
 @media (min-width: 992px){
 	.jms-row.header.fixed,
@@ -45,6 +43,9 @@
 		}
 	}
 }
+.lh-50{
+	line-height: 50px;
+}
 .jms-advsearch .input-group.keyword-group {
     width: 100%;
 }
@@ -65,6 +66,9 @@
 		> a{
 			color: #907459;
 			font-family: Cabin;
+			&:hover{
+				color: $active;
+			}
 		}
 	}
 }
@@ -311,7 +315,56 @@ a.wishlist_top{
 		bottom: 3px;
 	}
 }
-
+.top_menu_second{
+	.cus, .cur{
+		&::after{
+			content: "";
+			height: 24px;
+			width: 1px;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			background: #ebebeb;
+		}
+	}
+	.user-info{
+		&.type1, &.type2{
+			display: none;
+		}
+	}
+	#_desktop_currency_selector{
+		&.type2, &.type3{
+			display: none;
+		}
+		@include icon_dropdown(1);
+	}
+	.languages-info{
+		&.type1, &.type3, &.type4{
+			display: none;
+		}
+		@include icon_dropdown(1);
+	}
+}
+.home_1, .home_2{
+	.top_menu_second{
+		.container{
+			padding-top: 0;
+		}
+		.first{
+			&::after{
+				content: "";
+				width: calc(100% + 30px);
+				height: 1px;
+				background-color: #ebebeb;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}
 #off-canvas-menu{
 	.menu-item > .dropdown-menu{
 		position: relative !important;
@@ -400,7 +453,7 @@ a.wishlist_top{
 }
 #product{
 	 #footer {
-		margin-top: -186px;
+		margin-top: -166px;
 		display: inline-block;
 		width: 100%;
 	}

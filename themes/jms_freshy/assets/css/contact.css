@@ -7,6 +7,12 @@
 	position: relative;
 	display: inline-block;
 }
+#contact .btn_submit{
+	color: #fb943b;
+}
+#contact .btn_submit:hover{
+	color: #fff;
+}
 #contact .page-content.card-block {
 	padding-top: 70px;
 }

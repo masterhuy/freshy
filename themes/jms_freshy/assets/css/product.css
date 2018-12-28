@@ -262,6 +262,7 @@
 }
 .product-prices.content_price .price.new {
     font-size: 28px;
+    margin-right: 36px;
 }
 #product .pb-right-column .content_prices .shipping_cost {
 	line-height: 32px; 
@@ -378,15 +379,6 @@
 .product-variants-item{
     position: relative;
 }
-.product-variants-item::after{
-    content: "\f107";
-    font-family: FontAwesome;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -1;
-}
 .product-variants-item {
     display: inline-flex;
     align-items: center;
@@ -429,9 +421,7 @@
     color: #fff;
     display: inline-block;
     font-family: "Poppins";
-    line-height: 27px;
-    min-height: 45px;
-    padding: 12px 20px;
+    padding: 0px 20px;
     position: relative;
     text-align: center;
 }
@@ -657,7 +647,6 @@
 #product-availability {
     font-family: Cabin;
     color: #907459;
-    margin-left: 36px;
     position: relative;
     bottom: 4px;
 }
@@ -789,7 +778,7 @@
 	position: absolute;
 	top: 0;
 	padding:40px 0;
-	width: 120px;
+	width: 112px;
 }
 .thumbnails.js-thumbnails .js-modal-mask {
 	height: 100%;
@@ -857,6 +846,7 @@
     color: #907459;
     border-radius: 30px;
     font-family: Cabin;
+    background: url("../img/icon/icon-size.png") no-repeat 115px;
 }
 
 /*Active fiter*/

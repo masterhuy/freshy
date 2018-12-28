@@ -63,6 +63,17 @@
 				<a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
 				</a>
 			{/if}
+
+			{block name='product_variants'}
+				{if $product.main_variants}
+					{if isset($jpb_pcolor) && $jpb_pcolor == 1}
+						<div class="color_to_pick_list">
+							{include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
+						</div>
+					{/if}
+				{/if}
+			{/block}
+			
 		</div>
 						
 		<div class="product-info">
@@ -125,16 +136,6 @@
 			</div>
 		</div>
 		<div class="product_action">
-			{block name='product_variants'}
-				{if $product.main_variants}
-					{if isset($jpb_pcolor) && $jpb_pcolor == 1}
-						<div class="color_to_pick_list">
-							{include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
-						</div>
-					{/if}
-				{/if}
-			{/block}
-
 			{block name='product_price_and_shipping'}
 				{if $product.show_price}
 				  <div class="content_price">

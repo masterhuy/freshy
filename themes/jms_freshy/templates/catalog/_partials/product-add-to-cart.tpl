@@ -38,7 +38,10 @@
 			  />
 			</div>
         <div class="add">
-				<button class="btn-effect1 product-btn add-to-cart cart-button btn-shopnow1 {if $product.quantity < 1}disabled{/if}" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}>
+				<button class="btn-effect1 product-btn add-to-cart cart-button btn-shopnow1 {if $product.quantity < 1}disabled{/if}" data-button-action="add-to-cart" type="submit" 
+        {if !$product.add_to_cart_url}
+          disabled
+        {/if}>
 					<span class="fa fa-spin fa-spinner"></span>
 					<span class="fa fa-check"></span>
 					<span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}</span>		

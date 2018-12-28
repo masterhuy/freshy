@@ -292,6 +292,7 @@
 	padding: 5px 15px;
 	border-radius: 30px;
 	letter-spacing: 0.8px;
+	display: inline-block;
 }
 .blog-readmore:hover{
 	border-color: #fb943b;
