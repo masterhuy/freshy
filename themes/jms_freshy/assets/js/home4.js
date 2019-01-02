@@ -8,6 +8,12 @@
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 */
+ jQuery(document).ready(function($) {
+	$('.jms-vermegamenu').jmsVerMegaMenu({    			
+		event: jmvmm_event,
+		duration: jmvmm_duration
+	});
+});
 $(window).load(function(){
 	if($('.slider').length > 0)
 	$('.slider').fractionSlider({	

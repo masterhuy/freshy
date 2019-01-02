@@ -51,3 +51,6 @@
   margin-left: 0;
   margin-right: 5px;
 }
+.newsletter-btn img {
+  transform: rotate(180deg);
+}

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-11 23:10:28
+/* Smarty version 3.1.33, created on 2019-01-01 23:22:37
   from 'D:\xamppp\htdocs\jms_freshy\admin031gwo77f\themes\default\template\controllers\cms_content\content.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c108a34f205c6_22291804',
+  'unifunc' => 'content_5c2c3c8d7b7af1_94147556',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c108a34f205c6_22291804 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2c3c8d7b7af1_94147556 (Smarty_Internal_Template $_smarty_tpl) {
 if (isset($_smarty_tpl->tpl_vars['cms_breadcrumb']->value)) {?>
 	<ul class="breadcrumb cat_bar">
 		<?php echo $_smarty_tpl->tpl_vars['cms_breadcrumb']->value;?>

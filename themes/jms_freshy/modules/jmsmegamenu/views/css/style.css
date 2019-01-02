@@ -84,11 +84,7 @@
     opacity: 0;
     padding: 0;
     position: absolute;
-     transition: all 200ms ease 0s;
-	-webkit-transition: all 200ms ease 0s;
-	-moz-transition: all 200ms ease 0s;
-	-ms-transition: all 200ms ease 0s;
-	-o-transition: all 200ms ease 0s;
+     transition: unset;
     visibility: hidden;
     z-index: 9999;
 }

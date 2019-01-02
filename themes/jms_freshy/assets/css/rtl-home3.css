@@ -1,3 +1,11 @@
+.topbar .right .addon-box {
+  margin-right: 44px;
+  margin-left: 0;
+}
+.topbar .right .addon-box:not(:first-child)::before {
+  right: -21px;
+  left: auto;
+}
 .header .right .addon-box {
   margin-right: 40px;
   margin-left: 0;

@@ -362,7 +362,7 @@ li.product-flag {
 .btn-shopnow1:hover,
 .btn-shopnow1:active,
 .btn-shopnow1:focus{
-  background: #7b6146;
+  background: #7b6146 !important;
 }
 #cart_block #button_order_cart:hover{
   background: #7b6146;

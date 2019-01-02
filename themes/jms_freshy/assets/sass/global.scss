@@ -276,12 +276,7 @@ a.wishlist_top{
 	}
 	.product-preview .color_to_pick_list{
 		display: inline-flex;
-		margin-bottom: 35px;
-		a{
-			margin: 0;
-			margin-right: 10px;
-			border-radius: 50%;
-		}
+		margin-bottom: 10px;
 		.js-count.count {
 			display: none;
 		}
@@ -974,8 +969,7 @@ a.wishlist_top{
 	.images-container{
 		display: flex;
 		.js-qv-product-cover {
-			border: 1px solid #ebebeb;
-			border-radius: 5px;
+			border-radius: 10px;
 		}
 		.product-images > li.thumb-container {
 		    display: block;
@@ -992,7 +986,7 @@ a.wishlist_top{
 			max-height: 400px;
 			overflow: hidden;
 			margin-right: 0;
-			margin-top: 20px;
+			margin-top: 20px !important;
 		}
 	}
 	.content_price{
@@ -1190,11 +1184,13 @@ a.wishlist_top{
 .wlp_bought img{
 	width: 100%;
 }
+.product-cover{
+	position: relative;
+	border: 1px solid #f0ede8;
+	border-radius: 8px;
+}
 #product{
 	.product-cover{
-		position: relative;
-		border: 1px solid #f0ede8;
-		border-radius: 8px;
 		img{
 			border-radius: 8px;
 		}
@@ -1522,5 +1518,18 @@ a.wishlist_top{
 @media (max-width: 1199px){
 	.jms-megamenu .menu-align-center > .dropdown-menu{
 		width: 750px !important;
+	}
+}
+@media (max-height: 800px){
+	div.top_menu_second{
+		.third {
+			margin-top: 30px;
+		}
+		.second{
+			margin-top: 30px;
+		}
+		.first {
+		    padding-top: 90px !important;
+		}
 	}
 }

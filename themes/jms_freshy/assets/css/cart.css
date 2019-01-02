@@ -146,7 +146,8 @@
 }
 .js-cart-line-product-quantity.form-control {
 	border: 1px solid #ebebeb;
-	padding: 0 20px;
+	padding: 0 10px;
+	text-align: center;
 	border-right: 0;
 }
 .product-line-grid-right span.input-group-btn-vertical button {

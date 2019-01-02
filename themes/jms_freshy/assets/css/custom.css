@@ -987,6 +987,7 @@ table td[class*="col-"], table table th[class*="col-"] {
 
 /* Dropdown Menu */
 .dropdown-menu {
+  border: 0;
   border-top: 2px solid #fb943b;
   /*transform: translateY(10px);*/
   visibility: hidden;
@@ -1767,7 +1768,6 @@ ul#order_step li {
 .product-preview:hover, .product-preview:hover .product_action {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
 }
-
 .product-preview:hover .preview{
   border-radius: 10px 10px 0 0;
 }
@@ -2151,10 +2151,6 @@ ul#order_step li {
 .products-list-in-row .quick-view.product-btn{
   margin-top: 13px;
 }
-.products-list-in-row .ajax-add-to-cart .text-addcart{
-  position: relative;
-  bottom: 2px;
-}
 .product-name {
   font-family: Cabin;
   text-transform: capitalize;
@@ -2528,6 +2524,7 @@ li.product-flag {
 
 .products-list-in-row .product-preview:hover .product_action{
   box-shadow: unset !important;
+  margin-top: 0;
 }
  .products-list-in-row .product-preview .product-info::before{
     display: none;
@@ -5759,7 +5756,7 @@ sup.required {
   border-radius: 0 30px 30px 0;
   letter-spacing: 0.3px;
 }
-/*# sourceMappingURL=custom.css.map */
+
 
 .jms-vermegamenu .nav > li.sub-h18{
   display: none;

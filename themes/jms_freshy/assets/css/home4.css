@@ -346,11 +346,6 @@
     left: 0;
     bottom: 2px; }
 
-.product_carousel .product_box {
-  margin: 0; }
-  .product_carousel .product_box .item {
-    padding: 0; }
-
 .product_carousel .owl-theme {
   padding-top: 28px; }
   .product_carousel .owl-theme .owl-controls {

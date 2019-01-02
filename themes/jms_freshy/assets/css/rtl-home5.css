@@ -62,3 +62,6 @@
 .two_column .blog .owl-dots {
   text-align: right;
 }
+.two_column .product-box .flexbox {
+  margin-left: 10px;
+}

@@ -1,3 +1,6 @@
+.page-index #wrapper .addon-title h3 {
+  text-align: center !important;
+}
 .header .left .addon-box {
   margin-left: 52px;
   margin-right: 0;
@@ -41,4 +44,11 @@
 .newsletter .newsletter-btn.btn-popup {
   margin-right: 20px;
   margin-left: 0;
+}
+.cates .owl-theme .owl-controls {
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: inline-flex !important;
+  right: auto;
 }

@@ -8,12 +8,7 @@
 *  @license   license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
 *  @Website: http://www.joommasters.com
 */
- /*fixed menu*/
  jQuery(document).ready(function($) {
-	$('.jms-vermegamenu').jmsMegaMenu({    			
-		event: jmmm_event,
-		duration: jmmm_duration
-	});
 	$('.jms-megamenu').jmsMegaMenu({    			
 		event: jmmm_event,
 		duration: jmmm_duration
