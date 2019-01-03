@@ -454,7 +454,7 @@ a.wishlist_top {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
 
-#search .search-box {
+#search #content .search-box {
   width: 300px;
   margin: 0 auto; }
 
@@ -1283,10 +1283,12 @@ a.wishlist_top {
   .jms-megamenu .menu-align-center > .dropdown-menu {
     width: 750px !important; } }
 
-@media (max-height: 800px) {
+@media (max-height: 950px) {
+  div.top_menu_second .layout-column.first::before {
+    top: 30px; }
   div.top_menu_second .third {
     margin-top: 30px; }
   div.top_menu_second .second {
     margin-top: 30px; }
   div.top_menu_second .first {
-    padding-top: 90px !important; } }
+    padding-top: 70px !important; } }

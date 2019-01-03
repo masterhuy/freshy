@@ -349,6 +349,7 @@
 	.product-line-grid{
 		display: block;
 		text-align: center;
+		border: 1px solid #ebebeb;
 	}
 	.product-line-grid .product-info .product-line-info{
 		text-align: left;
@@ -373,6 +374,24 @@
 	}
 	.product-line-grid-right.product-line-actions{
 		margin-top:20px;
+	}
+}
+@media (max-width: 481px){
+	.product-image.media-middle {
+		display: block;	
+	}
+	.cart-grid .product-image.media-middle > img{
+		width: 100%;
+		display: block;
+		height: auto;
+		margin: 0;
+	}
+	.product-line-grid .product-info .product-line-info {
+		text-align: center;
+		padding-top: 10px;
+	}
+	.product-line-info .label.product-name{
+		text-align: center;
 	}
 }
 @media(max-width:320px){

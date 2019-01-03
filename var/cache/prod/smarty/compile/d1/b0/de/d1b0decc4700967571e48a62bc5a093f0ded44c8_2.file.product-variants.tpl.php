@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-02 05:24:15
+/* Smarty version 3.1.33, created on 2019-01-03 04:32:05
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\templates\catalog\_partials\product-variants.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c2c914f6d1893_59329795',
+  'unifunc' => 'content_5c2dd6958882d2_33110811',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c2c914f6d1893_59329795 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2dd6958882d2_33110811 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_freshy\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
  <div class="product-variants">

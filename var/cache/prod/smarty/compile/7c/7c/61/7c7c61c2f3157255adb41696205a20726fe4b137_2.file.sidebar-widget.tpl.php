@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-02 05:08:35
+/* Smarty version 3.1.33, created on 2019-01-03 05:19:17
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\jmsblogwidget\views\templates\hook\sidebar-widget.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c2c8da3353df0_98025850',
+  'unifunc' => 'content_5c2de1a5351b64_91227910',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c2c8da3353df0_98025850 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2de1a5351b64_91227910 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_freshy\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 if ($_smarty_tpl->tpl_vars['widget_setting']->value['JBW_SB_SHOW_CATEGORYMENU']) {?>
 <aside class="blog-widget widget-categories">

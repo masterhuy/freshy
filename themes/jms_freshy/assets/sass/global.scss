@@ -498,7 +498,7 @@ a.wishlist_top{
 		}
 	}
 }
-#search .search-box {
+#search #content .search-box {
 	width: 300px;
 	margin: 0 auto;
 }
@@ -1520,8 +1520,11 @@ a.wishlist_top{
 		width: 750px !important;
 	}
 }
-@media (max-height: 800px){
+@media (max-height: 950px){
 	div.top_menu_second{
+		.layout-column.first::before {
+			top: 30px;
+		}
 		.third {
 			margin-top: 30px;
 		}
@@ -1529,7 +1532,7 @@ a.wishlist_top{
 			margin-top: 30px;
 		}
 		.first {
-		    padding-top: 90px !important;
+		    padding-top: 70px !important;
 		}
 	}
 }

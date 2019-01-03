@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-02 05:19:46
+/* Smarty version 3.1.33, created on 2019-01-03 04:34:26
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\modules\contactform\views\templates\widget\contactform.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c2c9042539c16_07507688',
+  'unifunc' => 'content_5c2dd72213d694_98001513',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c5f86ef3517aa965267f9295c494d1120672fe9e' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\modules\\contactform\\views\\templates\\widget\\contactform.tpl',
-      1 => 1544425411,
+      1 => 1546483818,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c2c9042539c16_07507688 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2dd72213d694_98001513 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="contact-form">
   <form action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['contact'], ENT_QUOTES, 'UTF-8');?>
 " method="post" <?php if ($_smarty_tpl->tpl_vars['contact']->value['allow_file_upload']) {?>enctype="multipart/form-data"<?php }?>>
@@ -42,7 +42,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </ul>
       </div>
     <?php }?>
-
+    <?php if (!$_smarty_tpl->tpl_vars['notifications']->value || $_smarty_tpl->tpl_vars['notifications']->value['nw_error']) {?>
     <section class="form-fields">
 
       <div class="form-group row">
@@ -151,11 +151,20 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['contact']->value['message'], ENT_Q
 
     </section>
 
-    <footer class="form-footer text-xs-right">
-      <input class="btn_submit btn-effect1 btn-shopnow1" type="submit" name="submitMessage" value="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Submit','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
-">
-    </footer>
 
+    <footer class="form-footer text-sm-right">
+        <style>
+          input[name=url] {
+            display: none !important;
+          }
+        </style>
+        <input type="text" name="url" value=""/>
+        <input type="hidden" name="token" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['token']->value, ENT_QUOTES, 'UTF-8');?>
+" />
+        <input class="btn_submit btn-effect1 btn-shopnow1" type="submit" name="submitMessage" value="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Submit','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+">
+      </footer>
+    <?php }?>
   </form>
 </section>
 <?php }

@@ -29,9 +29,13 @@ meta:
 assets:
   js:
     product:
-     - id: elevateZoom
-       path: assets/js/jquery.elevatezoom.js
-       priority: 130
+     - id: jquery
+       path: assets/js/jquery331.min.js
+       priority: 1
+       position: bottom
+     - id: bootstrap
+       path: assets/js/bootstrap.min.js
+       priority: 2
        position: bottom
   # If you're using this theme as child and you want to load
   # the parent theme assets, uncomment this line.

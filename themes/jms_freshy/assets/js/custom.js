@@ -9,6 +9,10 @@
 *  @Website: http://www.joommasters.com
 */
  jQuery(document).ready(function($) {
+ 	$('.jms-vermegamenu').jmsMegaMenu({    			
+		event: jmmm_event,
+		duration: jmmm_duration
+	});
 	$('.jms-megamenu').jmsMegaMenu({    			
 		event: jmmm_event,
 		duration: jmmm_duration

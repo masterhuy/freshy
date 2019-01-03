@@ -189,10 +189,10 @@
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#description">{l s='Description' d='Shop.Theme.Catalog'}</a>
+                  <a data-toggle="collapse" data-parent="#accordion" href="#descriptionn">{l s='Description' d='Shop.Theme.Catalog'}</a>
               </h4>
             </div>
-            <div id="description" class="panel-collapse collapse in">
+            <div id="descriptionn" class="panel-collapse collapse in">
               <div class="panel-body">
                 {block name='product_description'}
                  <div class="product-description">{$product.description nofilter}</div>
@@ -204,10 +204,10 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#product-details">{l s='Product Details' d='Shop.Theme.Catalog'}</a>
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#product-detailss">{l s='Product Details' d='Shop.Theme.Catalog'}</a>
             </h4>
           </div>
-          <div id="product-details" class="panel-collapse collapse">
+          <div id="product-detailss" class="panel-collapse collapse">
             <div class="panel-body">
               {block name='product_details'}
                  {include file='catalog/_partials/product-details.tpl'}
@@ -219,10 +219,10 @@
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#attachments">{l s='Attachments' d='Shop.Theme.Catalog'}</a>
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#attachmentss">{l s='Attachments' d='Shop.Theme.Catalog'}</a>
               </h4>
             </div>
-            <div id="attachments" class="panel-collapse collapse">
+            <div id="attachmentss" class="panel-collapse collapse">
               <div class="panel-body">
                 {block name='product_attachments'}
                    {if $product.attachments}

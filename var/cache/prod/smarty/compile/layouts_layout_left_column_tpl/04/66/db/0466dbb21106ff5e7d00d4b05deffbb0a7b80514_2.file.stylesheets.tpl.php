@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-02 05:27:33
+/* Smarty version 3.1.33, created on 2019-01-03 05:32:39
   from 'D:\xamppp\htdocs\jms_freshy\themes\jms_freshy\templates\_partials\stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c2c92157f3e24_84599574',
+  'unifunc' => 'content_5c2de4c7bbd963_98602406',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0466dbb21106ff5e7d00d4b05deffbb0a7b80514' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_freshy\\themes\\jms_freshy\\templates\\_partials\\stylesheets.tpl',
-      1 => 1545808970,
+      1 => 1546481520,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c2c92157f3e24_84599574 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2de4c7bbd963_98602406 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
 css/linearicon.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>

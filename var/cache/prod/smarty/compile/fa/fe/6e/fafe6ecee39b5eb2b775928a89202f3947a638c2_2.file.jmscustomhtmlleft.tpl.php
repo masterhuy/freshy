@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-02 05:27:35
+/* Smarty version 3.1.33, created on 2019-01-03 05:29:29
   from 'D:\xamppp\htdocs\jms_freshy\modules\jmscustomhtmlleft\views\templates\hook\jmscustomhtmlleft.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c2c921747d905_53041128',
+  'unifunc' => 'content_5c2de409a04ac5_84322003',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c2c921747d905_53041128 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2de409a04ac5_84322003 (Smarty_Internal_Template $_smarty_tpl) {
 echo $_smarty_tpl->tpl_vars['html_left']->value;?>
 
 <?php }

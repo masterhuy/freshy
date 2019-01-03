@@ -240,7 +240,9 @@
 	display: none;
 }
 #category .custom-checkbox {
-    padding-right: 5px;
+	padding-right: 5px;
+	position: relative;
+	top: 1px;
 }
 #category .color-style .custom-checkbox {
 	padding-right:10px;

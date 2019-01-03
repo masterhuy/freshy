@@ -348,6 +348,7 @@
 .commentForm{
 	margin-top: 3px;
 	display: inline-block;
+	width: 100%;
 }
 .commentForm > h3{
 	font-size: 22px;
@@ -413,7 +414,6 @@
 }
 img.attachment-widget.wp-post-image.img-responsive {
 	margin-right: 30px;
-	width: 11.9%;
 	display: inline-block;
 }
 h4.heading {

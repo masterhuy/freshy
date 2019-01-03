@@ -84,7 +84,7 @@
     opacity: 0;
     padding: 0;
     position: absolute;
-     transition: unset;
+    transition: unset;
     visibility: hidden;
     z-index: 9999;
 }
@@ -122,7 +122,7 @@ div.jms-megamenu .dropdown-menu::before{
     font-family: Cabin;
     font-size: 15px;
     line-height: 23px;
-    padding: 3.5px 0;
+    padding: 3.5px 22px;
     position: relative;
     text-transform: capitalize;
     color: #907459;
@@ -143,8 +143,11 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .mega-nav li.selected, .mega-dropdown-menu.selected, .mega-col-nav.selected > .mega-inner {
     border: 1px solid #07b !important;
 }
-.jms-megamenu .mega-col-nav {
+.jms-megamenu .item-fullwidth .mega-col-nav {
     padding: 0 15px;
+}
+.jms-megamenu .mega-col-nav {
+    padding: 0;
 }
 .jms-megamenu .products .mega-col-nav:last-child{
     padding: 0;
@@ -170,7 +173,7 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .mega-nav .mega > a::after {
     font-family: "FontAwesome";
     position: absolute;
-    right: 0;
+    right: 22px;
     top: calc(50% - 12px);
 	content: '\f105';
     font-size: 14px;
@@ -190,11 +193,11 @@ div.jms-megamenu .dropdown-menu::before{
     margin-right: 5px;
 }
 .jms-megamenu .mega-nav > .mega > .dropdown-menu {
-    left: calc(100% + 21px);
+    left: 100%;
     margin: 0;
     top: 0;
 }
-.megamenu-custom.first .menu-item.group {
+.jms-megamenu .megamenu-custom.first .menu-item.group {
     margin-bottom: 7px;
 }
 .jms-megamenu .dropdown-menu .dropdown-menu {
@@ -233,9 +236,6 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .menu-align-center.open > .dropdown-menu{
     top: 100%;
 }
-.mega-nav .mega > a::after {
-    margin-right: 2px !important;
-}
 .jms-megamenu .mega-nav > .mega.menu-align-left > .dropdown-menu {
     left: 100%;
 }
@@ -255,7 +255,7 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .jms-megamenu .dropdown-menu {
     background: #fff !important;
-    padding: 12px 7px !important;
+    padding: 12px 0px !important;
 }
 .jms-megamenu .mega-col-nav.col-sm-3:first-child {
 	border-left:0;

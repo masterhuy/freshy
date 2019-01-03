@@ -3086,7 +3086,7 @@ ul.footer_links {
   .modal-backdrop.fade {
     opacity: 0; }
   .modal-backdrop.in {
-    opacity: 0.5; }
+    opacity: 0.3; }
 
 /************WHISLIST****************/
 .button_account {
@@ -3448,10 +3448,13 @@ ul.footer_links {
   left: -15px !important;
   position: absolute;
   right: 0;
-  text-align: center;
+  text-align: left;
   width: 134px !important;
   min-width: auto;
-  padding: 10px 0;
+  padding: 10px 20px;
+}
+.top_menu_second #_desktop_currency_selector.btn-group .dropdown-menu {
+  text-align: center;
 }
 
 .top_menu_second .btn-group ul li a {
@@ -5766,7 +5769,16 @@ sup.required {
   color: #fff;
   background: #fb943b;
 }
-
+#product-modal, #product{
+  padding:0 !important;
+}
+#product{
+  transition: unset;
+}
+#product.modal-open{
+  position: relative;
+  left: -8px;
+}
 
 .slides .btn-shopnow{
   transition: unset;
