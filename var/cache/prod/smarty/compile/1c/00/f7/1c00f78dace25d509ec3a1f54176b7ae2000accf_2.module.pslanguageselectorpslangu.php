@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-03 05:33:46
+/* Smarty version 3.1.33, created on 2019-01-04 04:26:43
   from 'module:pslanguageselectorpslangu' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c2de50a4b3f05_87769794',
+  'unifunc' => 'content_5c2f26d32531c2_16460271',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c2de50a4b3f05_87769794 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2f26d32531c2_16460271 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block languages module -->
 <?php if (count($_smarty_tpl->tpl_vars['languages']->value) > 1) {?>
 	<div class="btn-group compact-hidden languages-info type1">

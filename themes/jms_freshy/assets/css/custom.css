@@ -2932,10 +2932,13 @@ ul.footer_links {
   #blockcart-modal .modal-dialog {
     max-width: 1140px;
     width: 100%; }
-  #blockcart-modal .product-image {
-    float: left;
-    margin-right: 10px;
-    width: 100px; }
+#blockcart-modal .product-image {
+  float: left;
+  margin-right: 10px;
+  width: 100px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+}
   #blockcart-modal .modal-title {
     font-weight: 600;
     font-size: 1.6rem;
@@ -3454,7 +3457,7 @@ ul.footer_links {
   padding: 10px 20px;
 }
 .top_menu_second #_desktop_currency_selector.btn-group .dropdown-menu {
-  text-align: center;
+  padding-left: 40px;
 }
 
 .top_menu_second .btn-group ul li a {

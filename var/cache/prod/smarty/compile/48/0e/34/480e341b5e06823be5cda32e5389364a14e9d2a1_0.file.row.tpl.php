@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-03 04:19:54
+/* Smarty version 3.1.33, created on 2019-01-04 02:27:53
   from 'D:\xamppp\htdocs\jms_freshy\admin031gwo77f\themes\default\template\helpers\kpi\row.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c2dd3ba44d077_94783367',
+  'unifunc' => 'content_5c2f0af9741a21_94822014',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c2dd3ba44d077_94783367 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2f0af9741a21_94822014 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="panel kpi-container">
 	<?php if ($_smarty_tpl->tpl_vars['refresh']->value) {?>
 		<div class="kpi-refresh"><button class="close refresh" type="button" onclick="refresh_kpis(true);"><i class="process-icon-refresh" style="font-size:1em"></i></button></div>
